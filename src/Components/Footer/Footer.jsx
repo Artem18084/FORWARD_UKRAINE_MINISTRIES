@@ -8,25 +8,32 @@ import { Link } from "react-router-dom";
 
 export default function Footer(props) {
   return (
-    <footer className=" w-full  flex flex-col  items-center justify-center bg-gradient-to-r to-slate-900 from-sky-900  text-white  py-10 max-[768px]:py-5 ">
-      <hr className="w-[75vw] h-2 mb-16 max-[768px]:mb-4 max-[1024px]:mb-8" />
+    <footer className=" w-full  flex flex-col  items-center justify-center bg-gradient-to-r to-slate-900 from-sky-900  text-white  py-5 max-[768px]:py-2 ">
+      <hr className="w-[75vw] h-2 mb-[1vw]" />
       <section className="flex ">
-        <ContactButton img={imgInst} alt="instagram_logo" href="https://instagram.com/forward_ukraine_minestries?igshid=MDM4ZDc5MmU=" />
+        <ContactButton
+          img={imgInst}
+          alt="instagram_logo"
+          href="https://www.instagram.com/forward_ukraine__ministries/"
+        />
         <ContactButton
           img={imgFace}
           alt="facebook_logo"
           href="https://www.facebook.com/permalink.php?story_fbid=pfbid08BG4LUrwZb2oeocUvsRkK6Q3uGG2GHAkMrgPSvkrQqqBC4Gvj49s93Tr55F4j2gEl&id=102841305701116  "
         />
-       <Link to={"/Donate"}>
-        <ContactButton img={imgPay} alt="PayPal_logo"  donateActive={props.donateActive}/>
-       </Link>
-        <ContactButton img={imgWhatsapp} alt="whatsapp_logo" />
+      <a href="https://www.paypal.com/donate/?hosted_button_id=WYGADA44TMFFY" target="_blank">
+          <ContactButton img={imgPay} alt="PayPal_logo" />
+        </a>
+        <a href="https://wa.me/+380631146624" target='_blank'>
+           <ContactButton img={imgWhatsapp} alt="whatsapp_logo" />
+        </a>
+       
       </section>
 
-      <h4 className="uppercase mb-6 max-[768px]:my-1 max-[768px]:text-xs">
+      <h4 className="uppercase  max-[768px]:text-xs text-sm">
         forward ukraine ministries
       </h4>
-      <p className=" text-xs max-[768px]:text-[10px] max-[768px]:leading-[14px]">
+      <p className=" text-[10px] max-[768px]:text-[5px] max-[768px]:leading-[7px]">
         {" "}
         © ForwardUkraineMinistries 2022
       </p>

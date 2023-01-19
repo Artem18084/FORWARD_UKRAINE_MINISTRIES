@@ -1,5 +1,5 @@
 const path = require("path");
-const WebpackFavicons = require('webpack-favicons');
+const WebpackFavicons = require("webpack-favicons");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -10,10 +10,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[hash].js",
-    publicPath: '/'
+    publicPath: "/",
   },
   devServer: {
-    port: 3000, 
+    port: 3000,
     historyApiFallback: true,
   },
   resolve: {
@@ -24,31 +24,50 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "index.css",
-      chunkFilename: "index.css"
+      // chunkFilename: "index.css",
     }),
     new WebpackFavicons({
-      src: './src/images/logo/logo.png',
-      path: 'img',
-      background: '#000',
-      theme_color: '#000',
+      src: "./src/images/logo/logo.png",
+      path: "img",
+      background: "#000",
+      theme_color: "#000",
       icons: {
-        favicons: true
-      }
-    })
+        favicons: true,
+      },
+    }),
   ],
 
   module: {
     rules: [
+      // {
+      //   test: /\.svg$/i,
+      //   use: [
+      //     {
+      //       loader: 'url-loader',
+      //       options: {
+      //         encoding: false,
+      //       },
+      //     },
+      //   ],
+      // },
+       
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader", "postcss-loader",
-          ],
-          
-          
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+        
       },
-      { test: /\.(svg|png|jpg|jpeg|gif|PNG|JPG|SVG|JPEG)$/, use: ["file-loader"] ,},
+      {
+        test: /\.(svg|png|jpg|jpeg|gif|PNG|JPG|SVG|JPEG)$/,
+        use: [
+          {
+              loader: "file-loader",
+              options: {
+                  name: "[path][name].[ext]",
+                  
+              },
+          },
+      ],
+      },
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
@@ -57,7 +76,6 @@ module.exports = {
           options: {
             presets: ["@babel/preset-react", "@babel/preset-env"],
           },
-        
         },
       },
       {
@@ -72,4 +90,5 @@ module.exports = {
       },
     ],
   },
+  
 };

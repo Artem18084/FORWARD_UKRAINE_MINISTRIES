@@ -1,6 +1,6 @@
 const initialState = { amount: false ,flowAmount:false};
-const fixedPayments = "giv_fixedAmount";
-const inputPayments = "giv_flowAmount";
+const fixedPayments = "give_fixedAmount";
+const inputPayments = "give_flowAmount";
 
 export default function inputMoneyAmount(
   state = initialState,

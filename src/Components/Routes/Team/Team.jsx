@@ -121,7 +121,7 @@ export default function Team() {
       telegram: "https://t.me/Oleg_r1",
     },
     "Igor Cherevichniy": {
-      key: 13,
+      key: 14,
       name: "Igor Cherevichniy",
       inst: "",
       facebook: "",
@@ -168,7 +168,7 @@ export default function Team() {
           telegram={team["Oleg Rudenko"].telegram}
         />
 
-        {/* <PersonCArd
+        <PersonCArd
           src={imgAmalia}
           alt="Amalia"
           key={team["Amalia Vardanian"].key}
@@ -177,7 +177,7 @@ export default function Team() {
           facebook={team["Amalia Vardanian"].facebook}
           gmail={team["Amalia Vardanian"].gmail}
           telegram={team["Amalia Vardanian"].telegram}
-        /> */}
+        />
         <PersonCArd
           src={imgArtem}
           alt="Me"

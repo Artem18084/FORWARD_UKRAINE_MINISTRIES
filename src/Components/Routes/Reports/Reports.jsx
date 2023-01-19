@@ -32,13 +32,15 @@ import imgReport26 from "../../../images/Report/report26.JPG";
 import imgReport27 from "../../../images/Report/report27.JPG";
 import imgReport28 from "../../../images/Report/report28.JPG";
 import imgReport29 from "../../../images/Report/report29.jpg";
+import imgReport30 from "../../../images/Report/report30.jpg";
+import imgReport31 from "../../../images/Report/report31.jpg";
 
 import Dots from "./Dots/Dots";
 import { useSelector } from "react-redux";
 
 export default function Reports() {
   const [width, setWidth] = useState(false);
-  const active = useSelector(state => state.positionReportPhoto.active)
+  const active = useSelector((state) => state.positionReportPhoto.active);
 
   return (
     <main
@@ -53,7 +55,7 @@ export default function Reports() {
           Our Reports
         </h2>
 
-        <Dots />  
+        <Dots />
       </article>
       <section
         className={`flex  flex-wrap [&>*]:p-1 p-1 ${
@@ -62,36 +64,38 @@ export default function Reports() {
             : " [&>*]:w-[33.3333333333333333333333333333333333333%] [&>*]:h-[30vw]"
         } bg-white`}
       >
-        <ReportItem  src={imgReport1} alt="people" />{" "}
-        {/* <ReportItem  src={imgReport22} alt="child" /> */}
-        <ReportItem  src={imgReport3} alt="people" />
-        <ReportItem  src={imgReport20} alt="boy" />
-        <ReportItem  src={imgReport2} alt="van2" />
-        <ReportItem  src={imgReport28} alt="girl" />
-        <ReportItem  src={imgReport4} alt="child" />
-        <ReportItem  src={imgReport5} alt="people" />
-        <ReportItem  src={imgReport9} alt="person" />
-        <ReportItem  src={imgReport8} alt="person" />
-        <ReportItem  src={imgWood} alt="wood" />
-        <ReportItem  src={imgReport10} alt="wood" />
-        <ReportItem  src={imgReport6} alt="person" />
-        <ReportItem  src={imgReport7} alt="grandmother" />
-        <ReportItem  src={imgReport11} alt="people" />
-        <ReportItem  src={imgReport12} alt="people" />
-        <ReportItem  src={imgReport13} alt="people" />
-        <ReportItem  src={imgReport14} alt="grandmother" />
-        <ReportItem  src={imgReport15} alt="girl" />
-        <ReportItem  src={imgReport16} alt="grandmother" />
-        <ReportItem  src={imgReport17} alt="people" />
-        <ReportItem  src={imgReport18} alt="people" />
-        <ReportItem  src={imgReport19} alt="food" />
-        <ReportItem  src={imgReport21} alt="boy" />
-        <ReportItem  src={imgReport29} alt="people" />
-        <ReportItem  src={imgReport23} alt="van" />
-        <ReportItem  src={imgReport24} alt="van" />
-        <ReportItem  src={imgReport25} alt="people" />
-        <ReportItem  src={imgReport26} alt="people" />
-        <ReportItem  src={imgReport27} alt="people" />
+        <ReportItem src={imgReport1} alt="people" />{" "}
+        <ReportItem src={imgReport22} alt="child" />
+        <ReportItem src={imgReport27} alt="people" />
+        <ReportItem src={imgReport30} alt="people" />
+        <ReportItem src={imgReport3} alt="people" />
+        <ReportItem src={imgReport20} alt="boy" />
+        <ReportItem src={imgReport2} alt="van2" />
+        <ReportItem src={imgReport28} alt="girl" />
+        <ReportItem src={imgReport4} alt="child" />
+        <ReportItem src={imgReport5} alt="people" />
+        <ReportItem src={imgReport31} alt="people" />
+        <ReportItem src={imgReport9} alt="person" />
+        <ReportItem src={imgReport8} alt="person" />
+        <ReportItem src={imgWood} alt="wood" />
+        <ReportItem src={imgReport10} alt="wood" />
+        <ReportItem src={imgReport6} alt="person" />
+        <ReportItem src={imgReport7} alt="grandmother" />
+        <ReportItem src={imgReport11} alt="people" />
+        <ReportItem src={imgReport12} alt="people" />
+        <ReportItem src={imgReport13} alt="people" />
+        <ReportItem src={imgReport14} alt="grandmother" />
+        <ReportItem src={imgReport15} alt="girl" />
+        <ReportItem src={imgReport16} alt="grandmother" />
+        <ReportItem src={imgReport17} alt="people" />
+        <ReportItem src={imgReport18} alt="people" />
+        <ReportItem src={imgReport19} alt="food" />
+        <ReportItem src={imgReport21} alt="boy" />
+        <ReportItem src={imgReport29} alt="people" />
+        <ReportItem src={imgReport23} alt="van" />
+        <ReportItem src={imgReport24} alt="van" />
+        <ReportItem src={imgReport25} alt="people" />
+        <ReportItem src={imgReport26} alt="people" />
       </section>
     </main>
   );

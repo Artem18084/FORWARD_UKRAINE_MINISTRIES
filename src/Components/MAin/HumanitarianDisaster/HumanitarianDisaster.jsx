@@ -1,11 +1,19 @@
 import React from "react";
 import FirstArticleOnSection from "../firstArticleOnSection/FirstArticleOnSection";
-import imgCar from "../../../images/Disaster/car.jpg"
+import imgCar from "../../../images/Disaster/car.jpg";
 
 export default function HumanitarianDisaster() {
   return (
     <section className="flex flex-col w-full h-full px-4 md:px-10 py-6 md:py-14 items-center bg-gray-200">
-      <FirstArticleOnSection alt="Volunteers" selfClassMarginImg="md:ml-12"  selfReverse="md:flex-row-reverse" selfClassFlexReverse="flex-row-reverse" selfClassHidden="hidden" img={imgCar} title="Humanitarian Disaster" massage="The actions of the Russian authorities are causing a humanitarian
+      <FirstArticleOnSection
+        alt="Volunteers"
+        selfClassMarginImg="md:ml-12"
+        selfReverse="md:flex-row-reverse"
+        selfClassFlexReverse="flex-row-reverse"
+        selfClassHidden="hidden"
+        img={imgCar}
+        title="Humanitarian Disaster"
+        massage="The actions of the Russian authorities are causing a humanitarian
         catastrophe. Occupiers set up their positions in residential buildings
         and destroy private ones estates for storing weapons. Because of this,
         local residents are forced to leave their homes Shops and pharmacies are
@@ -19,8 +27,8 @@ export default function HumanitarianDisaster() {
         they need. But, unfortunately, all trips require constant funding. The
         humanitarian catastrophe in Ukraine is an element of the Russian
         military strategy. Join us and together we will thwart the aggressor's
-        plans." />
-      
+        plans."
+      />
     </section>
   );
 }

@@ -11,13 +11,14 @@ export default function ImpactSection() {
       <Title title="Our impact" />
 
       <div className="flex w-full h-[25vw] items-center justify-around">
-        <ImpactItem title="Humanitarian trip" img={imgVan} subTitle="35+"/>
-        <ImpactItem title="Active Since" subTitle="21 April 2022" img={imgClock}/>
-        <ImpactItem title="People reached" subTitle="1000+" img={imgPeople}/>
-      
-
-        
-            </div>
+        <ImpactItem title="Humanitarian trip" img={imgVan} subTitle="35+" />
+        <ImpactItem
+          title="Active Since"
+          subTitle="21 April 2022"
+          img={imgClock}
+        />
+        <ImpactItem title="People reached" subTitle="1000+" img={imgPeople} />
+      </div>
     </section>
   );
 }
