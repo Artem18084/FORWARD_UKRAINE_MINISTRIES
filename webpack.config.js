@@ -24,7 +24,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "index.css",
-      // chunkFilename: "index.css",
     }),
     new WebpackFavicons({
       src: "./src/images/logo/logo.png",
@@ -39,34 +38,20 @@ module.exports = {
 
   module: {
     rules: [
-      // {
-      //   test: /\.svg$/i,
-      //   use: [
-      //     {
-      //       loader: 'url-loader',
-      //       options: {
-      //         encoding: false,
-      //       },
-      //     },
-      //   ],
-      // },
-       
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
-        
       },
       {
         test: /\.(svg|png|jpg|jpeg|gif|PNG|JPG|SVG|JPEG)$/,
         use: [
           {
-              loader: "file-loader",
-              options: {
-                  name: "[path][name].[ext]",
-                  
-              },
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[ext]",
+            },
           },
-      ],
+        ],
       },
       {
         test: /\.m?js$/,
@@ -90,5 +75,4 @@ module.exports = {
       },
     ],
   },
-  
 };

@@ -34,17 +34,401 @@ import imgReport28 from "../../../images/Report/report28.JPG";
 import imgReport29 from "../../../images/Report/report29.jpg";
 import imgReport30 from "../../../images/Report/report30.jpg";
 import imgReport31 from "../../../images/Report/report31.jpg";
+import imgReport32 from "../../../images/Report/report32.jpg";
+import imgReport33 from "../../../images/Report/report33.jpg";
 
 import Dots from "./Dots/Dots";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import ReportModal from "./ReportModal/ReportModal";
+import { setArrayForModal } from "../../../Store/Reducers/arrayForModal";
 
 export default function Reports() {
+  const reportPhoto = [
+    { photo: imgReport8, id: 1 },
+    { photo: imgReport22, id: 2 },
+    { photo: imgReport27, id: 3 },
+    { photo: imgReport30, id: 4 },
+    { photo: imgReport3, id: 5 },
+    { photo: imgReport20, id: 6 },
+    { photo: imgReport2, id: 7 },
+    { photo: imgReport28, id: 8 },
+    { photo: imgReport4, id: 9 },
+    { photo: imgReport5, id: 10 },
+    { photo: imgReport31, id: 11 },
+    { photo: imgReport9, id: 12 },
+    { photo: imgReport1, id: 13 },
+    { photo: imgWood, id: 14 },
+    { photo: imgReport26, id: 15 },
+    { photo: imgReport10, id: 16 },
+    { photo: imgReport6, id: 17 },
+    { photo: imgReport7, id: 18 },
+    { photo: imgReport11, id: 19 },
+    { photo: imgReport12, id: 20 },
+    { photo: imgReport13, id: 21 },
+    { photo: imgReport14, id: 22 },
+    { photo: imgReport15, id: 23 },
+    { photo: imgReport33, id: 24 },
+    { photo: imgReport16, id: 25 },
+    { photo: imgReport17, id: 26 },
+    { photo: imgReport32, id: 27 },
+    { photo: imgReport18, id: 28 },
+    { photo: imgReport19, id: 29 },
+    { photo: imgReport21, id: 30 },
+    { photo: imgReport29, id: 31 },
+    { photo: imgReport23, id: 32 },
+    { photo: imgReport24, id: 33 },
+    { photo: imgReport25, id: 34 },
+  ];
+ 
+
+  const report = [
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport8}
+          alt="person"
+          id={1}
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport22}
+          alt="child"
+          id="2"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport27}
+          alt="people"
+          id="3"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport30}
+          alt="people"
+          id="4"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport3}
+          alt="people"
+          id="5"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport20}
+          alt="boy"
+          id="6"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport2}
+          alt="van2"
+          id="7"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport28}
+          alt="girl"
+          id="8"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport4}
+          alt="child"
+          id="9"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport5}
+          alt="people"
+          id="10"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport31}
+          alt="people"
+          id="11"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport9}
+          alt="person"
+          id="12"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport1}
+          alt="people"
+          id="13"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgWood}
+          alt="wood"
+          id="14"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport26}
+          alt="people"
+          id="15"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport10}
+          alt="wood"
+          id="16"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport6}
+          alt="person"
+          id="17"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport7}
+          alt="grandmother"
+          id="18"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport11}
+          alt="people"
+          id="19"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport12}
+          alt="people"
+          id="20"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport13}
+          alt="people"
+          id="21"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport14}
+          alt="grandmother"
+          id="22"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport15}
+          alt="girl"
+          id="23"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport33}
+          alt="people"
+          id="24"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport16}
+          alt="grandmother"
+          id="25"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport17}
+          alt="people"
+          id="26"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport32}
+          alt="people"
+          id="27"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport18}
+          alt="people"
+          id="28"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport19}
+          alt="food"
+          id="29"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport21}
+          alt="boy"
+          id="30"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport29}
+          alt="people"
+          id="31"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport23}
+          alt="van"
+          id="32"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport24}
+          alt="van"
+          id="33"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport25}
+          alt="people"
+          id="34"
+        />
+      ),
+    },
+  ];
   const [width, setWidth] = useState(false);
   const active = useSelector((state) => state.positionReportPhoto.active);
-
+  
   return (
     <main
-      className={`flex flex-col items-center justify-center  ${
+      className={`flex flex-col items-center justify-center relative  ${
         active
           ? "px-[5vw] sm:px-[10vw]  md:px-[15vw] lg:px-[20vw] xl:px-[25rem]"
           : "px-[8vw]"
@@ -64,39 +448,9 @@ export default function Reports() {
             : " [&>*]:w-[33.3333333333333333333333333333333333333%] [&>*]:h-[30vw]"
         } bg-white`}
       >
-        <ReportItem src={imgReport1} alt="people" />{" "}
-        <ReportItem src={imgReport22} alt="child" />
-        <ReportItem src={imgReport27} alt="people" />
-        <ReportItem src={imgReport30} alt="people" />
-        <ReportItem src={imgReport3} alt="people" />
-        <ReportItem src={imgReport20} alt="boy" />
-        <ReportItem src={imgReport2} alt="van2" />
-        <ReportItem src={imgReport28} alt="girl" />
-        <ReportItem src={imgReport4} alt="child" />
-        <ReportItem src={imgReport5} alt="people" />
-        <ReportItem src={imgReport31} alt="people" />
-        <ReportItem src={imgReport9} alt="person" />
-        <ReportItem src={imgReport8} alt="person" />
-        <ReportItem src={imgWood} alt="wood" />
-        <ReportItem src={imgReport10} alt="wood" />
-        <ReportItem src={imgReport6} alt="person" />
-        <ReportItem src={imgReport7} alt="grandmother" />
-        <ReportItem src={imgReport11} alt="people" />
-        <ReportItem src={imgReport12} alt="people" />
-        <ReportItem src={imgReport13} alt="people" />
-        <ReportItem src={imgReport14} alt="grandmother" />
-        <ReportItem src={imgReport15} alt="girl" />
-        <ReportItem src={imgReport16} alt="grandmother" />
-        <ReportItem src={imgReport17} alt="people" />
-        <ReportItem src={imgReport18} alt="people" />
-        <ReportItem src={imgReport19} alt="food" />
-        <ReportItem src={imgReport21} alt="boy" />
-        <ReportItem src={imgReport29} alt="people" />
-        <ReportItem src={imgReport23} alt="van" />
-        <ReportItem src={imgReport24} alt="van" />
-        <ReportItem src={imgReport25} alt="people" />
-        <ReportItem src={imgReport26} alt="people" />
+        {report.map((item) => item.reportItem)}
       </section>
+      <ReportModal />
     </main>
   );
 }

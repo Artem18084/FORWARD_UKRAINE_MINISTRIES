@@ -13,6 +13,9 @@ module.exports = {
         "sunsetPhone": "url('./images/sunsetPhone.svg')",
      
       }),
+      opacityModal:{
+        modalOpacity: "rgba(31,41,55,.5)"
+      },
       boxShadow: {
         def: " 0px 8px 15px rgba(0, 0, 0, 0.1)",
         hov: "0px 15px 20px rgba(255,228,181, 0.4)",
