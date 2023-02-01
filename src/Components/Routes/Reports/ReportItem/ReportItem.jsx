@@ -5,17 +5,17 @@ import { setArrayForModal } from "../../../../Store/Reducers/arrayForModal";
 import { setActivePosition } from "../../../../Store/Reducers/positionReportPhoto";
 
 export default function ReportItem(props) {
-  const active = useSelector(state => state.positionReportPhoto.active)
   const dispatchPhoto = useDispatch();
-  const dispatchModal = useDispatch()
-  const selectItemSetPosition =() =>{
-    
-    const idToFilter = props.id 
-    const filteredArrayForModal = props.reportPhoto.filter(item => item.id == idToFilter)
-    dispatchPhoto(setArrayForModal(filteredArrayForModal))
-    dispatchModal(setStatusModal(true))
+  const dispatchModal = useDispatch();
+  const selectItemSetPosition = () => {
+    const idToFilter = +props.id;
 
-  }
+    const filteredArrayForModal = props.reportPhoto.filter(
+      (item) => item.id == idToFilter
+    );
+    dispatchPhoto(setArrayForModal(filteredArrayForModal));
+    dispatchModal(setStatusModal(true));
+  };
 
   return (
     <img
@@ -24,7 +24,6 @@ export default function ReportItem(props) {
       src={props.src}
       alt={props.alt}
       id={props.id}
-      
     />
   );
 }

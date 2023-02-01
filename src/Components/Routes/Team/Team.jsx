@@ -12,6 +12,7 @@ import imgAngelina from "../../../images/Team/Angelina.JPG";
 import imgAlyona from "../../../images/Team/Alyona.JPG";
 import imgRuslana from "../../../images/Team/Ruslana.jpg";
 import imgIgor from "../../../images/Team/Igor.jpg";
+import imgOleg from "../../../images/Team/Oleg.jpg";
 
 export default function Team() {
   const team = {
@@ -67,7 +68,7 @@ export default function Team() {
     "Iliya Rochev": {
       key: 7,
       name: "Ilia Rochev",
-      inst: "",
+      inst: "https://www.instagram.com/ilia_rochev/",
       facebook: "",
       gmail: "",
       telegram: "https://t.me/IL_204",
@@ -107,15 +108,15 @@ export default function Team() {
     "Yevgeniy Ustenko": {
       key: 12,
       name: "Yevgeniy Ustenko",
-      inst: "",
-      facebook: "",
+      inst: "https://www.instagram.com/zhenyaust/",
+      facebook: "https://www.facebook.com/eugene.ustenko",
       gmail: "",
       telegram: "",
     },
     "Oleg Rudenko": {
       key: 13,
       name: "Oleg Rudenko",
-      inst: "",
+      inst: "https://www.instagram.com/oleg.rudenko3/",
       facebook: "",
       gmail: "",
       telegram: "https://t.me/Oleg_r1",
@@ -123,7 +124,7 @@ export default function Team() {
     "Igor Cherevichniy": {
       key: 14,
       name: "Igor Cherevichniy",
-      inst: "",
+      inst: "https://www.instagram.com/igorcerevicnij/",
       facebook: "",
       gmail: "",
       telegram: "",
@@ -158,7 +159,7 @@ export default function Team() {
         />
 
 <PersonCArd
-          src=""
+          src={imgOleg}
           alt="Oleg"
           key={team["Oleg Rudenko"].key}
           name={team["Oleg Rudenko"].name}

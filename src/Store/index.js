@@ -5,6 +5,7 @@ import inputMoneyAmount from "./Reducers/inputMoneyAmount";
 import sidebarChecker from "./Reducers/sidebarChecker";
 import arrayForModal from "./Reducers/arrayForModal";
 import activeModal from "./Reducers/activeModal";
+import arrowValue from "./Reducers/arrowValue";
 
 const rootReducer = combineReducers({
   positionReportPhoto: positionReportPhoto,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   sidebarChecker:sidebarChecker,
   arrayForModal:arrayForModal,
   activeModal:activeModal,
+  arrowValue:arrowValue,
 });
 
 export const store = createStore(

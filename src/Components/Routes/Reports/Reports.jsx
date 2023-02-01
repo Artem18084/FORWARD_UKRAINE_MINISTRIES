@@ -36,6 +36,11 @@ import imgReport30 from "../../../images/Report/report30.jpg";
 import imgReport31 from "../../../images/Report/report31.jpg";
 import imgReport32 from "../../../images/Report/report32.jpg";
 import imgReport33 from "../../../images/Report/report33.jpg";
+import imgReport34 from "../../../images/Report/report34.jpg";
+import imgReport35 from "../../../images/Report/report35.jpg";
+import imgReport36 from "../../../images/Report/report36.jpg";
+import imgReport37 from "../../../images/Report/report37.jpg";
+import imgReport38 from "../../../images/Report/report38.jpg"
 
 import Dots from "./Dots/Dots";
 import { useDispatch, useSelector } from "react-redux";
@@ -78,8 +83,14 @@ export default function Reports() {
     { photo: imgReport23, id: 32 },
     { photo: imgReport24, id: 33 },
     { photo: imgReport25, id: 34 },
+    { photo: imgReport34, id: 35 },
+    { photo: imgReport35, id: 36 },
+    { photo: imgReport36, id: 37 },
+    { photo: imgReport37, id: 38 },
+    { photo: imgReport38, id: 39 },
+
+
   ];
- 
 
   const report = [
     {
@@ -129,6 +140,16 @@ export default function Reports() {
           src={imgReport3}
           alt="people"
           id="5"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport35}
+          alt="people"
+          id="36"
         />
       ),
     },
@@ -186,6 +207,16 @@ export default function Reports() {
       reportItem: (
         <ReportItem
           reportPhoto={reportPhoto}
+          src={imgReport36}
+          alt="solder"
+          id="37"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
           src={imgReport31}
           alt="people"
           id="11"
@@ -209,6 +240,16 @@ export default function Reports() {
           src={imgReport1}
           alt="people"
           id="13"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport34}
+          alt="people"
+          id="35"
         />
       ),
     },
@@ -422,10 +463,30 @@ export default function Reports() {
         />
       ),
     },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport37}
+          alt="people"
+          id="38"
+        />
+      ),
+    },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport38}
+          alt="person"
+          id="39"
+        />
+      ),
+    },
   ];
   const [width, setWidth] = useState(false);
   const active = useSelector((state) => state.positionReportPhoto.active);
-  
+
   return (
     <main
       className={`flex flex-col items-center justify-center relative  ${
@@ -444,13 +505,13 @@ export default function Reports() {
       <section
         className={`flex  flex-wrap [&>*]:p-1 p-1 ${
           active
-            ? " [&>*]:w-full  [&>*]:h-[55vh]  sm:[&>*]:h-[60vh] md:[&>*]:h-[70vh] lg:[&>*]:h-[80vh] xl:[&>*]:h-[90vh]"
-            : " [&>*]:w-[33.3333333333333333333333333333333333333%] [&>*]:h-[30vw]"
+            ? " [&>*]:w-full  [&>*]:h-[60vh]  sm:[&>*]:h-[65vh] md:[&>*]:h-[75vh] lg:[&>*]:h-[85vh] xl:[&>*]:h-[90vh]"
+            : " [&>*]:w-[33.3333333333333333333333333333333333333%] [&>*]:h-[33vw]"
         } bg-white`}
       >
         {report.map((item) => item.reportItem)}
       </section>
-      <ReportModal />
+      <ReportModal reportPhoto={reportPhoto}/>
     </main>
   );
 }
