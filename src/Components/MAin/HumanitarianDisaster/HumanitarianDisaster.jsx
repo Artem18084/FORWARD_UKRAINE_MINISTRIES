@@ -8,7 +8,7 @@ export default function HumanitarianDisaster() {
       <FirstArticleOnSection
         alt="Volunteers"
         selfClassMarginImg="md:ml-12"
-        selfReverse="md:flex-row-reverse"
+        selfReverse="md:flex-row"
         selfClassFlexReverse="flex-row-reverse"
         selfClassHidden="hidden"
         img={imgCar}

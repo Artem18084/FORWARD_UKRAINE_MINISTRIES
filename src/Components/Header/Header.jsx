@@ -11,8 +11,7 @@ export default function Header() {
   const status = useSelector((state) => state.sidebarChecker.status);
 
   return (
-    <header className="fixed flex justify-between items-center z-10 top-0 right-0  w-full h-auto bg-gradient-to-r to-slate-900 from-sky-900  text-white py-4 px-8 max-[768px]:py-2 max-[768px]:px-4 z-20">
-      <nav></nav>
+    <header className="fixed flex md:flex-row-reverse justify-between items-center  top-0 right-0  w-full h-auto bg-gradient-to-r to-slate-900 from-sky-900  text-white py-4 px-8 max-[768px]:py-2 max-[768px]:px-4 z-20">
       <nav className=" max-[768px]:hidden ">
         <NavList />
       </nav>

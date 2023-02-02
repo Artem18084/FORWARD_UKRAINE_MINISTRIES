@@ -14,6 +14,9 @@ export default function JourneySection() {
       <FirstArticleOnSection
         alt="Independents square"
         selfClassPaddingP="md:pr-12"
+        selfClassMargin=" mr-10"
+        selfReverse="md:flex-row-reverse"
+        selfShadow="shadow-[-40px_40px_rgba(255,151,49,0.9)] "
         img={imgKiev}
         title="Missionary journey"
         massage=" &nbsp; &nbsp; It was nice to spend time in Ukraine. Although waking up to explosions is not very pleasant. 
@@ -44,12 +47,16 @@ export default function JourneySection() {
           &nbsp; &nbsp;Please consider donating so we can continue to support
           the people of Ukraine. May God bless you!
         </p>
-        <div className="flex gap-1 w-full h-[25vw] [&>*]:inline whitespace-normal	overflow-x-auto  scrollbar-thin  md:scrollbar-thumb-gray-300">
-          <img className="w-[50%] " src={imgWood1} alt="wood" />
-          <img className="w-[50%] " src={imgWood2} alt="wood_done" />
-          <img className="w-[50%] " src={imgWoodRock} alt="wood_done_Rock" />
-          <img className="w-[50%] " src={imgWood3} alt="wood" />
-          <img className="w-[50%] " src={imgWood4} alt="wood" />
+        <div className="flex gap-1 w-full h-[35vh] [&>*]:inline whitespace-normal	overflow-x-auto  scrollbar-thin  md:scrollbar-thumb-gray-300">
+          <img className="w-[50%] h-full" src={imgWood1} alt="wood" />
+          <img className="w-[50%]h-full" src={imgWood4} alt="person" />
+
+          <img className="w-[50%] h-full" src={imgWoodRock} alt="wood_done_Rock" />
+          <img className="w-[50%] h-full" src={imgWood3} alt="wood" />
+          <img className="w-[50%] h-full" src={imgWood2} alt="wood_done" />
+          <img className="w-[50%] h-full" src={imgWoodRock} alt="wood_done_Rock" />
+          <img className="w-[50%] h-full" src={imgWood3} alt="wood" />
+          <img className="w-[50%] h-full" src={imgWood2} alt="wood_done" />
         </div>
       </article>
     </section>

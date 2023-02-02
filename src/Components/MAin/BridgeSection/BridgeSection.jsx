@@ -1,13 +1,13 @@
 import React from "react";
 import MyButton from "../../UI/Button/MyButton";
 import Title from "../Title/Title";
-import bridgeDesk from "../../../images/UnderBridgeDesk.jpg";
+import bridgeDesk from "../../../images/UnderBridgeDesk1.png";
 import bridgeTablet from "../../../images/UnderBridgeTablet.jpg";
 import bridgePhone from "../../../images/UnderBridgePhone.jpg";
 
 export default function BridgeSection() {
   return (
-    <section className="flex bg-bridgePhone md:bg-bridgeTablet lg:bg-bridgeDesk  bg-cover bg-no-repeat w-full h-screen  relative  ">
+    <section className="flex bg-bridgePhone md:bg-bridgeTablet lg:bg-bridgeDesk  bg-cover bg-no-repeat w-full h-[70vh] md:h-screen relative  ">
       <article className="flex flex-col items-center justify-evenly text-white w-full z-10">
         <Title title="Pray For Ukraine" />
         <p className=" text-sm sm:text-md md:text-lg lg:text-2xl xl:text-4xl px-10 sm:px-12 md:px-20 lg:px-32 xl:px-44">
@@ -22,17 +22,17 @@ export default function BridgeSection() {
       <img
         src={bridgeDesk}
         alt="people under bridge"
-        className=" w-full h-screen absolute top-0 right-0 "
+        className=" w-full h-full absolute top-0 right-0 "
       />
       <img
         src={bridgeTablet}
         alt="people under bridge"
-        className=" w-full h-screen absolute top-0 right-0  block md:hidden"
+        className=" w-full h-full absolute top-0 right-0  block md:hidden"
       />
       <img
         src={bridgePhone}
         alt="people under bridge"
-        className=" w-full h-screen absolute top-0 right-0 block sm:hidden "
+        className=" w-full h-full absolute top-0 right-0 block sm:hidden "
       />
     </section>
   );

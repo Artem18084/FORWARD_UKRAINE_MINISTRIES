@@ -11,10 +11,9 @@ export default function NavLinkOrg() {
       rel="external
       "
     >
-      <figure className=" max-[768px]:flex-row-reverse  min-[769px]:flex-row  flex items-center">
-        <figcaption className="">{"Forward Ukraine Ministries"}</figcaption>
-
+      <figure className="  min-[769px]:flex-row  flex items-center">
         <img src={imgLogo} alt="logo" className="w-10 h-10" />
+        <figcaption className="">{"Forward Ukraine Ministries"}</figcaption>
       </figure>
     </a>
   );

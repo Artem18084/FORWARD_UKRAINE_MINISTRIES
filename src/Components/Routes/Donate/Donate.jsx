@@ -18,7 +18,7 @@ export default function Donate() {
           src={imgLogo}
           alt="logo"
         />
-        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg mt-5">
+        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg mt-1">
           Donate to
         </h3>
         <h1 className="uppercase mt-3 text-sm sm:text-base md:text-lg lg:text-xl font-bold ">
