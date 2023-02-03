@@ -19,8 +19,9 @@ export default function Header() {
         <NavList/>
       </nav>
       <button className='w-[100px] h-[36px] bg-white rounded-[40px] max-[768px]:hidden'>
-        <a href="https://www.paypal.com/donate/?hosted_button_id=WYGADA44TMFFY" className='w-full h-full'>Donate</a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=WYGADA44TMFFY" target="_blank" className='w-full h-full'>Donate</a>
       </button>
+      
       <img
         className=" min-[769px]:hidden  w-4 h-4 cursor-pointer"
         onClick={() => dispatch(setStatusSidebar(!status))}

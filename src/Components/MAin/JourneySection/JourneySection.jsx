@@ -5,6 +5,9 @@ import imgWood1 from "../../../images/Journey/wood1.jpg";
 import imgWood2 from "../../../images/Journey/wood2.jpg";
 import imgWood3 from "../../../images/Journey/wood3.jpg";
 import imgWood4 from "../../../images/Journey/wood4.jpg";
+import imgWood5 from "../../../images/Journey/wood5.jpg";
+import imgWood6 from "../../../images/Journey/wood6.jpg";
+
 import imgWoodRock from "../../../images/Journey/woodRock.jpg";
 import FirstArticleOnSection from "../firstArticleOnSection/FirstArticleOnSection";
 
@@ -60,13 +63,9 @@ export default function JourneySection() {
           />
           <img className="w-[50%] h-full" src={imgWood3} alt="wood" />
           <img className="w-[50%] h-full" src={imgWood2} alt="wood_done" />
-          <img
-            className="w-[50%] h-full"
-            src={imgWoodRock}
-            alt="wood_done_Rock"
-          />
-          <img className="w-[50%] h-full" src={imgWood3} alt="wood" />
-          <img className="w-[50%] h-full" src={imgWood2} alt="wood_done" />
+         
+          <img className="w-[50%] h-full" src={imgWood5} alt="wood" />
+          <img className="w-[50%] h-full" src={imgWood6} alt="wood_done" />
         </div>
       </article>
     </section>

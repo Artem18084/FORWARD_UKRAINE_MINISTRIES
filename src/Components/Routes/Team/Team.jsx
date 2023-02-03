@@ -13,6 +13,11 @@ import imgAlyona from "../../../images/Team/Alyona.JPG";
 import imgRuslana from "../../../images/Team/Ruslana.jpg";
 import imgIgor from "../../../images/Team/Igor.jpg";
 import imgOleg from "../../../images/Team/Oleg.jpg";
+import imgEugene from "../../../images/Team/Eugene.jpg";
+import imgTeamMain from "../../../images/Team/TeamMAin.png"
+import imgTeamMainPhone from "../../../images/Team/TeamMAinPhone.png"
+
+
 
 export default function Team() {
   const team = {
@@ -131,13 +136,42 @@ export default function Team() {
     },
   };
   return (
-    <main className="flex flex-col items-center justify-center py-[8rem] max-[1024px]:py-[6rem]   max-[768px]:py-[4rem]  px-[5vw] w-full h-full bg-[#1b1d33] ">
-      <h2 className=" text-4xl max-[1024px]:text-2xl max-[768px]:text-xl text-white">
+    <main className="flex flex-col items-center justify-center pb-[8rem] max-[1024px]:pb-[6rem]   max-[768px]:pb-[4rem]  px-[5vw] w-full h-full bg-white  relative">
+    
+
+    <img
+        src={imgTeamMain}
+        alt="mainImg"
+        className="absolute top-0  right-0 z-0 w-full hidden md:block"
+      />
+      {/* <img
+        // src={sunsetTablet}
+        alt="mainImg"
+        className="absolute top-0  right-0 z-0  w-full md:hidden"
+      /> */}
+      <img
+        src={imgTeamMainPhone}
+        alt="mainImg"
+        className="absolute top-0  right-0 z-0  w-full md:hidden h-[100vh]"
+      />
+       <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl whitespace-nowrap	  font-semibold md:font-normal uppercase pt-10">
+            We are the team{" "}
+          </h1>
+      <div className="hidden md:block relative w-full   ">
+        <div className=" z-10 flex flex-col items-center text-white md:pt-[10rem]">
+          <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
+            We are the team{" "}
+          </h1>
+        </div>
+      </div>
+
+
+      {/* <h2 className=" text-4xl max-[1024px]:text-2xl max-[768px]:text-xl text-white">
         Our Team
-      </h2>
-      <section className="  flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%] pt-[5%] max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
+      </h2> */}
+      <section className="  mt-[103vh] md:mt-[30vh] flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%] pt-[5%] max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
       <PersonCArd
-          src=""
+          src={imgEugene}
           alt="Yevgeniy"
           key={team["Yevgeniy Ustenko"].key}
           name={team["Yevgeniy Ustenko"].name}

@@ -13,7 +13,7 @@ export default function FirstArticleOnSection(props) {
         className={` flex flex-col  w-full md:w-[50%] items-center pb-[.5rem] ${props.selfClassPaddingP} `}
       >
         <h4
-          className={` ${props.selfClassHidden} pb-1 text-xs text-yellow-500`}
+          className={` ${props.selfClassHidden} pb-1 text-xs text-[#ff9731]`}
         >
           October-10-2022
         </h4>

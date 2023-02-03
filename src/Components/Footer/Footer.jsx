@@ -7,7 +7,7 @@ import ContactButton from "../UI/Button/ContactButton";
 
 export default function Footer(props) {
   return (
-    <footer className=" w-full  flex flex-col  items-center justify-center bg-gradient-to-r to-slate-900 from-sky-900  text-white  py-5 max-[768px]:py-2  ">
+    <footer className=" w-full  flex flex-col  items-center justify-center bg-[#00091D]  text-white  py-5 max-[768px]:py-2  ">
       <hr className="w-[75vw] h-2 mb-[1vw]" />
       <section className="flex ">
         <ContactButton

@@ -1,90 +1,94 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ReportItem from "./ReportItem/ReportItem";
 
-  import imgWood from "../../../images/Journey/wood1.jpg";
-  import imgReport1 from "../../../images/Report/report1.jpg";
-  import imgReport2 from "../../../images/Report/report2.jpg";
-  import imgReport3 from "../../../images/Report/report3.jpg";
-  import imgReport4 from "../../../images/Report/report4.jpg";
-  import imgReport5 from "../../../images/Report/report5.jpg";
-  import imgReport6 from "../../../images/Report/report6.jpg";
-  import imgReport7 from "../../../images/Report/report7.jpg";
-  import imgReport8 from "../../../images/Report/report8.jpg";
-  import imgReport9 from "../../../images/Report/report9.jpg";
-  import imgReport10 from "../../../images/Report/report10.jpg";
-  import imgReport11 from "../../../images/Report/report11.jpg";
-  import imgReport12 from "../../../images/Report/report12.jpg";
-  import imgReport13 from "../../../images/Report/report13.jpg";
-  import imgReport14 from "../../../images/Report/report14.jpg";
-  import imgReport15 from "../../../images/Report/report15.jpg";
-  import imgReport16 from "../../../images/Report/report16.jpg";
-  import imgReport17 from "../../../images/Report/report17.jpg";
-  import imgReport18 from "../../../images/Report/report18.jpg";
-  import imgReport19 from "../../../images/Report/report19.jpg";
-  import imgReport20 from "../../../images/Report/report20.JPG";
-  import imgReport21 from "../../../images/Report/report21.JPG";
-  import imgReport22 from "../../../images/Report/report22.JPG";
-  import imgReport23 from "../../../images/Report/report23.JPG";
-  import imgReport24 from "../../../images/Report/report24.JPG";
-  import imgReport25 from "../../../images/Report/report25.JPG";
-  import imgReport26 from "../../../images/Report/report26.JPG";
-  import imgReport27 from "../../../images/Report/report27.JPG";
-  import imgReport28 from "../../../images/Report/report28.JPG";
-  import imgReport29 from "../../../images/Report/report29.jpg";
-  import imgReport30 from "../../../images/Report/report30.jpg";
-  import imgReport31 from "../../../images/Report/report31.jpg";
-  import imgReport32 from "../../../images/Report/report32.jpg";
-  import imgReport33 from "../../../images/Report/report33.jpg";
-  import imgReport34 from "../../../images/Report/report34.jpg";
-  import imgReport35 from "../../../images/Report/report35.jpg";
-  import imgReport36 from "../../../images/Report/report36.jpg";
-  import imgReport37 from "../../../images/Report/report37.jpg";
-  import imgReport38 from "../../../images/Report/report38.jpg"
+import imgWood from "../../../images/Journey/wood1.jpg";
+import imgReport1 from "../../../images/Report/report1.jpg";
+import imgReport2 from "../../../images/Report/report2.jpg";
+import imgReport3 from "../../../images/Report/report3.jpg";
+import imgReport4 from "../../../images/Report/report4.jpg";
+import imgReport5 from "../../../images/Report/report5.jpg";
+import imgReport6 from "../../../images/Report/report6.jpg";
+import imgReport7 from "../../../images/Report/report7.jpg";
+import imgReport8 from "../../../images/Report/report8.jpg";
+import imgReport9 from "../../../images/Report/report9.jpg";
+import imgReport10 from "../../../images/Report/report10.jpg";
+import imgReport11 from "../../../images/Report/report11.jpg";
+import imgReport12 from "../../../images/Report/report12.jpg";
+import imgReport13 from "../../../images/Report/report13.jpg";
+import imgReport14 from "../../../images/Report/report14.jpg";
+import imgReport15 from "../../../images/Report/report15.jpg";
+import imgReport16 from "../../../images/Report/report16.jpg";
+import imgReport17 from "../../../images/Report/report17.jpg";
+import imgReport18 from "../../../images/Report/report18.jpg";
+import imgReport19 from "../../../images/Report/report19.jpg";
+import imgReport20 from "../../../images/Report/report20.JPG";
+import imgReport21 from "../../../images/Report/report21.JPG";
+import imgReport22 from "../../../images/Report/report22.JPG";
+import imgReport23 from "../../../images/Report/report23.JPG";
+import imgReport24 from "../../../images/Report/report24.JPG";
+import imgReport25 from "../../../images/Report/report25.JPG";
+import imgReport26 from "../../../images/Report/report26.JPG";
+import imgReport27 from "../../../images/Report/report27.JPG";
+import imgReport28 from "../../../images/Report/report28.JPG";
+import imgReport29 from "../../../images/Report/report29.jpg";
+import imgReport30 from "../../../images/Report/report30.jpg";
+import imgReport31 from "../../../images/Report/report31.jpg";
+import imgReport32 from "../../../images/Report/report32.jpg";
+import imgReport33 from "../../../images/Report/report33.jpg";
+import imgReport34 from "../../../images/Report/report34.jpg";
+import imgReport35 from "../../../images/Report/report35.jpg";
+import imgReport36 from "../../../images/Report/report36.jpg";
+import imgReport37 from "../../../images/Report/report37.jpg";
+import imgReport38 from "../../../images/Report/report38.jpg";
+import imgReport39 from "../../../images/Report/report39.jpg";
+
 // import {useSelector} from "react-redux";
 import ReportModal from "./ReportModal/ReportModal";
-import loveUkraine from "../../../images/love-ukraine.png"
+import loveUkraine from "../../../images/love-ukrainePhone.png";
+import loveUkraineDesk from "../../../images/love-ukraine.png";
+
 export default function Reports() {
   const reportPhoto = [
-    {photo: imgReport8, id: 1},
-    {photo: imgReport22, id: 2},
-    {photo: imgReport27, id: 3},
-    {photo: imgReport30, id: 4},
-    {photo: imgReport3, id: 5},
-    {photo: imgReport20, id: 6},
-    {photo: imgReport2, id: 7},
-    {photo: imgReport28, id: 8},
-    {photo: imgReport4, id: 9},
-    {photo: imgReport5, id: 10},
-    {photo: imgReport31, id: 11},
-    {photo: imgReport9, id: 12},
-    {photo: imgReport1, id: 13},
-    {photo: imgWood, id: 14},
-    {photo: imgReport26, id: 15},
-    {photo: imgReport10, id: 16},
-    {photo: imgReport6, id: 17},
-    {photo: imgReport7, id: 18},
-    {photo: imgReport11, id: 19},
-    {photo: imgReport12, id: 20},
-    {photo: imgReport13, id: 21},
-    {photo: imgReport14, id: 22},
-    {photo: imgReport15, id: 23},
-    {photo: imgReport33, id: 24},
-    {photo: imgReport16, id: 25},
-    {photo: imgReport17, id: 26},
-    {photo: imgReport32, id: 27},
-    {photo: imgReport18, id: 28},
-    {photo: imgReport19, id: 29},
-    {photo: imgReport21, id: 30},
-    {photo: imgReport29, id: 31},
-    {photo: imgReport23, id: 32},
-    {photo: imgReport24, id: 33},
-    {photo: imgReport25, id: 34},
-    {photo: imgReport34, id: 35},
-    {photo: imgReport35, id: 36},
-    {photo: imgReport36, id: 37},
-    {photo: imgReport37, id: 38},
-    {photo: imgReport38, id: 39},
-
+    { photo: imgReport8, id: 1 },
+    { photo: imgReport22, id: 2 },
+    { photo: imgReport27, id: 3 },
+    { photo: imgReport30, id: 4 },
+    { photo: imgReport3, id: 5 },
+    { photo: imgReport20, id: 6 },
+    { photo: imgReport2, id: 7 },
+    { photo: imgReport28, id: 8 },
+    { photo: imgReport4, id: 9 },
+    { photo: imgReport5, id: 10 },
+    { photo: imgReport31, id: 11 },
+    { photo: imgReport9, id: 12 },
+    { photo: imgReport1, id: 13 },
+    { photo: imgWood, id: 14 },
+    { photo: imgReport26, id: 15 },
+    { photo: imgReport10, id: 16 },
+    { photo: imgReport6, id: 17 },
+    { photo: imgReport7, id: 18 },
+    { photo: imgReport11, id: 19 },
+    { photo: imgReport12, id: 20 },
+    { photo: imgReport13, id: 21 },
+    { photo: imgReport14, id: 22 },
+    { photo: imgReport15, id: 23 },
+    { photo: imgReport33, id: 24 },
+    { photo: imgReport16, id: 25 },
+    { photo: imgReport17, id: 26 },
+    { photo: imgReport32, id: 27 },
+    { photo: imgReport18, id: 28 },
+    { photo: imgReport19, id: 29 },
+    { photo: imgReport21, id: 30 },
+    { photo: imgReport29, id: 31 },
+    { photo: imgReport23, id: 32 },
+    { photo: imgReport24, id: 33 },
+    { photo: imgReport25, id: 34 },
+    { photo: imgReport34, id: 35 },
+    { photo: imgReport35, id: 36 },
+    { photo: imgReport36, id: 37 },
+    { photo: imgReport37, id: 38 },
+    { photo: imgReport38, id: 39 },
+    { photo: imgReport39, id: 40 },
 
   ];
 
@@ -479,34 +483,47 @@ export default function Reports() {
         />
       ),
     },
+    {
+      reportItem: (
+        <ReportItem
+          reportPhoto={reportPhoto}
+          src={imgReport39}
+          alt="people"
+          id="40"
+        />
+      ),
+    },
   ];
   // const active = useSelector((state) => state.positionReportPhoto.active);
 
   return (
-    <div>
-      <img src={loveUkraine} alt="love"/>
+    <main className="relative">
+      <img
+        src={loveUkraineDesk}
+        alt="love"
+        className="absolute top-0  right-0 z-0 w-full hidden md:block"
+      />
+      <img
+        src={loveUkraine}
+        alt="love"
+        className="absolute top-0  right-0 z-0  w-full md:hidden h-[100vh]"
+      />
+      <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl   font-semibold md:font-normal uppercase pt-10">
+        Our Reports{" "}
+      </h1>
+      <div className="hidden md:block relative w-full   ">
+        <div className=" z-10 flex flex-col items-center text-white md:pt-[10rem]">
+          <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
+            Our Report{" "}
+          </h1>
+        </div>
+      </div>
 
-      <main className='mt-[50px] pt-30 w-full flex flex-row justify-center flex-wrap'>
+      <section className="md:mt-[40vh] mt-[105vh] pt-30 w-full flex flex-row justify-center flex-wrap">
         {report.map((item) => item.reportItem)}
-        <ReportModal reportPhoto={reportPhoto}/>
-      </main>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <ReportModal reportPhoto={reportPhoto} />
+      </section>
+    </main>
 
     // <main
     //   className={`flex flex-col items-center justify-center relative  ${
