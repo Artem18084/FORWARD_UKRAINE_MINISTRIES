@@ -1,8 +1,8 @@
 import React from "react";
 import Title from "../Title/Title";
-import imgVan from "../../../images/Impact/vanBlue.png";
-import imgClock from "../../../images/Impact/clockBlue.png";
-import imgPeople from "../../../images/Impact/peopleBlue.png";
+import imgVan from "../../../images/Impact/van.png";
+import imgClock from "../../../images/Impact/clock.png";
+import imgPeople from "../../../images/Impact/people.png";
 import ImpactItem from "./ImpactItem/ImpactItem";
 
 export default function ImpactSection() {
@@ -11,13 +11,13 @@ export default function ImpactSection() {
       <Title title="Our impact" />
 
       <div className="flex w-full h-[25vw] items-center justify-around">
-        <ImpactItem title="Humanitarian trip" img={imgVan} subTitle="35+" />
+        <ImpactItem title="Humanitarian trip" img={imgVan} subTitle="60+" />
         <ImpactItem
           title="Active Since"
           subTitle="21 April 2022"
           img={imgClock}
         />
-        <ImpactItem title="People reached" subTitle="1000+" img={imgPeople} />
+        <ImpactItem title="People reached" subTitle="1500+" img={imgPeople} />
       </div>
     </section>
   );

@@ -1,17 +1,20 @@
 import React from "react";
 import FirstArticleOnSection from "../firstArticleOnSection/FirstArticleOnSection";
-import imgCar from "../../../images/Disaster/car.jpg";
+import imgCar from "../../../images/Disaster/car.png";
 
 export default function HumanitarianDisaster() {
   return (
     <section className="flex flex-col w-full h-full px-4 md:px-10 py-6 md:py-14 items-center bg-gray-200">
       <FirstArticleOnSection
         alt="Volunteers"
-        selfClassMarginImg="md:ml-12"
+        // selfClassMarginImg="md:ml-12"
         selfReverse="md:flex-row"
         selfClassFlexReverse="flex-row-reverse"
         selfClassHidden="hidden"
         img={imgCar}
+        w="w-[90%] md:w-[40%]"
+        
+
         title="Humanitarian Disaster"
         massage="The actions of the Russian authorities are causing a humanitarian
         catastrophe. Occupiers set up their positions in residential buildings

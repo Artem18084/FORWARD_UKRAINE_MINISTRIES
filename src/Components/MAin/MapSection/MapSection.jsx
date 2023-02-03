@@ -1,8 +1,8 @@
 import React from "react";
 import MyButton from "../../UI/Button/MyButton";
-import sunsetDesk from "../../../images/sunsetDesk1.png";
+import sunsetDesk from "../../../images/mainImageDesk.png";
 import sunsetTablet from "../../../images/sunsetTablet.png";
-import sunsetPhone from "../../../images/mainImageDesk.png";
+import sunsetPhone from "../../../images/sunsetPhone2.png";
 
 export default function MapSection() {
   return (
@@ -22,12 +22,12 @@ export default function MapSection() {
         alt="mainImg"
         className="absolute top-0  right-0 z-0 h-screen w-full sm:hidden"
       />
-      <div className=" z-10 flex flex-col items-center text-white pt-[10rem]">
-        <p className="mb-[1rem]">Ukraine needs your support</p>
-        <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase mb-[1.5rem]">
+      <div className=" z-10 flex flex-col items-center text-white md:pt-[10rem]">
+        <p className="mb-[.3rem] md:mb-[1rem] text-[10px] leading-[10px] md:text-sm  lg:text-base xl:text-xl">Ukraine needs your support</p>
+        <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase mb-[.5rem] md:mb-[1.5rem]">
           forward ukraine ministries
         </h1>
-        <p className="w-[50%] text-center mb-[5.5rem]">
+        <p className="w-[50%] text-center   md:mb-[5.5rem] text-[10px] leading-[10px] md:text-sm  lg:text-base  xl:text-xl ">
           Ukraine needs your support now more than ever, you and I can not be
           indifferent and only in vain can we help all these people survive
           these really difficult times in the history of Ukraine that

@@ -3,14 +3,14 @@ import MyButton from "../../UI/Button/MyButton";
 import Title from "../Title/Title";
 import bridgeDesk from "../../../images/UnderBridgeDesk1.png";
 import bridgeTablet from "../../../images/UnderBridgeTablet.jpg";
-import bridgePhone from "../../../images/UnderBridgePhone.jpg";
+import bridgePhone from "../../../images/UnderBridgePhone.png";
 
 export default function BridgeSection() {
   return (
     <section className="flex bg-bridgePhone md:bg-bridgeTablet lg:bg-bridgeDesk  bg-cover bg-no-repeat w-full h-[70vh] md:h-screen relative  ">
       <article className="flex flex-col items-center justify-evenly text-white w-full z-10">
         <Title title="Pray For Ukraine" />
-        <p className=" text-sm sm:text-md md:text-lg lg:text-2xl xl:text-4xl px-10 sm:px-12 md:px-20 lg:px-32 xl:px-44">
+        <p className=" w-[75vw] text-center text-[10px] leading-[10px] md:text-sm  lg:text-base  xl:text-xl px-10 sm:px-12 md:px-20 lg:px-32 xl:px-44">
           Your help is needed in Ukraine where there are already more than 2.9
           million people in need of assistance. There is great risk of
           additional suffering both within Ukraine and for those who may flee to
