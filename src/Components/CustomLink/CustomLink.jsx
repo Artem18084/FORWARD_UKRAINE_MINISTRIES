@@ -8,7 +8,7 @@ export default function CustomLink({ children, to, ...props }) {
     <Link
       to={to}
       {...props}
-      className={`${match && !status ? "text-yellow-600" : "text-white"}`}
+      className={`${match && !status ? "activeLink" : "text-white"} link mr-5`}
     >
       {children}
     </Link>
