@@ -40,9 +40,9 @@ import ReportItem from "./ReportItem/ReportItem";
   import imgReport36 from "../../../images/Report/report36.jpg";
   import imgReport37 from "../../../images/Report/report37.jpg";
   import imgReport38 from "../../../images/Report/report38.jpg"
-import {useSelector} from "react-redux";
+// import {useSelector} from "react-redux";
 import ReportModal from "./ReportModal/ReportModal";
-
+import loveUkraine from "../../../images/love-ukraine.png"
 export default function Reports() {
   const reportPhoto = [
     {photo: imgReport8, id: 1},
@@ -480,14 +480,17 @@ export default function Reports() {
       ),
     },
   ];
-  const [width, setWidth] = useState(false);
-  const active = useSelector((state) => state.positionReportPhoto.active);
+  // const active = useSelector((state) => state.positionReportPhoto.active);
 
   return (
-    <main className='pt-30 w-full flex flex-row justify-center flex-wrap'>
-      {report.map((item) => item.reportItem)}
-      <ReportModal reportPhoto={reportPhoto}/>
-    </main>
+    <div>
+      <img src={loveUkraine} alt="love"/>
+
+      <main className='mt-[120px] pt-30 w-full flex flex-row justify-center flex-wrap'>
+        {report.map((item) => item.reportItem)}
+        <ReportModal reportPhoto={reportPhoto}/>
+      </main>
+    </div>
 
 
 

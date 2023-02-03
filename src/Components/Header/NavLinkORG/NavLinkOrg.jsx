@@ -12,8 +12,8 @@ export default function NavLinkOrg() {
       "
     >
       <figure className="  min-[769px]:flex-row  flex items-center">
+        <figcaption className="text-white">{"Forward Ukraine Ministries"}</figcaption>
         <img src={imgLogo} alt="logo" className="w-10 h-10" />
-        <figcaption className="">{"Forward Ukraine Ministries"}</figcaption>
       </figure>
     </a>
   );

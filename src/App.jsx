@@ -22,7 +22,7 @@ export default function App() {
   // ];
 
   return (
-    <div className=" flex flex-col  w-full h-full   text-xl  max-[1024px]:text-sm  	  ">
+    <div className=" flex flex-col w-full h-full text-base max-[1024px]:text-sm font-normal">
       <Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
       <Routes>
         {" "}

@@ -12,7 +12,7 @@ export default function NavList(props) {
   };
   return (
     <ul
-      className={`flex ${props.flexSidebar} ${props.marginTop}   max-[1024px]:[&>*]:ml-[4vw]  max-[1280px]:[&>*]:ml-[6vw] [&>*]:ml-[8vw] [&>*]:cursor-pointer [&>*]:duration-700 items-center relative `}
+      className={`flex ${props.flexSidebar} ${props.marginTop} pl-5 justify-center [&>*]:cursor-pointer items-center relative `}
     >
       <CustomLink to="/">
         <ListItem tittle={navList.main} />

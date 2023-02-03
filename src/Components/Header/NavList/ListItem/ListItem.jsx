@@ -8,7 +8,6 @@ export default function ListItem(props) {
     <ul>
       <li
         onClick={() => dispatch(setStatusSidebar(false))}
-        className={`hover:text-yellow-600 hover:scale-110 duration-500   `}
       >
         <button>{props.tittle} </button>
       </li>
