@@ -486,7 +486,7 @@ export default function Reports() {
     <div>
       <img src={loveUkraine} alt="love"/>
 
-      <main className='mt-[120px] pt-30 w-full flex flex-row justify-center flex-wrap'>
+      <main className='mt-[50px] pt-30 w-full flex flex-row justify-center flex-wrap'>
         {report.map((item) => item.reportItem)}
         <ReportModal reportPhoto={reportPhoto}/>
       </main>

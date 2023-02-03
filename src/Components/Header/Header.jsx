@@ -13,7 +13,7 @@ export default function Header() {
 
 
   return (
-    <header className='w-full fixed flex flex-row items-center justify-between backdrop-blur-lg h-[80px] px-5 lg:px-[120px]'>
+    <header className='w-full fixed flex flex-row items-center justify-between backdrop-blur-lg h-[80px] px-5 lg:px-[120px] z-20'>
       <NavLinkOrg/>
       <nav className=" max-[768px]:hidden ">
         <NavList/>
