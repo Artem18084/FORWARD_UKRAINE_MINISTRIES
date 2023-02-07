@@ -10,7 +10,6 @@ import PersonContact from "./RersonContact/PersonContact";
 export default function PersonCArd(props) {
   return (
     <section className="  flex  flex-col items-center rounded-xl w-[20%] max-[768px]:w-[30%]  hover:scale-110 duration-500    bg-[#000E30]  relative px-[1rem] pb-[1rem] pt-[1rem]    ">
-      <div className="absolute top-0 left-0 hidden lg:block rounded-xl w-full h-full opacity-60"></div>
       <PersonPhoto src={props.src} alt={props.alt} />
       <Name name={props.name} />
       <article className="flex items-center justify-center w-full   flex-wrap [&>*]:w-[20%] [&>*]:hover:cursor-pointer">

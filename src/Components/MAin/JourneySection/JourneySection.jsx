@@ -16,14 +16,14 @@ export default function JourneySection() {
     <section className="flex flex-col w-full h-full  px-4 md:px-10 md:pt-14 pt-6 items-center bg-gray-200">
       <FirstArticleOnSection
         alt="Independents square"
-        selfClassPaddingP="md:pr-12"
-        selfClassMargin=" md:ml-40"
+        selfClassPaddingP="xl:pr-12"
+        selfClassMargin=" xl:ml-40"
         sideCar="hidden"
-        selfReverse="md:flex-row-reverse"
-        selfShadow="md:shadow-[-40px_40px_rgba(255,151,49,0.9)] "
+        selfReverse="xl:flex-row-reverse"
+        selfShadow="xl:shadow-[-40px_40px_rgba(255,151,49,0.9)] "
         img={imgKiev}
         mb="mb-5"
-        w="w-[90vw] h-[40vh]  md:w-[30%]"
+        w="w-[90vw] h-[40vh]  xl:w-[30%]"
         title="Missionary journey"
         massage=" &nbsp; &nbsp; It was nice to spend time in Ukraine. Although waking up to explosions is not very pleasant. 
         October 10, 2022. That day, we saw with our own eyes the destroyed playgrounds near one of the Kyiv universities, crushed 
@@ -34,7 +34,7 @@ export default function JourneySection() {
       />
 
       <article className="flex flex-col w-full items-center  pt-6 sm:pt-8 md:pt-12 lg:pt-16  xl:pt-20 ">
-        <p className="w-full md:px-12 lg:px-16 xl:px-20  pb-8 md:pb-16 text">
+        <p className="w-full  lg:px-16 xl:px-20  pb-8 md:pb-16 text">
           The main targets are civilians and critical infrastructure that
           ensures ordinary people are left without heat and electricity. We
           started buying firewood for people who cannot afford it and would be
@@ -52,10 +52,9 @@ export default function JourneySection() {
           help - ordinary people living in peace. Please consider donating so we
           can continue to support the people of Ukraine. May God bless you!
         </p>
-        <div className="flex gap-1 w-full h-[35vh] [&>*]:inline whitespace-normal	overflow-x-auto  scrollbar-thin  md:scrollbar-thumb-gray-300">
+        <div className="flex gap-1 w-full h-[20vh] md:h-[25vh] xl:h-[35vh] [&>*]:inline whitespace-normal	overflow-x-auto  scrollbar-thin  md:scrollbar-thumb-gray-300">
           <img className="w-[50%] h-full" src={imgWood1} alt="wood" />
           <img className="w-[50%]h-full" src={imgWood4} alt="person" />
-
           <img
             className="w-[50%] h-full"
             src={imgWoodRock}
@@ -63,7 +62,6 @@ export default function JourneySection() {
           />
           <img className="w-[50%] h-full" src={imgWood3} alt="wood" />
           <img className="w-[50%] h-full" src={imgWood2} alt="wood_done" />
-         
           <img className="w-[50%] h-full" src={imgWood5} alt="wood" />
           <img className="w-[50%] h-full" src={imgWood6} alt="wood_done" />
         </div>

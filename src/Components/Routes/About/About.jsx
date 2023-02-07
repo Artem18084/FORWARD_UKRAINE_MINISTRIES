@@ -10,48 +10,29 @@ import imgPeopleRight from "../../../images/Needs/rightSidePhoto.png";
 export default function About() {
   return (
     <main className="relative w-full  flex flex-col  items-center  text-black  item-center justify-center  bg-white ">
-      
       <img
         src={imgHands}
         alt="mainImg"
-        className="absolute top-0  right-0 z-0 w-full hidden md:block"
+        className="absolute top-0  right-0 z-0 w-full hidden   md:block"
       />
-      {/* <img
-        // src={sunsetTablet}
-        alt="mainImg"
-        className="absolute top-0  right-0 z-0  w-full md:hidden"
-      /> */}
+
       <img
         src={imgHandsPhone}
         alt="mainImg"
         className="absolute top-0  right-0 z-0  w-full md:hidden h-[100vh]"
       />
-       <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl   font-semibold md:font-normal uppercase pt-10">
-            Who we are{" "}
-          </h1>
-      <div className="hidden md:block relative w-full   ">
-        <div className=" z-10 flex flex-col items-center text-white md:pt-[10rem]">
-          <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
-            Who we are{" "}
-          </h1>
-        </div>
-      </div>
-      {/* <section className=" w-full items-center  justify-around flex flex-row max-[768px]:flex-col ">
-        <article className="flex flex-col items-center ">
-          <h2 className="text-2xl max-[1024px]:text-sm">Founder of the fund</h2>
-          <h1 className="text-5xl max-[1024px]:text-lg py-5 max-[1024px]:py-1">
-            Yevgeniy Ustenko
-          </h1>
-        </article>
+      <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl   font-semibold md:font-normal uppercase pt-10">
+        Who we are{" "}
+      </h1>
 
-        <img
-          className=" w-[30vw] max-[768px]:w-[50vw] h-full rounded-2xl hover:scale-110 duration-1000"
-          src={imgFounder}
-          alt="founder"
-        />
-      </section> */}
-      <section className="md:flex items-center justify-center mt-[105vh] md:mt-72">
-        <article className="md:w-[50vw] flex  items-center md:items-start flex-col pl-16 max-[768px]:px-6 pb-10 md:pb-20 text-sm md:text-base  ">
+      <div className=" z-10  hidden md:flex relative w-full   flex-col items-center text-white md:pt-[5rem] lg:pt-[10rem]  ">
+        <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
+          Who we are{" "}
+        </h1>
+      </div>
+
+      <section className="xl:flex items-center justify-center mt-[105vh]  md:mt-[11vh]  lg:mt-[20vh] xl:mt-[25vh] 2xl:mt-[40vh]  pt-30 w-full">
+        <article className="xl:w-[50vw] flex  items-center xl:items-start flex-col pl-16  md:px-8 max-[768px]:px-6 pb-10 xl:pb-20 text-sm xl:text-base  ">
           <h2 className="text-xl md:text-3xl font-semibold mb-5">About us</h2>
           <p className="mb-5 font-bold ">
             Who are we? "Forward, Ukraine" Ministries is a 501(c)3 non-profit
@@ -82,21 +63,21 @@ export default function About() {
             help Ukraine, then you've come to the right place!
           </p>
         </article>
-        <div className=" flex items-center justify-center md:w-[45vw] mb-5 md:mb-0  ">
+        <div className=" flex items-center justify-center xl:w-[45vw] mb-5 md:mb-10 xl:mb-0  ">
           <img
             src={igmGroupLeft}
             alt="people "
-            className=" md:w-[6vw] md:h-[40vh]  w-[9vw] h-[25vh] rounded-l-xl "
+            className=" xl:w-[6vw] xl:h-[40vh] md:h-[40vh] w-[10vw] h-[25vh] rounded-l-xl "
           />
           <img
             src={imgMen}
             alt="men"
-            className="  md:w-[27vw] md:h-[55vh] h-[30vh] rounded-xl "
+            className="  xl:w-[25vw] md:h-[50vh] md:w-[60vw] xl:h-[55vh] w-[45vw] h-[30vh] rounded-xl "
           />
           <img
             src={imgPeopleRight}
             alt="group  "
-            className=" md:w-[6vw] md:h-[40vh] w-[9vw] h-[25vh] rounded-r-xl"
+            className=" xl:w-[6vw] md:h-[40vh] xl:h-[40vh] w-[10vw] h-[25vh] rounded-r-xl"
           />
         </div>
       </section>

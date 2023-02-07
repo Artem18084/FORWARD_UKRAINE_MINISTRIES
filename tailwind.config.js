@@ -4,15 +4,15 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-           "bridgeDesk": "url('./images/UnderBridgeDesk.jpg')",
-           "bridgeTablet": "url('./images/UnderBridgeTablet.jpg')",
-           "bridgePhone": "url('./images/UnderBridgePhone.jpg')",
-        "sunsetDesk": "url('./images/sunsetDesk.png')",
-        "sunsetTablet": "url('./images/sunsetTablet.svg')",
-        "sunsetPhone": "url('./images/sunsetPhone.svg')",
+      // backgroundImage: (theme) => ({
+      //      "bridgeDesk": "url('./images/UnderBridgeDesk.jpg')",
+      //      "bridgeTablet": "url('./images/UnderBridgeTablet.jpg')",
+      //      "bridgePhone": "url('./images/UnderBridgePhone.jpg')",
+      //   "sunsetDesk": "url('./images/sunsetDesk.png')",
+      //   "sunsetTablet": "url('./images/sunsetTablet.svg')",
+      //   "sunsetPhone": "url('./images/sunsetPhone.svg')",
      
-      }),
+      // }),
       opacityModal:{
         modalOpacity: "rgba(31,41,55,.5)"
       },

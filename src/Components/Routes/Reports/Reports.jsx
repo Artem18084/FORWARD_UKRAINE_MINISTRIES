@@ -494,14 +494,17 @@ export default function Reports() {
       ),
     },
   ];
-  // const active = useSelector((state) => state.positionReportPhoto.active);
 
   return (
     <main className="relative">
+      <div>
+
+        
+      </div>
       <img
         src={loveUkraineDesk}
         alt="love"
-        className="absolute top-0  right-0 z-0 w-full hidden md:block"
+        className="absolute top-0  right-0 z-0 w-full hidden  md:block"
       />
       <img
         src={loveUkraine}
@@ -511,15 +514,13 @@ export default function Reports() {
       <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl   font-semibold md:font-normal uppercase pt-10">
         Our Reports{" "}
       </h1>
-      <div className="hidden md:block relative w-full   ">
-        <div className=" z-10 flex flex-col items-center text-white md:pt-[10rem]">
+        <div className=" z-10  hidden md:flex relative w-full   flex-col items-center text-white md:pt-[5rem] lg:pt-[10rem]  ">
           <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
             Our Report{" "}
           </h1>
-        </div>
       </div>
 
-      <section className="md:mt-[40vh] mt-[105vh] pt-30 w-full flex flex-row justify-center flex-wrap">
+      <section className="mt-[105vh]  md:mt-[15vh] lg:mt-[25vh] xl:mt-[30vh] 2xl:mt-[40vh]  pt-30 w-full flex flex-row justify-center flex-wrap">
         {report.map((item) => item.reportItem)}
         <ReportModal reportPhoto={reportPhoto} />
       </section>

@@ -136,7 +136,7 @@ export default function Team() {
     },
   };
   return (
-    <main className="flex flex-col items-center justify-center pb-[8rem] max-[1024px]:pb-[6rem]   max-[768px]:pb-[4rem]  px-[5vw] w-full h-full bg-white  relative">
+    <main className="flex flex-col items-center justify-center  px-[5vw] w-full h-full bg-white  relative">
     
 
     <img
@@ -157,19 +157,24 @@ export default function Team() {
        <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl whitespace-nowrap	  font-semibold md:font-normal uppercase pt-10">
             We are the team{" "}
           </h1>
-      <div className="hidden md:block relative w-full   ">
+          <div className=" z-10  hidden md:flex relative w-full   flex-col items-center text-white md:pt-[5rem] lg:pt-[10rem]  ">
+          <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
+            We are the team{" "}
+          </h1>
+      </div>
+      {/* <div className="hidden md:block relative w-full   ">
         <div className=" z-10 flex flex-col items-center text-white md:pt-[10rem]">
           <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
             We are the team{" "}
           </h1>
         </div>
-      </div>
+      </div> */}
 
 
       {/* <h2 className=" text-4xl max-[1024px]:text-2xl max-[768px]:text-xl text-white">
         Our Team
       </h2> */}
-      <section className="  mt-[103vh] md:mt-[30vh] flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%] pt-[5%] max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
+      <section className="  mt-[105vh] md:mt-[10vh] lg:mt-[18vh] xl:mt-[23vh] 2xl:mt-[30vh] flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%] pt-[5%] max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
       <PersonCArd
           src={imgEugene}
           alt="Yevgeniy"
