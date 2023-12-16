@@ -22,7 +22,7 @@ export default function MapSection() {
         alt="mainImg"
         className="absolute top-0  right-0 z-0 h-screen w-full sm:hidden"
       />
-      <div className=" z-10 flex flex-col items-center text-white xl:pt-[10rem]  md:pt-[10rem] pt-[10rem]">
+      <div className=" z-10 flex flex-col items-center text-white   md:pt-[8rem] pt-[10rem]">
         <p className="mb-[.3rem] md:mb-[1rem] text-[10px] leading-[10px] md:text-sm  lg:text-base xl:text-xl">
           Ukraine needs your support
         </p>
@@ -36,8 +36,8 @@ export default function MapSection() {
           unfortunately happened to them
         </p>
         <MyButton
-          mt="md:mt-[30rem]"
-          mtPhone="mt-[20rem]"
+          mt="md:mt-[30rem] xl:mt-[10rem]"
+          mtPhone="mt-[15rem] sm:mt-[20rem]"
           mapClasses="hover:shadow-hov bg-yellow-100 text-yellow-600  hover:bg-yellow-600 "
         />
       </div>

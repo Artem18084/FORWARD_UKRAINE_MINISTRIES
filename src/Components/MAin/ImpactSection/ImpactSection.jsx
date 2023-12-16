@@ -18,7 +18,7 @@ export default function ImpactSection() {
           img={imgClock}
         />
         <ImpactItem title="People reached" subTitle="1500+" img={imgPeople} />
-      </div>
+      </div> 
     </section>
   );
 }

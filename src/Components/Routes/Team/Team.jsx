@@ -14,10 +14,8 @@ import imgRuslana from "../../../images/Team/Ruslana.jpg";
 import imgIgor from "../../../images/Team/Igor.jpg";
 import imgOleg from "../../../images/Team/Oleg.jpg";
 import imgEugene from "../../../images/Team/Eugene.jpg";
-import imgTeamMain from "../../../images/Team/TeamMAin.png"
-import imgTeamMainPhone from "../../../images/Team/TeamMAinPhone.png"
-
-
+import imgTeamMain from "../../../images/Team/TeamMAin.png";
+import imgTeamMainPhone from "../../../images/Team/TeamMAinPhone.png";
 
 export default function Team() {
   const team = {
@@ -137,45 +135,26 @@ export default function Team() {
   };
   return (
     <main className="flex flex-col items-center justify-center  px-[5vw] w-full h-full bg-white  relative">
-    
-
-    <img
+      <img
         src={imgTeamMain}
         alt="mainImg"
         className="absolute top-0  right-0 z-0 w-full hidden md:block"
       />
-      {/* <img
-        // src={sunsetTablet}
-        alt="mainImg"
-        className="absolute top-0  right-0 z-0  w-full md:hidden"
-      /> */}
       <img
         src={imgTeamMainPhone}
         alt="mainImg"
         className="absolute top-0  right-0 z-0  w-full md:hidden h-[100vh]"
       />
-       <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl whitespace-nowrap	  font-semibold md:font-normal uppercase pt-10">
-            We are the team{" "}
-          </h1>
-          <div className=" z-10  hidden md:flex relative w-full   flex-col items-center text-white md:pt-[5rem] lg:pt-[10rem]  ">
-          <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
-            We are the team{" "}
-          </h1>
+      <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl whitespace-nowrap	  font-semibold md:font-normal uppercase pt-10">
+        We are the team{" "}
+      </h1>
+      <div className=" z-10  hidden md:flex relative w-full   flex-col items-center text-white md:pt-[5rem] lg:pt-[10rem]  ">
+        <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
+          We are the team{" "}
+        </h1>
       </div>
-      {/* <div className="hidden md:block relative w-full   ">
-        <div className=" z-10 flex flex-col items-center text-white md:pt-[10rem]">
-          <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
-            We are the team{" "}
-          </h1>
-        </div>
-      </div> */}
-
-
-      {/* <h2 className=" text-4xl max-[1024px]:text-2xl max-[768px]:text-xl text-white">
-        Our Team
-      </h2> */}
       <section className="  mt-[105vh] md:mt-[10vh] lg:mt-[18vh] xl:mt-[23vh] 2xl:mt-[30vh] flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%] pt-[5%] max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
-      <PersonCArd
+        <PersonCArd
           src={imgEugene}
           alt="Yevgeniy"
           key={team["Yevgeniy Ustenko"].key}
@@ -185,7 +164,7 @@ export default function Team() {
           gmail={team["Yevgeniy Ustenko"].gmail}
           telegram={team["Yevgeniy Ustenko"].telegram}
         />
-      
+
         <PersonCArd
           src={imgYana}
           alt="Yana"
@@ -197,7 +176,7 @@ export default function Team() {
           telegram={team["Yana Kravchenko"].telegram}
         />
 
-<PersonCArd
+        <PersonCArd
           src={imgOleg}
           alt="Oleg"
           key={team["Oleg Rudenko"].key}
@@ -239,7 +218,7 @@ export default function Team() {
           telegram={team["Angelina Vardanian"].telegram}
         />
 
-        <PersonCArd
+        {/* <PersonCArd
           src={imgAndrii}
           alt="Andrii"
           key={team["Andrii Yablonskii"].key}
@@ -248,8 +227,8 @@ export default function Team() {
           facebook={team["Andrii Yablonskii"].facebook}
           gmail={team["Andrii Yablonskii"].gmail}
           telegram={team["Andrii Yablonskii"].telegram}
-        />
-        <PersonCArd
+        /> */}
+        {/* <PersonCArd
           src={imgAlyona}
           alt="Alyona"
           key={team["Alyona Snigur"].key}
@@ -258,8 +237,8 @@ export default function Team() {
           facebook={team["Alyona Snigur"].facebook}
           gmail={team["Alyona Snigur"].gmail}
           telegram={team["Alyona Snigur"].telegram}
-        />
-        <PersonCArd
+        /> */}
+        {/* <PersonCArd
           src={imgVadim}
           alt="Vadim"
           key={team["Vadim Kravchenko"].key}
@@ -278,7 +257,7 @@ export default function Team() {
           facebook={team["Julia Badya"].facebook}
           gmail={team["Julia Badya"].gmail}
           telegram={team["Julia Badya"].telegram}
-        />
+        /> */}
         <PersonCArd
           src={imgIgor}
           alt="Iliya"
@@ -289,7 +268,7 @@ export default function Team() {
           gmail={team["Igor Cherevichniy"].gmail}
           telegram={team["Igor Cherevichniy"].telegram}
         />
-        <PersonCArd
+        {/* <PersonCArd
           src={imgVika}
           alt="Vika"
           key={team["Vika Lemberg"].key}
@@ -309,8 +288,8 @@ export default function Team() {
           facebook={team["Ruslana Lagno"].facebook}
           gmail={team["Ruslana Lagno"].gmail}
           telegram={team["Ruslana Lagno"].telegram}
-        />
-         <PersonCArd
+        /> */}
+        {/* <PersonCArd
           src={imgIllya}
           alt="Iliya"
           key={team["Iliya Rochev"].key}
@@ -319,7 +298,7 @@ export default function Team() {
           facebook={team["Iliya Rochev"].facebook}
           gmail={team["Iliya Rochev"].gmail}
           telegram={team["Iliya Rochev"].telegram}
-        />
+        /> */}
       </section>
     </main>
   );
