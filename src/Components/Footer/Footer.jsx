@@ -4,9 +4,11 @@ import imgFace from "../../images/footer/facebook.png";
 import imgPay from "../../images/footer/payPal.png";
 import imgWhatsapp from "../../images/footer/whatsapp.png";
 import ContactButton from "../UI/Button/ContactButton";
+import { data } from "autoprefixer";
 
 export default function Footer(props) {
-  return (
+  let currentDate = new Date().getFullYear(); 
+   return (
     <footer className=" w-full  flex flex-col  items-center justify-center bg-[#00091D]  text-white  py-5 max-[768px]:py-2  ">
       <hr className="w-[75vw] h-2 mb-[1vw]" />
       <section className="flex ">
@@ -36,7 +38,7 @@ export default function Footer(props) {
       </h4>
       <p className=" text-[10px] max-[768px]:text-[5px] max-[768px]:leading-[7px]">
         {" "}
-        © ForwardUkraineMinistries 2022
+        © ForwardUkraineMinistries {currentDate}
       </p>
     </footer>
   );
