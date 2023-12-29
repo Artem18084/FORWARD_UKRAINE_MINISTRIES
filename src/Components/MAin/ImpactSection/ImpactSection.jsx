@@ -6,16 +6,16 @@ import imgPeople from "../../../images/Impact/people.png";
 import ImpactItem from "./ImpactItem/ImpactItem";
 
 export default function ImpactSection() {
-  const [humanitarianValue, setHumanitarianValue] = useState(0);
-  const [peopleReachedValue, setPeopleReachedValue] = useState(0);
+  const [humanitarianValue, setHumanitarianValue] = useState("");
+  const [peopleReachedValue, setPeopleReachedValue] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3002/values");
+        const response = await fetch("https://bible-gym.pp.ua/api/v1/injection/values");
         const data = await response.json();
-        setHumanitarianValue(data.humanitarianValue);
-        setPeopleReachedValue(data.peopleReachedValue);
+        setHumanitarianValue(+data.humanitarianValue);
+        setPeopleReachedValue(+data.peopleReachedValue);
       } catch (error) {
         console.error("Error fetching data", error);
       }
@@ -23,11 +23,12 @@ export default function ImpactSection() {
 
     const updateServerData = async () => {
       try {
-        await fetch("http://localhost:3002/updateValues", {
-          method: "POST",
+        await fetch("https://bible-gym.pp.ua/api/v1/injection/values", {
+          method: "PUT",
           headers: {
             "Content-Type": "application/json",
           },
+
           body: JSON.stringify({
             newHumanitarianValue: humanitarianValue + 1,
             newPeopleReachedValue: peopleReachedValue + 25,

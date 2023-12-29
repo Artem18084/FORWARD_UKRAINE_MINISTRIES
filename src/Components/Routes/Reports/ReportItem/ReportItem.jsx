@@ -20,7 +20,7 @@ export default function ReportItem(props) {
   return (
     <img
       className={`w-[280px] mr-3 mb-[20px] rounded-xl`}
-      onDoubleClick={() => dispatch(setActivePosition(false))}
+      // onDoubleClick={() => dispatch(setActivePosition(false))}
       onClick={() => selectItemSetPosition()}
       src={props.src}
       alt={props.alt}

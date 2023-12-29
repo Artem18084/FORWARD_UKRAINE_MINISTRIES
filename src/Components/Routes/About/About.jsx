@@ -4,7 +4,7 @@ import imgHands from "../../../images/Needs/hands.png";
 import imgHandsPhone from "../../../images/Needs/handsPhone.png";
 
 import igmGroupLeft from "../../../images/Needs/leftSidePhoto.png";
-import imgMen from "../../../images/Report/report26.JPG";
+import imgMen from "../../../images/Report/report26.jpg";
 import imgPeopleRight from "../../../images/Needs/rightSidePhoto.png";
 
 export default function About() {
