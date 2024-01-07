@@ -44,7 +44,7 @@ export default function ImpactSection() {
     const interval = setInterval(async () => {
       await updateServerData();
       fetchData();
-    }, 604800000);
+    }, 604800);
 
     return () => clearInterval(interval);
   }, [humanitarianValue, peopleReachedValue]);
