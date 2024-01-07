@@ -9,7 +9,6 @@ export default function Reports() {
     photo: require(`../../../images/Report/report${index + 1}.jpg`).default,
     id: index + 1,
   })).reverse();
-  console.log(reportPhoto);
 
   const reportItems = reportPhoto.map((item) => (
     <ReportItem
@@ -26,7 +25,7 @@ export default function Reports() {
       <img
         src={loveUkraineDesk}
         alt="love"
-        className="absolute top-0 right-0 z-0 w-full hidden md:block"
+        className="absolute top-0 right-0 z-0 w-full hidden md:block "
       />
       <img
         src={loveUkraine}
@@ -41,7 +40,7 @@ export default function Reports() {
           Our Report
         </h1>
       </div>
-      <section className="mt-[105vh] md:mt-[15vh] lg:mt-[25vh] xl:mt-[30vh] 2xl:mt-[40vh] pt-30 w-full flex flex-row justify-center flex-wrap">
+      <section className="mt-[105vh]  md:mt-[20vw] lg:mt-[15vw] xl:mt-[20vw] 2xl:mt-[20vw]  5xl:mt-[23vw]  pt-30 w-full flex flex-row justify-center flex-wrap">
         {reportItems}
         <ReportModal reportPhoto={reportPhoto} />
       </section>

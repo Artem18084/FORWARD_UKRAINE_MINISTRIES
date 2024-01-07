@@ -4,6 +4,11 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1600px', // Define your 3xl breakpoint
+        '4xl': '1820px', // Define your 4xl breakpoint
+        '5xl': '2100px',
+      },
       // backgroundImage: (theme) => ({
       //      "bridgeDesk": "url('./images/UnderBridgeDesk.jpg')",
       //      "bridgeTablet": "url('./images/UnderBridgeTablet.jpg')",

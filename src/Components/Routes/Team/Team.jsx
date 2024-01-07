@@ -153,7 +153,7 @@ export default function Team() {
           We are the team{" "}
         </h1>
       </div>
-      <section className="  mt-[105vh] md:mt-[10vh] lg:mt-[18vh] xl:mt-[23vh] 2xl:mt-[30vh] flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%] pt-[5%] max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
+      <section className="  mt-[105vh]  md:mt-[20vw] lg:mt-[15vw] xl:mt-[20vw] 2xl:mt-[20vw]  5xl:mt-[23vw] flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%]  max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
         <PersonCArd
           src={imgEugene}
           alt="Yevgeniy"
@@ -218,46 +218,7 @@ export default function Team() {
           telegram={team["Angelina Vardanian"].telegram}
         />
 
-        {/* <PersonCArd
-          src={imgAndrii}
-          alt="Andrii"
-          key={team["Andrii Yablonskii"].key}
-          name={team["Andrii Yablonskii"].name}
-          instagram={team["Andrii Yablonskii"].inst}
-          facebook={team["Andrii Yablonskii"].facebook}
-          gmail={team["Andrii Yablonskii"].gmail}
-          telegram={team["Andrii Yablonskii"].telegram}
-        /> */}
-        {/* <PersonCArd
-          src={imgAlyona}
-          alt="Alyona"
-          key={team["Alyona Snigur"].key}
-          name={team["Alyona Snigur"].name}
-          instagram={team["Alyona Snigur"].inst}
-          facebook={team["Alyona Snigur"].facebook}
-          gmail={team["Alyona Snigur"].gmail}
-          telegram={team["Alyona Snigur"].telegram}
-        /> */}
-        {/* <PersonCArd
-          src={imgVadim}
-          alt="Vadim"
-          key={team["Vadim Kravchenko"].key}
-          name={team["Vadim Kravchenko"].name}
-          instagram={team["Vadim Kravchenko"].inst}
-          facebook={team["Vadim Kravchenko"].facebook}
-          gmail={team["Vadim Kravchenko"].gmail}
-          telegram={team["Vadim Kravchenko"].telegram}
-        />
-        <PersonCArd
-          src={imgJulia}
-          alt="Julia"
-          key={team["Julia Badya"].key}
-          name={team["Julia Badya"].name}
-          instagram={team["Julia Badya"].inst}
-          facebook={team["Julia Badya"].facebook}
-          gmail={team["Julia Badya"].gmail}
-          telegram={team["Julia Badya"].telegram}
-        /> */}
+        
         <PersonCArd
           src={imgIgor}
           alt="Iliya"
@@ -268,37 +229,7 @@ export default function Team() {
           gmail={team["Igor Cherevichniy"].gmail}
           telegram={team["Igor Cherevichniy"].telegram}
         />
-        {/* <PersonCArd
-          src={imgVika}
-          alt="Vika"
-          key={team["Vika Lemberg"].key}
-          name={team["Vika Lemberg"].name}
-          instagram={team["Vika Lemberg"].inst}
-          facebook={team["Vika Lemberg"].facebook}
-          gmail={team["Vika Lemberg"].gmail}
-          telegram={team["Vika Lemberg"].telegram}
-        />
-
-        <PersonCArd
-          src={imgRuslana}
-          alt="Ruslana"
-          key={team["Ruslana Lagno"].key}
-          name={team["Ruslana Lagno"].name}
-          instagram={team["Ruslana Lagno"].inst}
-          facebook={team["Ruslana Lagno"].facebook}
-          gmail={team["Ruslana Lagno"].gmail}
-          telegram={team["Ruslana Lagno"].telegram}
-        /> */}
-        {/* <PersonCArd
-          src={imgIllya}
-          alt="Iliya"
-          key={team["Iliya Rochev"].key}
-          name={team["Iliya Rochev"].name}
-          instagram={team["Iliya Rochev"].inst}
-          facebook={team["Iliya Rochev"].facebook}
-          gmail={team["Iliya Rochev"].gmail}
-          telegram={team["Iliya Rochev"].telegram}
-        /> */}
+        
       </section>
     </main>
   );

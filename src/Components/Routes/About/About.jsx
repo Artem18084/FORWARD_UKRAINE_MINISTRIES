@@ -31,7 +31,7 @@ export default function About() {
         </h1>
       </div>
 
-      <section className="xl:flex items-center justify-center mt-[105vh]  md:mt-[11vh]  lg:mt-[20vh] xl:mt-[25vh] 2xl:mt-[40vh]  pt-30 w-full">
+      <section className="xl:flex items-center justify-center mt-[105vh]   md:mt-[20vw] lg:mt-[15vw] xl:mt-[20vw] 2xl:mt-[20vw]  5xl:mt-[23vw]  w-full">
         <article className="xl:w-[50vw] flex  items-center xl:items-start flex-col pl-16  md:px-8 max-[768px]:px-6 pb-10 xl:pb-20 text-sm xl:text-base  ">
           <h2 className="text-xl md:text-3xl font-semibold mb-5">About us</h2>
           <p className="mb-5 font-bold ">
@@ -63,7 +63,7 @@ export default function About() {
             help Ukraine, then you've come to the right place!
           </p>
         </article>
-        <div className=" flex items-center justify-center xl:w-[45vw] mb-5 md:mb-10 xl:mb-0  ">
+        <div className=" flex items-center justify-center xl:w-[45vw] mb-5 md:mb-10   ">
           <img
             src={igmGroupLeft}
             alt="people "
