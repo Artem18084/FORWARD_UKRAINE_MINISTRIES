@@ -4,11 +4,13 @@ import HumanitarianDisaster from "./HumanitarianDisaster/HumanitarianDisaster";
 import ImpactSection from "./ImpactSection/ImpactSection";
 import JourneySection from "./JourneySection/JourneySection";
 import MapSection from "./MapSection/MapSection";
+import OurFieldsOfActivity from "./OurFieldsOfActivity/OurFieldsOfActivity";
 
 export default function Main(props) {
   return (
     <main className="flex flex-col w-full h-full ">
       <MapSection />
+      <OurFieldsOfActivity/>
       <JourneySection />
       <HumanitarianDisaster />
       <ImpactSection />
