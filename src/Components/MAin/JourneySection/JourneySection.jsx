@@ -13,7 +13,7 @@ import FirstArticleOnSection from "../firstArticleOnSection/FirstArticleOnSectio
 
 export default function JourneySection() {
   return (
-    <section className="flex flex-col w-full h-full  px-4 md:px-10 md:pt-14 pt-6 items-center bg-gray-200">
+    <section className="flex flex-col w-full h-full  px-[1rem] md:px-[2.5rem] md:pt-14 pt-6 items-center bg-gray-200">
       <FirstArticleOnSection
         alt="Independents square"
         selfClassPaddingP="xl:pr-12"

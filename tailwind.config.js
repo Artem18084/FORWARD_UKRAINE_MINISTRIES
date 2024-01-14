@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      backgroundColor: {
+        'dark-blue': '#000E30',
+      },
       screens: {
         '3xl': '1600px', // Define your 3xl breakpoint
         '4xl': '1820px', // Define your 4xl breakpoint

@@ -1,1 +1,8 @@
-node_modules
+# Ігнорує всі файли з розширенням .log
+*.log
+
+# Ігнорує папку з іменем node_modules
+node_modules/
+
+# Ігнорує файли з конкретним іменем
+config.ini
