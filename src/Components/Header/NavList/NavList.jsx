@@ -26,9 +26,6 @@ export default function NavList(props) {
       <CustomLink to="/Team">
         <ListItem tittle={navList.team} />
       </CustomLink>
-      {/* <CustomLink to="/Donate">
-        <ListItem tittle={navList.donate} />
-      </CustomLink> */}
     </ul>
   );
 }

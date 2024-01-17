@@ -5,7 +5,7 @@ export default function NavLinkOrg() {
     <a
       className="cursor-pointer hover:text-yellow-600  duration-800"
       href={
-        "https://www.facebook.com/permalink.php?story_fbid=pfbid08BG4LUrwZb2oeocUvsRkK6Q3uGG2GHAkMrgPSvkrQqqBC4Gvj49s93Tr55F4j2gEl&id=102841305701116  "
+        "https://www.facebook.com/profile.php?id=100080343590994 "
       }
       target="_blank"
       rel="external

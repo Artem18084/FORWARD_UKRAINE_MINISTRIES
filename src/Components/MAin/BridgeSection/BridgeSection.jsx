@@ -1,5 +1,5 @@
 import React from "react";
-import MyButton from "../../UI/Button/MyButton";
+// import MyButton from "../../UI/Button/MyButton";
 import Title from "../Title/Title";
 import bridgeDesk from "../../../images/UnderBridgeDesk1.png";
 import bridgeTablet from "../../../images/UnderBridgeTablet.png";
@@ -16,11 +16,11 @@ export default function BridgeSection() {
           additional suffering both within Ukraine and for those who may flee to
           neighboring countries for safety
         </p>
-        <MyButton
+        {/* <MyButton
           mt="md:mt-[20rem]"
           mtPhone="mt-[10rem]"
           bridgeClasses=" bg-gray-100  hover:bg-gray-500 text-gray-500  hover:shadow-hovBridge"
-        />
+        /> */}
       </article>
 
       <img

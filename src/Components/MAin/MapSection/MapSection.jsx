@@ -1,5 +1,5 @@
 import React from "react";
-import MyButton from "../../UI/Button/MyButton";
+// import MyButton from "../../UI/Button/MyButton";
 import sunsetDesk from "../../../images/mainImageDesk.png";
 import sunsetTablet from "../../../images/sunsetTablet.png";
 import sunsetPhone from "../../../images/sunsetPhone2.png";
@@ -35,11 +35,11 @@ export default function MapSection() {
           these really difficult times in the history of Ukraine that
           unfortunately happened to them
         </p>
-        <MyButton
+        {/* <MyButton
           mt="md:mt-[30rem] xl:mt-[10rem]"
           mtPhone="mt-[15rem] sm:mt-[20rem]"
           mapClasses="hover:shadow-hov bg-yellow-100 text-yellow-600  hover:bg-yellow-600 "
-        />
+        /> */}
       </div>
     </section>
   );
