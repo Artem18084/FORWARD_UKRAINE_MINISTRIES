@@ -7,11 +7,13 @@ import MapSection from "./MapSection/MapSection";
 import AboutWar from "./AboutWar/AboutWar";
 import PraySection from "./PraySection/PraySection";
 import Evacuation from "./Evacuation/Evacuation";
+import AreaOfWork from "./AreaOfWork/AreaOfWork";
 
 export default function Main(props) {
   return (
     <main className="flex flex-col w-full h-full ">
       <ImpactSection />
+      <AreaOfWork/>
       <Evacuation />
       <AboutWar />
       <PraySection />

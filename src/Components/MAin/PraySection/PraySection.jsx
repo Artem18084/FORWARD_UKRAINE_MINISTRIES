@@ -18,7 +18,7 @@ export default function PraySection() {
         suffering both within Ukraine and for those who may flee to neighboring
         countries for safety
       </p>
-      <DonateButton />
+      <DonateButton helping="Donate" bgColor="myYellow" color="black"/>
     </article>
   );
 }

@@ -50,7 +50,7 @@ export default function Evacuation() {
                 className=" text-[#fff200] font-playfair text-sm font-semibold leading-4 tracking-normal text-left"
                 dateTime="2022-10-10"
               >
-                OCTOBER-10-2022
+                AUGUST-24-2023{" "}
               </time>
             </li>
 

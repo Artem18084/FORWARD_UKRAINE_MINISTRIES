@@ -18,6 +18,8 @@ module.exports = {
         modalOpacity: "rgba(31,41,55,.5)"
       },
       boxShadow: {
+        cardShadow:'-2px 28px 68px 0px rgba(0, 0, 0, 0.05)',
+
         def: " 0px 8px 15px rgba(0, 0, 0, 0.1)",
         hov: "0px 15px 20px rgba(255,228,181, 0.4)",
         hovDonate: "0px 15px 20px rgba(200,200,200, 0.4)",

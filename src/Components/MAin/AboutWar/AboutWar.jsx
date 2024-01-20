@@ -33,7 +33,7 @@ export default function AboutWar() {
                 className=" text-[#4177ec] font-playfair text-sm font-semibold leading-4 tracking-normal text-left"
                 dateTime="2022-10-10"
               >
-                OCTOBER-10-2022
+                DECEMBER-09-2023
               </time>
             </li>
             <li>
