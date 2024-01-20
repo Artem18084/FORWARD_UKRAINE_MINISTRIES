@@ -13,7 +13,7 @@ export default function Main(props) {
     <main className="flex flex-col w-full h-full ">
       <ImpactSection />
       <Evacuation />
-      {/* <AboutWar /> */}
+      <AboutWar />
       <PraySection />
     </main>
   );

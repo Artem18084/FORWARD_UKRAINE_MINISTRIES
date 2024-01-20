@@ -35,24 +35,25 @@ export default function Evacuation() {
   ];
   return (
     <article className="flex flex-col bg-dark-blue">
-      <figure className="max-w-[375px] max-h-[430px] flex items-center justify-center">
+      <figure className=" flex items-center justify-center">
         <img
-          className="max-w-full max-h-full object-contain"
+          className="max-w-[375px] max-h-[430px] object-contain"
           src={evacImg}
           alt="carEvacuation"
         />
       </figure>
-      <section className="flex gap-8 px-12 py-4">
+      <section className="flex gap-8 py-12 px-4">
         <div className="flex flex-col gap-8">
           <ul className="flex flex-col gap-4 border-l-[#fff200] border-l-[1px] pl-4 font-semibold text-sm leading-4 ">
             <li>
               <time
-                className=" text-[#fff200] font-playfair text-lg font-semibold leading-6 tracking-normal text-left"
+                className=" text-[#fff200] font-playfair text-sm font-semibold leading-4 tracking-normal text-left"
                 dateTime="2022-10-10"
               >
-                October 10, 2022
+                OCTOBER-10-2022
               </time>
             </li>
+
             <li>
               <Title title="Evacuation..." color="white" />
             </li>
