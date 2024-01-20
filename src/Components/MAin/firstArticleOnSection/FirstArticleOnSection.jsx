@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../Title/Title";
-import leftCarSide from "../../../images/Disaster/carLeft.png";
-import rightCarSide from "../../../images/Disaster/carRight.png";
+// import leftCarSide from "../../../images/Disaster/carLeft.png";
+// import rightCarSide from "../../../images/Disaster/carRight.png";
 
 export default function FirstArticleOnSection(props) {
   return (

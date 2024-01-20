@@ -1,6 +1,6 @@
 import React from "react";
 import ListItem from "./ListItem/ListItem";
-import CustomLink from "../../CustomLink/CustomLink";
+import CustomLink from "../../Link/CustomLink";
 
 export default function NavList(props) {
   const navList = {
@@ -12,7 +12,7 @@ export default function NavList(props) {
   };
   return (
     <ul
-      className={`flex ${props.flexSidebar} ${props.marginTop} pl-5 justify-center [&>*]:cursor-pointer items-center relative `}
+      className={`flex ${props.flexSidebar} gap-6 items-center ${props.marginTop}  font-playfair text-base font-normal leading-6 tracking-normal  `}
     >
       <CustomLink to="/">
         <ListItem tittle={navList.main} />

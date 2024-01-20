@@ -5,22 +5,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'dark-blue': '#000E30',
+        'dark-blue': '#0E2B6C',
+        'myYellow':'#FFF200',
       },
       screens: {
         '3xl': '1600px', // Define your 3xl breakpoint
         '4xl': '1820px', // Define your 4xl breakpoint
         '5xl': '2100px',
       },
-      // backgroundImage: (theme) => ({
-      //      "bridgeDesk": "url('./images/UnderBridgeDesk.jpg')",
-      //      "bridgeTablet": "url('./images/UnderBridgeTablet.jpg')",
-      //      "bridgePhone": "url('./images/UnderBridgePhone.jpg')",
-      //   "sunsetDesk": "url('./images/sunsetDesk.png')",
-      //   "sunsetTablet": "url('./images/sunsetTablet.svg')",
-      //   "sunsetPhone": "url('./images/sunsetPhone.svg')",
-     
-      // }),
+      
       opacityModal:{
         modalOpacity: "rgba(31,41,55,.5)"
       },

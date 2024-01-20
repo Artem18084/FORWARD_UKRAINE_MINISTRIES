@@ -2,7 +2,7 @@ import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {setStatusSidebar} from "../../Store/Reducers/sidebarChecker";
 
-import NavLinkOrg from "./NavLinkORG/NavLinkOrg";
+// import NavLinkOrg from "./NavLinkORG/NavLinkOrg";
 import NavList from "./NavList/NavList";
 import imgActiveMenu from "../../images/header/activeMenu.png";
 import imgPassiveMenu from "../../images/header/pasiveMenu.png";
@@ -14,8 +14,8 @@ export default function Header() {
 
   return (
     <header className='w-full fixed flex flex-row items-center justify-between backdrop-blur-lg h-[80px] px-5 lg:px-[120px] z-20'>
-      <NavLinkOrg/>
-      <nav className=" max-[768px]:hidden ">
+      {/* <NavLinkOrg/> */}
+      {/* <nav className=" max-[768px]:hidden ">
         <NavList/>
       </nav>
       <button className='w-[100px] h-[36px] bg-white rounded-[40px] max-[768px]:hidden'>
@@ -27,7 +27,7 @@ export default function Header() {
         onClick={() => dispatch(setStatusSidebar(!status))}
         src={!status ? imgPassiveMenu : imgActiveMenu}
         alt="toggleMenu"
-      />
+      /> */}
     </header>
   );
 }
