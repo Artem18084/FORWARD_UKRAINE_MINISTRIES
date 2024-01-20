@@ -9,7 +9,7 @@ export default function PraySection() {
       style={{ backgroundImage: `url(${prayBanner})` }}
     >
       <section className=" flex flex-col  items-center gap-2">
-        <Title title="Pray for ukraine" />
+        <Title title="Pray for ukraine" color="white"/>
         <div className="max-w-[103.5px] w-full h-[1px] bg-myYellow "></div>
       </section>
       <p className="">

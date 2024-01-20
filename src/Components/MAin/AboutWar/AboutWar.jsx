@@ -5,8 +5,14 @@ import aboutWarSolder from "../../../images/AboutWar/aboutWarSolder.png";
 import aboutWarRight from "../../../images/AboutWar/aboutWarRight.png";
 export default function AboutWar() {
   return (
-    <article className=" flex  gap-[3.75rem] px-[7.5rem] py-24 bg-white">
-      <div className="flex  items-center justify-between gap-[3.75rem]">
+    <article className=" flex  bg-white">
+      
+    </article>
+  );
+}
+
+
+{/* <div className="flex  items-center justify-between gap-[3.75rem]">
         <section className="flex flex-col gap-8 font-inter text-base font-light leading-6 tracking-normal text-left ">
           <div className=" flex flex-col items-start gap-4 border-l-[1px] pl-4 border-[#4177ec]">
             <h3 className="leading-4 font-semibold text-[#4177ec]">
@@ -52,7 +58,4 @@ export default function AboutWar() {
             alt="destroyed builds"
           />
         </section>
-      </div>
-    </article>
-  );
-}
+      </div> */}
