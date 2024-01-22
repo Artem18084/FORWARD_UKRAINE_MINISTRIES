@@ -14,7 +14,7 @@ export default function AreaOfWorkCard(props) {
         />
       {/* </figure> */}
       <section className="flex flex-col justify-between h-[259px] px-8 pt-8 pb-10  flex-shrink-0 self-stretch  ">
-        <ul className="flex flex-col  gap-6">
+        <ul className="flex flex-col  gap-4">
           <li>
             <h4 className="font-playfair text-[18px] font-bold leading-[23.4px] tracking-wider text-left uppercase whitespace-nowrap ">
               {title}

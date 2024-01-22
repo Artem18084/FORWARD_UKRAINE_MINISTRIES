@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Title from "../Title/Title";
-import imgVan from "../../../images/Impact/van.png";
-import imgClock from "../../../images/Impact/clock.png";
-import imgPeople from "../../../images/Impact/people.png";
 import ImpactItem from "./ImpactItem/ImpactItem";
+import vanMobile from "../../../images/Impact/vanMobile.svg";
+import peopleMobile from "../../../images/Impact/peopleMobile.svg";
+import historyMobile from "../../../images/Impact/historyMobile.svg";
 
 export default function ImpactSection() {
   const [humanitarianValue, setHumanitarianValue] = useState("");
@@ -12,7 +11,9 @@ export default function ImpactSection() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://bible-gym.pp.ua/api/v1/injection/values");
+        const response = await fetch(
+          "https://bible-gym.pp.ua/api/v1/injection/values"
+        );
         const data = await response.json();
         setHumanitarianValue(+data.humanitarianValue);
         setPeopleReachedValue(+data.peopleReachedValue);
@@ -44,32 +45,33 @@ export default function ImpactSection() {
     const interval = setInterval(async () => {
       await updateServerData();
       fetchData();
-    }, 604800);
+    }, 604800000);
 
     return () => clearInterval(interval);
   }, [humanitarianValue, peopleReachedValue]);
 
   return (
-    <section className="flex flex-col items-center bg-[#000E30] text-white py-4 sm:py-6 md:py-10 lg:py-14 xl:py-20">
-      <Title title="Our impact" />
-
-      <div className="flex w-full h-[25vw] items-center justify-around">
+    <section className=" w-full flex flex-col items-start  justify-center gap-8 self-stretch pt-12 pb-0 px-4 ">
+      <ul className="flex flex-col items-start gap-10 flex-grow-1 flex-shrink-0 flex-basis-0">
         <ImpactItem
-          title="Humanitarian trip"
-          img={imgVan}
-          subTitle={humanitarianValue + " +"}
+          title={humanitarianValue + " +"}
+          src={vanMobile}
+          alt="van"
+          text="Humanitarian trip"
         />
         <ImpactItem
-          title="Active Since"
-          subTitle="21 April 2022"
-          img={imgClock}
+          title="21 April 2022"
+          src={historyMobile}
+          alt="active since"
+          text="Humanitarian trip"
         />
         <ImpactItem
-          title="People reached"
-          img={imgPeople}
-          subTitle={peopleReachedValue + " +"}
+          title={peopleReachedValue + " +"}
+          src={peopleMobile}
+          alt="people"
+          text="Humanitarian trip"
         />
-      </div>
+      </ul>
     </section>
   );
 }
