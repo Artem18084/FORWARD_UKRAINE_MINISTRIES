@@ -14,8 +14,11 @@ module.exports = {
         '5xl': '2100px',
       },
       
-      opacityModal:{
-        modalOpacity: "rgba(31,41,55,.5)"
+      opacity:{
+        modalOpacity: "rgba(31,41,55,.5)",
+        headerOpacity:"( rgba(14, 46, 117, 0.60)",
+
+
       },
       boxShadow: {
         cardShadow:'-2px 28px 68px 0px rgba(0, 0, 0, 0.05)',

@@ -1,11 +1,10 @@
 import React from "react";
 import NavList from "../Header/NavList/NavList";
 
-import logo from "../../images/logo/logo.png";
 import ContactButton from "../UI/DonateButton/ContactButton";
-import facebookLogo from "../../images/footer/facebook.png";
-import instagramLogo from "../../images/footer/instagram.png";
-import whatsappLogo from "../../images/footer/whatsapp.png";
+import facebookLogo from "../../images/social/facebook.png";
+import instagramLogo from "../../images/social/instagram.png";
+import whatsappLogo from "../../images/social/whatsapp.png";
 import NavLinkOrg from "../Link/NavLinkOrg";
 
 export default function Footer(props) {
@@ -16,7 +15,7 @@ export default function Footer(props) {
       <section className=" flex flex-col items-center  gap-6">
         <ul className=" flex flex-col  items-center   gap-4 tracking-normal ">
           <li className=" flex  items-center justify-between h-auto font-playfair text-base font-semibold leading-7  text-white mx-[1.1562rem]">
-            <NavLinkOrg src={logo} />
+            <NavLinkOrg justify="center" />
           </li>
           <li className="font-sans text-base font-semibold leading-8 text-center ">
             <a className="flex gap-1" href="###">
@@ -35,7 +34,7 @@ export default function Footer(props) {
           </li>
         </ul>
         <span className="bg-[#fff200] h-[1px] w-full"></span>
-        <NavList />
+        <NavList flex="flex" />
         <h5 className="text-[#9aaad7]  font-montserrat text-base font-normal leading-17">
           © ForwardUkraineMinistries {currentDate}
         </h5>

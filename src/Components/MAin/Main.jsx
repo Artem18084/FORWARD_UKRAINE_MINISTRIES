@@ -12,10 +12,8 @@ import AreaOfWork from "./AreaOfWork/AreaOfWork";
 export default function Main(props) {
   return (
     <main className="flex flex-col w-full h-full ">
-            <AboutWar />
-
       <ImpactSection />
-      <AreaOfWork/>
+      <AreaOfWork />
       <Evacuation />
       <AboutWar />
       <PraySection />
