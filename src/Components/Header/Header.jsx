@@ -5,14 +5,12 @@ import NavLinkOrg from "../Link/NavLinkOrg";
 import DonateButton from "../UI/DonateButton/DonateButton";
 import NavList from "./NavList/NavList";
 
-import imgActiveMenu from "../../images/header/activeMenu.svg";
 import imgPassiveMenu from "../../images/header/passiveMenu.svg";
 import headerBanner from "../../images/pray/prayBanner.jpg";
 import vectorMobile from "../../images/header/vector.svg";
-import instagramImg from "../../images/social/instagram.png"
-import facebookImg from "../../images/social/facebook.png"
+import instagramImg from "../../images/social/instagram.png";
+import facebookImg from "../../images/social/facebook.png";
 import ContactButton from "../UI/DonateButton/ContactButton";
-
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -23,7 +21,7 @@ export default function Header() {
       className=" relative h-[812px] flex flex-col justify-center items-center text-white bg-center"
       style={{ backgroundImage: `url(${headerBanner})` }}
     >
-      <nav className=" fixed top-0 left-0 flex items-center justify-between w-full h-[100px] px-4 py-10 flex-shrink-0 self-stretch backdrop-blur-[2px] opacity-[.9] bg-dark-blue">
+      <nav className=" fixed top-0 left-0 flex items-center justify-between w-full h-[100px] px-4 py-10 flex-shrink-0 self-stretch backdrop-blur-[2px] opacity-[.9] bg-dark-blue z-40">
         <ul className="flex items-center justify-between w-full">
           <li>
             <NavLinkOrg justify="start" />
@@ -32,7 +30,7 @@ export default function Header() {
             <img
               className="min-[769px]:hidden w-6 h-6 cursor-pointer"
               onClick={() => dispatch(setStatusSidebar(!status))}
-              src={!status ? imgPassiveMenu : imgActiveMenu}
+              src={imgPassiveMenu}
               alt="toggleMenu"
             />
           </li>
@@ -47,7 +45,9 @@ export default function Header() {
               </h4>
             </li>
             <li>
-              <h1 className="flex self-stretch not-italic  font-playfair font-semibold  text-[34px] leading-[47.6px] tracking-wide uppercase">Ukraine needs your support</h1>
+              <h1 className="flex self-stretch not-italic  font-playfair font-semibold  text-[34px] leading-[47.6px] tracking-wide uppercase">
+                Ukraine needs your support
+              </h1>
             </li>
             <li>
               <p className="text-lg leading-[27px] font-normal">
@@ -62,11 +62,10 @@ export default function Header() {
         </section>
         <ul className="flex items-start justify-between gap-4 mb-[-100px]">
           <li>
-          <ContactButton src={instagramImg}/>
+            <ContactButton src={instagramImg} />
           </li>
           <li>
-          <ContactButton src={facebookImg}/>
-
+            <ContactButton src={facebookImg} />
           </li>
           <li>
             <ul className="flex items-center justify-between gap-4">
