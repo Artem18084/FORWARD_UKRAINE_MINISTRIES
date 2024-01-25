@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Title(props) {
   return (
-   <h2 className={` font-playfair text-3xl font-bold leading-9 tracking-tight text-left uppercase  text-${props.color}`}>{props.title}</h2>
-  )
+    <h1 className="flex text-white self-stretch not-italic  font-playfair font-semibold  text-[34px] leading-[47.6px] tracking-wide uppercase">
+   {props.text}
+    </h1>
+  );
 }

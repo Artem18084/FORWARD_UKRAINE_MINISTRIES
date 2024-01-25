@@ -1,6 +1,6 @@
 import React from "react";
-import Title from "../Title/Title";
 import aboutWarSolderMobile from "../../../images/main/AboutWar/aboutWarSolderMobile.png";
+import SubTitle from "../SubTitle/SubTitle";
 export default function AboutWar() {
   const contentData = [
     {
@@ -17,6 +17,7 @@ export default function AboutWar() {
     },
   ];
   return (
+
     <article className=" flex flex-col bg-white text-[#3f424b]">
       <figure className=" flex items-center justify-center">
         <img
@@ -37,13 +38,13 @@ export default function AboutWar() {
               </time>
             </li>
             <li>
-              <Title title="About war..." color="black" />
+              <SubTitle title="About war..." color="black" />
             </li>
           </ul>
           <ul className="flex flex-col gap-4 text-base font-light font-inter">
             {contentData.map((item, index) => (
               <li key={index}>
-                <p className={item.isBold ? "font-normal" : ""}>{item.text}</p>
+                <p className={item.isBold ? "font-bold" : "text-normal"}>{item.text}</p>
               </li>
             ))}
           </ul>

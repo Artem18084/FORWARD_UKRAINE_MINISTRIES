@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import imgCancel from "../../../../images/Report/cancel.png";
+// import imgCancel from "../../../../images/Report/cancel.png";
 import { setStatusModal } from "../../../../Store/Reducers/activeModal";
 
 export default function ReportModal(props) {

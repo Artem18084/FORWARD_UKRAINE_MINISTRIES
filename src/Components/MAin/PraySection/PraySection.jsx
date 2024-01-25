@@ -1,6 +1,6 @@
 import React from "react";
 import prayBanner from "../../../images/pray/prayBanner.jpg";
-import Title from "../Title/Title";
+import Title from "../SubTitle/SubTitle";
 import DonateButton from "../../UI/DonateButton/DonateButton";
 export default function PraySection() {
   return (
@@ -9,7 +9,7 @@ export default function PraySection() {
       style={{ backgroundImage: `url(${prayBanner})` }}
     >
       <section className=" flex flex-col  items-center gap-2">
-        <Title title="Pray for ukraine" color="white"/>
+        <Title title="Pray for ukraine" color="white" />
         <div className="max-w-[103.5px] w-full h-[1px] bg-myYellow "></div>
       </section>
       <p className="">
@@ -18,7 +18,7 @@ export default function PraySection() {
         suffering both within Ukraine and for those who may flee to neighboring
         countries for safety
       </p>
-      <DonateButton helping="Donate" bgColor="myYellow" color="black"/>
+      <DonateButton helping="Donate" bgColor="myYellow" color="black" />
     </article>
   );
 }

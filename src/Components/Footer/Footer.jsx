@@ -34,7 +34,7 @@ export default function Footer(props) {
           </li>
         </ul>
         <span className="bg-[#fff200] h-[1px] w-full"></span>
-        <NavList flex="flex" />
+        <NavList flex="flex" footer="gap-6 items-center"/>
         <h5 className="text-[#9aaad7]  font-montserrat text-base font-normal leading-17">
           © ForwardUkraineMinistries {currentDate}
         </h5>

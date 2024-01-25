@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <div
-      className={`flex flex-col w-full h-full text-base max-[1024px]:text-sm font-normal  `}
+      className={`flex  flex-col w-full h-full text-base max-[1024px]:text-sm font-normal  `}
     >
       <div className=" relative flex flex-col z-40">
         <Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
@@ -27,10 +27,11 @@ export default function App() {
           <Route path="/About" element={<About key="About" />} />
           <Route path="/Team" element={<Team key="Team" />} />
         </Routes>
+
         <Footer />
         <div
-          className={`absolute top-0 left-0  h-full w-full ${
-            statusSidebar ? "bg-[#07215A] bg-opacity-90 z-50" : ""
+          className={`absolute top-0 left-0   h-full w-full ${
+            statusSidebar ? "bg-[#07215A] bg-opacity-90 z-50" : "hidden"
           }`}
         ></div>
       </div>

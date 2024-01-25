@@ -6,7 +6,7 @@ import loveUkraineDesk from "../../../images/love-ukraine.png";
 
 export default function Reports() {
   const reportPhoto = Array.from({ length: 49 }, (_, index) => ({
-    photo: require(`../../../images/Report/report${index + 1}.jpg`).default,
+    photo: require(`../../../images/Routes/Report/report${index + 1}.jpg`).default,
     id: index + 1,
   })).reverse();
 

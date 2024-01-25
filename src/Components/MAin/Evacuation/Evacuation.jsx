@@ -1,6 +1,6 @@
 import React from "react";
 import evacImg from "../../../images/main/evacuation/evacuationMobile.png";
-import Title from "../Title/Title";
+import SubTitle from "../SubTitle/SubTitle";
 
 export default function Evacuation() {
   const contentData = [
@@ -55,7 +55,7 @@ export default function Evacuation() {
             </li>
 
             <li>
-              <Title title="Evacuation..." color="white" />
+              <SubTitle title="Evacuation..." color="white" />
             </li>
           </ul>
           <ul className="flex flex-col gap-4 text-base font-light text-[#9aaad7] font-inter">

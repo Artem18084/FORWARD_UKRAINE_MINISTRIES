@@ -47,7 +47,7 @@ export default function NavList(props) {
 
   return (
     <ul
-      className={`flex ${props.sidebar} gcap-6  itcems-center   font-playfair text-base font-normal leading-6 tracking-normal  `}
+      className={`flex ${props.sidebar} ${props.footer}     font-playfair text-base font-normal leading-6 tracking-normal  `}
     >
       <CustomLink to="/">
         <ListItem tittle={navList.main} text={props.text}/>

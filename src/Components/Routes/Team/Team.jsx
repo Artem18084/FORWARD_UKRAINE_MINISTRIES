@@ -2,15 +2,10 @@ import React from "react";
 import PersonCArd from "./PersonCard/PersonCArd";
 import imgArtem from "../../../images/Team/Artem.jpg";
 import imgAmalia from "../../../images/Team/Amalia.jpg";
-import imgAndrii from "../../../images/Team/Andrii.jpg";
 import imgYana from "../../../images/Team/Yana.JPG";
-import imgVadim from "../../../images/Team/Vadim.jpg";
-import imgJulia from "../../../images/Team/Julia.jpg";
-import imgIllya from "../../../images/Team/Iliya.jpg";
-import imgVika from "../../../images/Team/Vika.jpg";
+
 import imgAngelina from "../../../images/Team/Angelina.JPG";
-import imgAlyona from "../../../images/Team/Alyona.JPG";
-import imgRuslana from "../../../images/Team/Ruslana.jpg";
+
 import imgIgor from "../../../images/Team/Igor.jpg";
 import imgOleg from "../../../images/Team/Oleg.jpg";
 import imgEugene from "../../../images/Team/Eugene.jpg";
@@ -35,15 +30,7 @@ export default function Team() {
       gmail: "amaliavardanan805@gmail.com",
       telegram: "https://t.me/amaliiavard",
     },
-    "Andrii Yablonskii": {
-      key: 3,
-      name: "Andrii Yablonskii",
-      inst: "https://instagram.com/yablonskii.a?igshid=MDM4ZDc5MmU=",
-      facebook:
-        "https://www.facebook.com/friends/requests/?profile_id=100046212093353",
-      gmail: "",
-      telegram: "https://t.me/yablonskii",
-    },
+    
     "Yana Kravchenko": {
       key: 4,
       name: "Yana Kravchenko",
@@ -52,22 +39,7 @@ export default function Team() {
       gmail: "mailto:ykravchenko94@gmail.com",
       telegram: "https://t.me/kr_yankaaa",
     },
-    "Vadim Kravchenko": {
-      key: 5,
-      name: "Vadim Kravchenko",
-      inst: "https://instagram.com/vadim_k.r",
-      facebook: "https://www.facebook.com/profile.php?id=100009597649534",
-      gmail: "mailto:vadimkravchenko179@gmail.com",
-      telegram: "https://t.me/vadim_kravchenk0",
-    },
-    "Julia Badya": {
-      key: 6,
-      name: "Julia Badya",
-      inst: "https://www.instagram.com/julia.badya351",
-      facebook: "https://www.facebook.com/profile.php?id=100013677225309",
-      gmail: "juliabadya351@gmail.com",
-      telegram: "https://t.me/juliabadya",
-    },
+    
     "Iliya Rochev": {
       key: 7,
       name: "Ilia Rochev",
@@ -76,14 +48,7 @@ export default function Team() {
       gmail: "",
       telegram: "https://t.me/IL_204",
     },
-    "Vika Lemberg": {
-      key: 8,
-      name: "Vika Lemberg",
-      inst: "https://instagram.com/_fortsessou?igshid=N2ZiY2E3YmU=",
-      facebook: "https://www.facebook.com/profile.php?id=100048788085684",
-      gmail: "",
-      telegram: "https://t.me/fortsessou",
-    },
+    
     "Angelina Vardanian": {
       key: 9,
       name: "Angelina Vardanian",
@@ -92,22 +57,8 @@ export default function Team() {
       gmail: "",
       telegram: "https://t.me/enj_vard",
     },
-    "Alyona Snigur": {
-      key: 10,
-      name: "Alyona Snigur",
-      inst: "https://www.instagram.com/alyonkaa_s",
-      facebook: "",
-      gmail: "",
-      telegram: "https://telegram.me/alyonkaaa_s",
-    },
-    "Ruslana Lagno": {
-      key: 11,
-      name: "Ruslana Lagno",
-      inst: "https://instagram.com/lagnoruslana",
-      facebook: "https://www.facebook.com/profile.php?id=100037441245962",
-      gmail: "",
-      telegram: "https://telegram.me/lagnoruslana",
-    },
+   
+   
     "Yevgeniy Ustenko": {
       key: 12,
       name: "Yevgeniy Ustenko",
@@ -199,7 +150,7 @@ export default function Team() {
         />
         <PersonCArd
           src={imgArtem}
-          alt="Me"
+          alt="Artem"
           key={team["Artem Kosharnyi"].key}
           name={team["Artem Kosharnyi"].name}
           instagram={team["Artem Kosharnyi"].inst}

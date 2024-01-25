@@ -1,86 +1,65 @@
 import React from "react";
+import RoutUnderHeader from "../RoutUnderHeader";
 
-import imgHands from "../../../images/Needs/hands.png";
-import imgHandsPhone from "../../../images/Needs/handsPhone.png";
+import aboutImg from "../../../images/Routes/About/about.jpg";
+import SubTitle from "../../MAin/SubTitle/SubTitle";
 
-import igmGroupLeft from "../../../images/Needs/leftSidePhoto.png";
-import imgMen from "../../../images/Report/report26.jpg";
-import imgPeopleRight from "../../../images/Needs/rightSidePhoto.png";
+import leftImgMobile from "../../../images/Routes/About/AboutImages/leftImageMobile.png";
+import mainImgMobile from "../../../images/Routes/About/AboutImages/mainImagesMobile.png"
+
+import rightImgMobile from "../../../images/Routes/About/AboutImages/rightImageMobile.png";
 
 export default function About() {
+  const contentData = [
+    {
+      text: `Who are we? "Forward, Ukraine" Ministries is a 501(c)3 non-profit organization that supports Ukrainians in need. We want to take Ukraine forward in small steps. A small victory in someone's life is a victory for the great Ukraine.`,
+      isBold: true,
+    },
+    {
+      text: `We want to help Ukrainians to live better, get out of poverty, get an education and get a chance to improve their lives. We try to help people who suffer daily from military aggression, for whom every day can be the last, we have already made a large number of humanitarian trips to some of the hottest spots in Ukraine.`,
+      isBold: false,
+    },
+    {
+      text: `Thanks to caring people, without whom we could not do this, we have been able to help thousands of people and we are helping now and encourage you to do the same, everyone can be useful where they are. At the very beginning of the war, we were involved in the evacuation of people to safe places, and we also try to help people who are left without heat due to the constant shelling of the enemy - firewood, and those who are unable. to process it, our team fully prepares it for use by these people. If you don't know how you can help Ukraine, then you've come to the right place!`,
+      isBold: false,
+    },
+  ];
+
   return (
-    <main className="relative w-full  flex flex-col  items-center  text-black  item-center justify-center  bg-white ">
-      <img
-        src={imgHands}
-        alt="mainImg"
-        className="absolute top-0  right-0 z-0 w-full hidden   md:block"
-      />
-
-      <img
-        src={imgHandsPhone}
-        alt="mainImg"
-        className="absolute top-0  right-0 z-0  w-full md:hidden h-[100vh]"
-      />
-      <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl   font-semibold md:font-normal uppercase pt-10">
-        Who we are{" "}
-      </h1>
-
-      <div className=" z-10  hidden md:flex relative w-full   flex-col items-center text-white md:pt-[5rem] lg:pt-[10rem]  ">
-        <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
-          Who we are{" "}
-        </h1>
-      </div>
-
-      <section className="xl:flex items-center justify-center mt-[105vh]   md:mt-[20vw] lg:mt-[15vw] xl:mt-[20vw] 2xl:mt-[20vw]  5xl:mt-[23vw]  w-full">
-        <article className="xl:w-[50vw] flex  items-center xl:items-start flex-col pl-16  md:px-8 max-[768px]:px-6 pb-10 xl:pb-20 text-sm xl:text-base  ">
-          <h2 className="text-xl md:text-3xl font-semibold mb-5">About us</h2>
-          <p className="mb-5 font-bold ">
-            Who are we? "Forward, Ukraine" Ministries is a 501(c)3 non-profit
-            organization that supports Ukrainians in need. We want to take
-            Ukraine forward in small steps. A small victory in someone's life is
-            a victory for the great Ukraine.
-          </p>
-
-          <p className="mb-5 ">
-            {" "}
-            We want to help Ukrainians to live better, get out of poverty, get
-            an education and get a chance to improve their lives. We try to help
-            people who suffer daily from military aggression, for whom every day
-            can be the last, we have already made a large number of humanitarian
-            trips to some of the hottest spots in Ukraine.
-          </p>
-
-          <p className="">
-            {" "}
-            Thanks to caring people, without whom we could not do this, we have
-            been able to help thousands of people and we are helping now and
-            encourage you to do the same, everyone can be useful where they are.
-            At the very beginning of the war, we were involved in the evacuation
-            of people to safe places, and we also try to help people who are
-            left without heat due to the constant shelling of the enemy -
-            firewood, and those who are unable. to process it, our team fully
-            prepares it for use by these people. If you don't know how you can
-            help Ukraine, then you've come to the right place!
-          </p>
-        </article>
-        <div className=" flex items-center justify-center xl:w-[45vw] mb-5 md:mb-10   ">
+    <main className="flex flex-col items-center">
+      <RoutUnderHeader title="who we are" banner={aboutImg} />
+      <article className="flex flex-col gap-8 items-center justify-center self-stretch px-4 py-16">
+        <div className="flex items-center justify-center w-[343px] h-[270px] mx-auto relative">
           <img
-            src={igmGroupLeft}
-            alt="people "
-            className=" xl:w-[6vw] xl:h-[40vh] md:h-[40vh] w-[10vw] h-[25vh] rounded-l-xl "
+            className="absolute left-0 w-[167.52908px] h-[221.63086px]"
+            src={leftImgMobile}
+            alt=""
           />
+
+          <img className="z-20 w-[225.67px] h-[269.45px]" src={mainImgMobile} alt="" />
+
           <img
-            src={imgMen}
-            alt="men"
-            className="  xl:w-[25vw] md:h-[50vh] md:w-[60vw] xl:h-[55vh] w-[45vw] h-[30vh] rounded-xl "
-          />
-          <img
-            src={imgPeopleRight}
-            alt="group  "
-            className=" xl:w-[6vw] md:h-[40vh] xl:h-[40vh] w-[10vw] h-[25vh] rounded-r-xl"
+            className="absolute right-0 w-[167.52908px] h-[221.63086px]"
+            src={rightImgMobile}
+            alt=""
           />
         </div>
-      </section>
+
+        <section className="flex flex-col items-start gap-[29.793px]">
+          <div className="pl-4 border-l-[1px] border-l-[#4177EC] ">
+            <SubTitle color="black" title="About us" />
+          </div>
+          <ul className="flex flex-col items-start gap-[14.897px] self-stretch text-base leading-6 text-[#3F424B] font-inter ">
+            {contentData.map((item, index) => (
+              <li key={index}>
+                <p className={item.isBold ? "font-bold " : "text-light"}>
+                  {item.text}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </article>
     </main>
   );
 }

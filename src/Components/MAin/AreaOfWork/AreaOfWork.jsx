@@ -1,6 +1,6 @@
 import React from "react";
 import AreaOfWorkCard from "./AreaOfWorkCard/AreaOfWorkCard";
-import Title from "../Title/Title";
+import Title from "../SubTitle/SubTitle";
 import volunteerMobImg from "../../../images/main/areaOfWork/volunteerMob.png";
 import churchMinistriesMobImg from "../../../images/main/areaOfWork/churchMinistriesMobile.png";
 
