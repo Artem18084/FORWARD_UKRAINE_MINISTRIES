@@ -7,6 +7,7 @@ module.exports = {
       backgroundColor: {
         'dark-blue': '#0E2B6C',
         'myYellow':'#FFF200',
+        'mainBlue':'#4177ec',
       },
       screens: {
         '3xl': '1600px', // Define your 3xl breakpoint

@@ -1,16 +1,15 @@
 import React from "react";
 import PersonCArd from "./PersonCard/PersonCArd";
+import RoutUnderHeader from "../RoutUnderHeader";
+import teamBanner from "../../../images/Routes/Team/team.jpg"
+
 import imgArtem from "../../../images/Team/Artem.jpg";
 import imgAmalia from "../../../images/Team/Amalia.jpg";
 import imgYana from "../../../images/Team/Yana.JPG";
-
 import imgAngelina from "../../../images/Team/Angelina.JPG";
-
 import imgIgor from "../../../images/Team/Igor.jpg";
 import imgOleg from "../../../images/Team/Oleg.jpg";
 import imgEugene from "../../../images/Team/Eugene.jpg";
-import imgTeamMain from "../../../images/Team/TeamMAin.png";
-import imgTeamMainPhone from "../../../images/Team/TeamMAinPhone.png";
 
 export default function Team() {
   const team = {
@@ -85,26 +84,12 @@ export default function Team() {
     },
   };
   return (
-    <main className="flex flex-col items-center justify-center  px-[5vw] w-full h-full bg-white  relative">
-      <img
-        src={imgTeamMain}
-        alt="mainImg"
-        className="absolute top-0  right-0 z-0 w-full hidden md:block"
-      />
-      <img
-        src={imgTeamMainPhone}
-        alt="mainImg"
-        className="absolute top-0  right-0 z-0  w-full md:hidden h-[100vh]"
-      />
-      <h1 className=" md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%] z-10 xl:text-9xl lg:text-4xl  text-2xl whitespace-nowrap	  font-semibold md:font-normal uppercase pt-10">
-        We are the team{" "}
-      </h1>
-      <div className=" z-10  hidden md:flex relative w-full   flex-col items-center text-white md:pt-[5rem] lg:pt-[10rem]  ">
-        <h1 className=" xl:text-6xl lg:text-4xl md:text-2xl text-xl   font-semibold md:font-normal uppercase pt-10">
-          We are the team{" "}
-        </h1>
-      </div>
-      <section className="  mt-[105vh]  md:mt-[20vw] lg:mt-[15vw] xl:mt-[20vw] 2xl:mt-[20vw]  5xl:mt-[23vw] flex flex-wrap   w-full [&>*]:mr-[5%]  max-[768px]:[&>*]:mr-[3.3333333333333333333333333333333%] [&>*]:mb-[5%] max-[768px]:[&>*]:mb-[3.3333333333333333333333333333333%]  max-[768px]:[&>*]:pt-[3.3333333333333333333333333333333%] pl-[5%] max-[768px]:[&>*]:pl-[3.3333333333333333333333333333333%]">
+    <main className="  relative">
+      <RoutUnderHeader title="we are the team " banner={teamBanner} />
+
+      <section className="   flex flex-col items-center justify-center self-stretch px-4 py-8 gap-[60px]">
+        <div className=" w-full flex flex-row justify-center  flex-wrap gap-6">
+
         <PersonCArd
           src={imgEugene}
           alt="Yevgeniy"
@@ -180,8 +165,17 @@ export default function Team() {
           gmail={team["Igor Cherevichniy"].gmail}
           telegram={team["Igor Cherevichniy"].telegram}
         />
-        
+                </div>
+
       </section>
     </main>
   );
 }
+
+
+// <main className="relative">
+// <section className=" ">
+//   <div className=" w-full flex flex-row justify-center flex-wrap gap-6" >{reportItems}</div>
+//   <ReportModal reportPhoto={reportPhoto} />
+// </section>
+// </main>
