@@ -1,12 +1,14 @@
 import React from "react";
 import ReportItem from "./ReportItem/ReportItem";
 import ReportModal from "./ReportModal/ReportModal";
-import loveUkraine from "../../../images/love-ukrainePhone.png";
-import loveUkraineDesk from "../../../images/love-ukraine.png";
+import RoutUnderHeader from "../RoutUnderHeader";
+
+import reportBanner from "../../../images/Routes/Report/reports.jpg";
 
 export default function Reports() {
   const reportPhoto = Array.from({ length: 49 }, (_, index) => ({
-    photo: require(`../../../images/Routes/Report/report${index + 1}.jpg`).default,
+    photo: require(`../../../images/Routes/Report/report${index + 1}.jpg`)
+      .default,
     id: index + 1,
   })).reverse();
 
@@ -22,26 +24,9 @@ export default function Reports() {
 
   return (
     <main className="relative">
-      <img
-        src={loveUkraineDesk}
-        alt="love"
-        className="absolute top-0 right-0 z-0 w-full hidden md:block "
-      />
-      <img
-        src={loveUkraine}
-        alt="love"
-        className="absolute top-0 right-0 z-0 w-full md:hidden h-[100vh]"
-      />
-      <h1 className="md:hidden absolute text-white top-[45vh] right-[50%] translate-x-[50%]  xl:text-9xl lg:text-4xl text-2xl font-semibold md:font-normal uppercase pt-10">
-        Our Reports
-      </h1>
-      <div className=" hidden md:flex relative w-full flex-col items-center text-white md:pt-[5rem] lg:pt-[10rem]">
-        <h1 className="xl:text-6xl lg:text-4xl md:text-2xl text-xl font-semibold md:font-normal uppercase pt-10">
-          Our Report
-        </h1>
-      </div>
-      <section className="mt-[105vh]  md:mt-[20vw] lg:mt-[15vw] xl:mt-[20vw] 2xl:mt-[20vw]  5xl:mt-[23vw]  pt-30 w-full flex flex-row justify-center flex-wrap">
-        {reportItems}
+      <RoutUnderHeader title="our reports" banner={reportBanner} />
+      <section className="  flex flex-col items-center justify-center self-stretch px-4 py-8 gap-[60px]">
+        <div className=" w-full flex flex-row justify-center flex-wrap gap-6" >{reportItems}</div>
         <ReportModal reportPhoto={reportPhoto} />
       </section>
     </main>
