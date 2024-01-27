@@ -10,9 +10,9 @@ module.exports = {
         'mainBlue':'#4177ec',
       },
       screens: {
-        '3xl': '1600px', // Define your 3xl breakpoint
-        '4xl': '1820px', // Define your 4xl breakpoint
-        '5xl': '2100px',
+        'sm': '376x', 
+        'md':'769px',
+        'l':'1025px',
       },
       
       opacity:{
