@@ -5,7 +5,7 @@ import aboutImg from "../../../images/Routes/About/about.jpg";
 import SubTitle from "../../MAin/SubTitle/SubTitle";
 
 import leftImgMobile from "../../../images/Routes/About/AboutImages/leftImageMobile.png";
-import mainImgMobile from "../../../images/Routes/About/AboutImages/mainImagesMobile.png"
+import mainImgMobile from "../../../images/Routes/About/AboutImages/mainImagesMobile.png";
 
 import rightImgMobile from "../../../images/Routes/About/AboutImages/rightImageMobile.png";
 
@@ -28,24 +28,8 @@ export default function About() {
   return (
     <main className="flex flex-col items-center">
       <RoutUnderHeader title="who we are" banner={aboutImg} />
-      <article className="flex flex-col gap-8 items-center justify-center self-stretch px-4 py-16">
-        <div className="flex items-center justify-center w-[343px] h-[270px] mx-auto relative">
-          <img
-            className="absolute left-0 w-[167.52908px] h-[221.63086px]"
-            src={leftImgMobile}
-            alt=""
-          />
-
-          <img className="z-20 w-[225.67px] h-[269.45px]" src={mainImgMobile} alt="" />
-
-          <img
-            className="absolute right-0 w-[167.52908px] h-[221.63086px]"
-            src={rightImgMobile}
-            alt=""
-          />
-        </div>
-
-        <section className="flex flex-col items-start gap-[29.793px]">
+      <article className="flex flex-col-reverse sm:flex-col md:flex-row   gap-8 sm:gap-[24px] l:gap-[110px]  items-center justify-center self-stretch px-4 sm:px-9 md:px-11 l:px-[72px] py-16 sm:py-[72px] md:py-[96px] ">
+        <section className=" w-full md:w-[455px] l:w-[526px] flex flex-col items-start md:items-center md:justify-center gap-[29.793px]">
           <div className="pl-4 border-l-[1px] border-l-[#4177EC] ">
             <SubTitle color="black" title="About us" />
           </div>
@@ -59,6 +43,25 @@ export default function About() {
             ))}
           </ul>
         </section>
+        <div className="flex items-center justify-center w-[343px] sm:w-[696px] md:w-[642px]  h-[270px] sm:h-[546px] md:h-[504px]  mx-au to relative">
+          <img
+            className="absolute left-0 w-[167.52px] sm:w-[339.72px] md:w-[313.36px]  h-[221.63px] sm:h-[448.82px]  md:h-[414px]  "
+            src={leftImgMobile}
+            alt=""
+          />
+
+          <img
+            className="z-20 w-[225.67px] h-[269.45px] sm:w-[457.61px] md:w-[246px] l:w-[422.21px]   sm:h-[546.39px] md:h-[504px]"
+            src={mainImgMobile}
+            alt=""
+          />
+
+          <img
+            className="absolute right-0 w-[167.52px] sm:w-[339.72px] md:w-[313.36px]  h-[221.63px] sm:h-[448.82px]  md:h-[414px] "
+            src={rightImgMobile}
+            alt=""
+          />
+        </div>
       </article>
     </main>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-// import BridgeSection from "./BridgeSection/BridgeSection";
 import ImpactSection from "./ImpactSection/ImpactSection";
 import AboutWar from "./AboutWar/AboutWar";
 import PraySection from "./PraySection/PraySection";
