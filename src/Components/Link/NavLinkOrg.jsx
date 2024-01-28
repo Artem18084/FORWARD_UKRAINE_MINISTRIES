@@ -10,7 +10,7 @@ export default function NavLinkOrg(props) {
     >
       <figure className={`flex items-center justify-${props.justify} gap-3  min-w-[306px] text-center`}>
         <img src={logoMobile} alt="logo" className="max-w-10 h-10" />
-        <figcaption className=" h-[24px] text-center">
+        <figcaption className=" h-[24px] text-center font-playfair text-[20px]   leading-[28px] font-semibold">
           Forward Ukraine Ministries
         </figcaption>
       </figure>
