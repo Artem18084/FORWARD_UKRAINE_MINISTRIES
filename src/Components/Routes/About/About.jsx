@@ -28,22 +28,8 @@ export default function About() {
   return (
     <main className="flex flex-col items-center">
       <RoutUnderHeader title="who we are" banner={aboutImg} />
-      <article className="flex flex-col-reverse sm:flex-col md:flex-row   gap-8 sm:gap-[24px] l:gap-[110px]  items-center justify-center self-stretch px-4 sm:px-9 md:px-11 l:px-[72px] py-16 sm:py-[72px] md:py-[96px] ">
-        <section className=" w-full md:w-[455px] l:w-[526px] flex flex-col items-start md:items-center md:justify-center gap-[29.793px]">
-          <div className="pl-4 border-l-[1px] border-l-[#4177EC] ">
-            <SubTitle color="black" title="About us" />
-          </div>
-          <ul className="flex flex-col items-start gap-[14.897px] self-stretch text-base leading-6 text-[#3F424B] font-inter ">
-            {contentData.map((item, index) => (
-              <li key={index}>
-                <p className={item.isBold ? "font-bold " : "text-light"}>
-                  {item.text}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </section>
-        <div className="flex items-center justify-center w-[343px] sm:w-[696px] md:w-[642px]  h-[270px] sm:h-[546px] md:h-[504px]  mx-au to relative">
+      <article className="flex flex-col sm:flex-col-reverse md:   gap-8 sm:gap-[24px] l:gap-[110px]  items-center justify-center self-stretch px-4 sm:px-9 md:px-11 l:px-[72px] py-16 sm:py-[72px] md:py-[96px] ">
+      <div className="flex items-center justify-center w-[343px] sm:w-[696px] md:w-[642px]  h-[270px] sm:h-[546px] md:h-[504px]  mx-au to relative">
           <img
             className="absolute left-0 w-[167.52px] sm:w-[339.72px] md:w-[313.36px]  h-[221.63px] sm:h-[448.82px]  md:h-[414px]  "
             src={leftImgMobile}
@@ -62,6 +48,22 @@ export default function About() {
             alt=""
           />
         </div>
+        
+        <section className=" w-full md:w-[455px] l:w-[526px] flex flex-col items-start md:items-center md:justify-center gap-[29.793px]">
+          <div className="pl-4 border-l-[1px] border-l-[#4177EC] ">
+            <SubTitle color="black" title="About us" />
+          </div>
+          <ul className="flex flex-col items-start gap-[14.897px] self-stretch text-base leading-6 text-[#3F424B] font-inter ">
+            {contentData.map((item, index) => (
+              <li key={index}>
+                <p className={item.isBold ? "font-bold " : "text-light"}>
+                  {item.text}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+       
       </article>
     </main>
   );
