@@ -62,7 +62,9 @@ export default function AreaOfWork() {
   ];
 
   return (
-    <article className="flex flex-col gap-8 md:gap-12 lg:gap-[60px]  py-12 md:py-[72px] lg:py-24 px-4 md:px-9 lg:px-11 xl:px-[72px] bg-white">
+    <div className="flex items-center justify-center">
+     
+    <article className="flex flex-col  gap-8 md:gap-12 lg:gap-[60px]  py-12 md:py-[72px] lg:py-24 px-4 md:px-9 lg:px-11 xl:px-[72px] bg-white max-w-[1440px]">
       <section className="flex flex-col items-center gap-2">
         <Title title="Areas of work" color="black" />
         <div className="w-[103.5px] h-[1px] bg-[#4177ec]"></div>
@@ -77,5 +79,6 @@ export default function AreaOfWork() {
         ))}
       </ul>
     </article>
+    </div>
   );
 }

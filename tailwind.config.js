@@ -9,11 +9,11 @@ module.exports = {
         'myYellow':'#FFF200',
         'mainBlue':'#4177ec',
       },
-      // screens: {
-      //   'sm': '376x', 
-      //   'md':'769px',
-      //   'l':'1025px',
-      // },
+      screens: {
+       'my2xl':'1400px',
+       'my1920':'1920px',
+        'betweenMDLG':'900px',
+      },
       
       opacity:{
         modalOpacity: "rgba(31,41,55,.5)",

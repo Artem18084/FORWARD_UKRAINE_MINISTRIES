@@ -34,7 +34,9 @@ export default function Evacuation() {
     },
   ];
   return (
-    <article className="lg:min-h-[1098px] flex flex-col lg:items-center lg:flex-row bg-dark-blue md:gap-[72px] lg:gap-6 xl:gap-[110px]">
+    <div className="flex items-center justify-center bg-dark-blue">
+
+    <article className="lg:min-h-[1098px] flex flex-col lg:items-center lg:flex-row bg-dark-blue md:gap-[72px] lg:gap-6 xl:gap-[110px] max-w-[1440px]">
        <img
   className="w-full h-full lg:w-[500px] xl:w-[622px]  overflow-hidden object-cover"
   src={evacImg}
@@ -67,5 +69,6 @@ export default function Evacuation() {
         </div>
       </section>
     </article>
+    </div>
   );
 }

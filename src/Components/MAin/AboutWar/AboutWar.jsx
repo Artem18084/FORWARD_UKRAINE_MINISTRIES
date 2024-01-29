@@ -21,8 +21,10 @@ export default function AboutWar() {
     },
   ];
   return (
-    <article className=" flex flex-col md:flex-col-reverse lg:flex-row-reverse lg:items-center lg:justify-between bg-white text-[#3f424b] md:gap-[40px] lg:gap-[60px] md:px-9 lg:px-11 xl:px-[72px] md:py-[72px] lg:py-24">
-      <div className=" flex items-center justify-center md:gap-6 md:max-h-[433.945px]  lg:max-w-[438px] xl:max-w-[618px] rounded-[12px]">
+    <div className="flex items-center justify-center">
+
+    <article className=" flex flex-col md:flex-col-reverse lg:flex-row-reverse lg:items-center lg:justify-between bg-white text-[#3f424b] md:gap-[40px] lg:gap-[60px] md:px-9 lg:px-11 xl:px-[72px] md:py-[72px] lg:py-24 max-w-[1440px]">
+      <div className=" flex items-center justify-center md:gap-6 md:max-h-[433.945px]  lg:max-w-[438px] xl:max-w-[618px]  rounded-[12px]">
         <img
           className="  hidden md:block md:max-w-[96.64px] lg:max-w-[60.8px] xl:max-w-[85.81px] md:h-[356.45px]  leading-[12px]"
           src={leftDestroyed}
@@ -82,5 +84,6 @@ export default function AboutWar() {
         </div>
       </section>
     </article>
+    </div>
   );
 }
