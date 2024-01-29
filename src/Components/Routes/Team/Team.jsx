@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import PersonCard from "./PersonCard/PersonCard";
 import RoutUnderHeader from "../RoutUnderHeader";
@@ -88,8 +87,8 @@ export default function Team() {
     <main className="flex flex-col">
       <RoutUnderHeader title="we are the team" banner={teamBanner} />
 
-      <section className="flex flex-col items-center justify-center self-stretch px-4 sm:px-11 l:px-[72px] py-[48px] sm:py-[72px] md:py-[96px] gap-[60px]">
-        <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 l:gap-12 ">
+      <section className="flex flex-col items-center justify-center self-stretch py-[48px] sm:py-[72px] md:py-[96px] gap-[60px]">
+        <div className="w-full flex flex-wrap justify-center gap-[24px] md:gap-y-[60px] px-4 md:px-[44px] lg:px-[44px] xl:px-[72px]">
           {team.map((member) => (
             <PersonCard
               key={member.key}

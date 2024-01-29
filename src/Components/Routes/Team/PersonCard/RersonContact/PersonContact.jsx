@@ -2,7 +2,7 @@ import React from "react";
 import PersonalContactItem from "./PersonalContactItem/PersonalContactItem";
 
 import facebookImg from "../../../../../images/Routes/Team/TeamSocial/facebook.svg";
-import instagramImg from "../../../../../images/Routes/Team/TeamSocial/instagram.svg";
+import instagramImg from "../../../../../images/Routes/Team/TeamSocial/Instagram.svg";
 import mailImg from "../../../../../images/Routes/Team/TeamSocial/mail.svg";
 
 export default function PersonContact(props) {

@@ -1,5 +1,5 @@
 import React from "react";
-import evacImg from "../../../images/main/evacuation/evacuationMobile.png";
+import evacImg from "../../../images/main/evacuation/evacuationCar.png";
 import SubTitle from "../SubTitle/SubTitle";
 
 export default function Evacuation() {
@@ -34,16 +34,15 @@ export default function Evacuation() {
     },
   ];
   return (
-    <article className="flex flex-col bg-dark-blue">
-      <figure className=" flex items-center justify-center">
-        <img
-          className="max-w-[375px] max-h-[430px] object-contain"
-          src={evacImg}
-          alt="carEvacuation"
-        />
-      </figure>
-      <section className="flex gap-8 py-12 px-4">
-        <div className="flex flex-col gap-8">
+    <article className="lg:min-h-[1098px] flex flex-col lg:items-center lg:flex-row bg-dark-blue md:gap-[72px] lg:gap-6 xl:gap-[110px]">
+       <img
+  className="w-full h-full lg:w-[500px] xl:w-[622px]  overflow-hidden object-cover"
+  src={evacImg}
+  alt="carEvacuation"
+/>
+
+      <section className="flex  gap-[60px] py-12 px-4 md:px-9 md:pb-[72px] md:pt-0 lg:py-0 lg:pl-0 lg:pr-11 xl:pr-[72px]">
+        <div className="flex flex-col gap-8 lg:py-24">
           <ul className="flex flex-col gap-4 border-l-[#fff200] border-l-[1px] pl-4 font-semibold text-sm leading-4 ">
             <li>
               <time
