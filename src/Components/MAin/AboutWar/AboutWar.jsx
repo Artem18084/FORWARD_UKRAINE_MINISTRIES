@@ -31,6 +31,7 @@ export default function AboutWar() {
           alt="leftHouseDestroyed"
         />
         <img
+        
           src={solder}
           alt="solder"
           className="w-full md:max-w-[457.42px] lg:max-w-[287.86px] xl:max-w-[406.15px] md:h-[433.94px]  md:leading-[12px] rounded-[12px]"
@@ -41,21 +42,7 @@ export default function AboutWar() {
           alt="rightHouseDestroyed"
         />
 
-        {/* <img
-          className=" hidden md:block md:max-w-[96.64px] lg:max-w-[60.8px] xl:max-w-[85.81px] h-3/4  leading-[12px]"
-          src={leftDestroyed}
-          alt="leftHouseDestroyed"
-        />
-        <img
-          src={solder}
-          alt="solder"
-          className="w-full md:max-w-[457.42px] lg:max-w-[287.86px] xl:max-w-[406.15px]  md:leading-[12px] h-full rounded-[12px]"
-        />
-        <img
-          className=" hidden md:block md:max-w-[96.64px] lg:max-w-[60.8px] xl:max-w-[85.81px]  h-3/4   leading-[12px]"
-          src={rightDestroyed}
-          alt="rightHouseDestroyed"
-        /> */}
+      
       </div>
       <section className="flex gap-[60px] py-12 px-4 md:py-0 md:px-0 lg:max-w-[438px] xl:max-w-[618px] ">
         <div className="flex flex-col gap-8">

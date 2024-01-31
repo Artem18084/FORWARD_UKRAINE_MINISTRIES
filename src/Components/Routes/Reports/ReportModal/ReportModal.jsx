@@ -52,12 +52,12 @@ export default function ReportModal(props) {
         !activeModal ? "hidden" : "flex"
       }`}
     >
-      <div className="relative mt-[100px]">
+      <div className="">
         <img
           src={photoFiltered[0].photo}
-          alt="people"
+          alt="reportPhoto"
           style={{ width: modalWidth, height: modalHeight }}
-          className="opacity-100"
+          className=""
         />
       </div>
     </div>

@@ -15,12 +15,12 @@ export default function UnderHeaderSection() {
     <div className="flex items-center justify-center bg-dark-blue overflow-hidden">
       {" "}
       <article
-        className="  h-[812px] md:h-[900px] flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start text-white bg-center relative overflow-hidden  w-full  max-w-[1440"
+        className="  h-[812px] md:h-[900px] flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start bg-center relative overflow-hidden  w-full  max-w-[1440"
         style={{ backgroundImage: `url(${headerBanner})` }}
       >
         <article className="flex flex-col justify-center h-full items-start gap-16 md:gap-[88px]  w-full md:w-[50vw] xl:w-[600px] my2xl:w-[750px]  2xl:w-[45vw] py-0 px-4 md:px-0 md:pl-9 lg:pl-11 xl:pl-[72px] 2xl:pl-[10vw] font-normal">
           <section className="flex flex-col justify-center items-start gap-16 md:gap-12 self-stretch">
-            <ul className="flex flex-col items-start gap-6 self-stretch">
+            <ul className="flex flex-col items-start gap-6 self-stretch text-white">
               <li>
                 <h4 className="uppercase leading-[19.2px] text-[#fff200] font-normal text-base">
                   forward ukraine ministries
@@ -38,7 +38,7 @@ export default function UnderHeaderSection() {
                 </p>
               </li>
             </ul>
-            <DonateButton bgColor="myYellow" color="black" helping="Donate" />
+            <DonateButton  />
           </section>
           <ul className="flex items-start justify-between gap-4 mb-[-100px]">
             <li>
@@ -48,7 +48,7 @@ export default function UnderHeaderSection() {
               <ContactButton src={facebookImg} />
             </li>
             <li>
-              <ul className="flex items-center justify-between gap-4">
+              <ul className="flex items-center justify-between gap-4 text-white">
                 <li className="uppercase">Follow us</li>
                 <li className="">
                   <figure>

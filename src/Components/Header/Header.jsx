@@ -2,15 +2,10 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setStatusSidebar } from "../../Store/Reducers/sidebarChecker";
 import NavLinkOrg from "../Link/NavLinkOrg";
-import DonateButton from "../UI/DonateButton/DonateButton";
-import NavList from "./NavList/NavList";
+
 
 import imgPassiveMenu from "../../images/header/passiveMenu.svg";
-import headerBanner from "../../images/pray/prayBanner.jpg";
-import vectorMobile from "../../images/header/vector.svg";
-import instagramImg from "../../images/social/instagram.png";
-import facebookImg from "../../images/social/facebook.png";
-import ContactButton from "../UI/DonateButton/ContactButton";
+
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -35,21 +30,3 @@ export default function Header() {
   );
 }
 
-{
-  /* <NavLinkOrg/> */
-}
-{
-  /* <nav className=" max-[768px]:hidden ">
-        <NavList/>
-      </nav>
-      <button className='w-[100px] h-[36px] bg-white rounded-[40px] max-[768px]:hidden'>
-        <a href="https://www.paypal.com/donate/?hosted_button_id=WYGADA44TMFFY" target="_blank" className='w-full h-full'>Donate</a>
-      </button>
-      
-      <img
-        className=" min-[769px]:hidden  w-4 h-4 cursor-pointer"
-        onClick={() => dispatch(setStatusSidebar(!status))}
-        src={!status ? imgPassiveMenu : imgActiveMenu}
-        alt="toggleMenu"
-      /> */
-}

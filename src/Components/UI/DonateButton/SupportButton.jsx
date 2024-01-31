@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function DonateButton(props) {
+export default function SupportButton(props) {
+  console.log(props.hoverBtn);
   return (
     <button 
-      className={`bg-myYellow text-black  rounded-xl font-inter text-center text-base font-semibold leading-6 tracking-normal transition duration-300 hover:bg-hovDonate hover:shadow-shadowDonate`}
+      className={`bg-mainBlue text-white   rounded-xl font-inter text-center text-base font-semibold leading-6 tracking-normal transition duration-300 hover:bg-hovSupport`}
     >
       <a
         href="https://www.paypal.com/donate/?hosted_button_id=WYGADA44TMFFY"
@@ -11,10 +12,8 @@ export default function DonateButton(props) {
         rel="noopener noreferrer"
         className="block px-12 py-3"
       >
-        Donate
+        Support
       </a>
     </button>
   );
 }
-
-
