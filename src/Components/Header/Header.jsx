@@ -12,7 +12,7 @@ export default function Header() {
   const status = useSelector((state) => state.sidebarChecker.status);
 
   return (
-    <header className=" text-white  font-playfair text-[18px] font-semibold leading-7 fixed top-0 left-0 flex items-center justify-between w-full h-[100px] px-4 py-10 flex-shrink-0 self-stretch backdrop-blur-[2px] opacity-[.95] bg-dark-blue z-40">
+    <header className=" text-white  font-serif text-[18px] font-semibold leading-7 fixed top-0 left-0 flex items-center justify-between w-full h-[100px] px-4 py-10 flex-shrink-0 self-stretch backdrop-blur-[2px] opacity-[.95] bg-dark-blue z-40">
       <ul className="flex items-center justify-between w-full">
         <li>
           <NavLinkOrg justify="start" />

@@ -18,7 +18,7 @@ const Sidebar = () => {
     <aside
       className={`fixed top-0 left-0 z-50 h-screen flex flex-row-reverse w-screen bg-opacity-0 duration-[1500ms] ${
         status ? "translate-x-0" : "translate-x-[100%]"
-      } font-inter text-base font-semibold leading-6`}
+      } font-sans text-base font-semibold leading-6`}
     >
       <nav className="h-full w-[266px] flex flex-col bg-white">
         <div className="flex justify-end p-8">
@@ -33,7 +33,7 @@ const Sidebar = () => {
         <div className="flex flex-col">
           <NavList
             sidebar=" flex-col items-start gap-4 px-8"
-            text="text-[#000E30] font-playfair text-base font-normal leading-6"
+            text="text-[#000E30]  text-base font-normal leading-6"
           />
           <button
             className="flex items-center px-8 py-4 gap-[7px]"

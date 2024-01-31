@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <div
-      className={`flex  flex-col w-full h-full text-base max-[1024px]:text-sm font-normal bg- dark-blue   `}
+      className={`flex  flex-col w-full h-full text-base max-[1024px]:text-sm font-normal bg- dark-blue  font-sans `}
     >
       <div className=" relative flex flex-col z-40">
         <Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />

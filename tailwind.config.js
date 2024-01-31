@@ -3,6 +3,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+      serif: ['Playfair Display', 'serif'], // Додаємо шрифт Playfair Display
+    },
     extend: {
       backgroundColor: {
         'dark-blue': '#0E2B6C',

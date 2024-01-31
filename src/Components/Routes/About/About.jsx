@@ -56,7 +56,7 @@ export default function About() {
             <SubTitle color="black" title="About us"/>
           </div>
           <ul
-            className="flex flex-col items-start gap-[14.897px] self-stretch text-base leading-6 text-[#3F424B] font-inter ">
+            className="flex flex-col items-start gap-[14.897px] self-stretch text-base leading-6 text-[#3F424B] font-sans ">
             {contentData.map((item, index) => (
               <li key={index}>
                 <p className={item.isBold ? "font-bold " : "text-light"}>

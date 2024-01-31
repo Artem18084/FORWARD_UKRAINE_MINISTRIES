@@ -49,7 +49,7 @@ export default function Evacuation() {
           <ul className="flex flex-col gap-4 border-l-[#fff200] border-l-[1px] pl-4 font-semibold text-sm leading-4 ">
             <li>
               <time
-                className=" text-[#fff200] font-playfair text-sm font-semibold leading-4 tracking-normal text-left"
+                className=" text-[#fff200] font-serif text-sm font-semibold leading-4 tracking-normal text-left"
                 dateTime="2022-10-10"
               >
                 AUGUST-24-2023{" "}
@@ -60,7 +60,7 @@ export default function Evacuation() {
               <SubTitle title="Evacuation..." color="white" />
             </li>
           </ul>
-          <ul className="flex flex-col gap-4 text-base font-light text-[#9aaad7] font-inter">
+          <ul className="flex flex-col gap-4 text-base font-light text-[#9aaad7] ">
             {contentData.map((item, index) => (
               <li key={index}>
                 <p className={item.isBold ? "font-medium" : ""}>{item.text}</p>

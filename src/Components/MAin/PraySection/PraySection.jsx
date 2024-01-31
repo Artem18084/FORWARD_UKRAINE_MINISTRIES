@@ -5,7 +5,7 @@ import DonateButton from "../../UI/DonateButton/DonateButton";
 export default function PraySection() {
   return (
     <article
-      className=" flex flex-col gap-11 md:gap-[60px] items-center px-4 md:px-9 lg:px-11 xl:px-[72px] py-12 md:py-[72px] lg:py-24 font-inter text-center text-[18px] font-normal leading-[27px ] tracking-normal "
+      className=" flex flex-col gap-11 md:gap-[60px] items-center px-4 md:px-9 lg:px-11 xl:px-[72px] py-12 md:py-[72px] lg:py-24  text-center text-[18px] font-normal leading-[27px ] tracking-normal "
       style={{ backgroundImage: `url(${prayBanner})` }}
     >
       <section className=" flex flex-col  items-center gap-2">

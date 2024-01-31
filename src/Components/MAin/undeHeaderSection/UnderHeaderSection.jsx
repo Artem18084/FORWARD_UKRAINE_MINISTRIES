@@ -22,7 +22,7 @@ export default function UnderHeaderSection() {
           <section className="flex flex-col justify-center items-start gap-16 md:gap-12 self-stretch">
             <ul className="flex flex-col items-start gap-6 self-stretch text-white">
               <li>
-                <h4 className="uppercase leading-[19.2px] text-[#fff200] font-normal text-base">
+                <h4 className="uppercase leading-[19.2px] text-[#fff200] font-serif  font-normal text-base">
                   forward ukraine ministries
                 </h4>
               </li>
