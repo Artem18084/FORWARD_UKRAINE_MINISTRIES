@@ -1,5 +1,5 @@
 import React from "react";
-import DonateButton from "../../UI/DonateButton/DonateButton";
+import DonateButton from "../../UI/UIComponents/DonateButton";
 
 import headerBanner from "../../../images/pray/prayBanner.jpg";
 import vectorMobile from "../../../images/header/vector.svg";
@@ -7,7 +7,7 @@ import instagramImg from "../../../images/social/instagram.png";
 import facebookImg from "../../../images/social/facebook.png";
 import solder from "../../../images/header/solder.png";
 
-import ContactButton from "../../UI/DonateButton/ContactButton";
+import ContactButton from "../../UI/UIComponents/ContactButton";
 import Title from "../Title/Title";
 
 export default function UnderHeaderSection() {
@@ -38,7 +38,7 @@ export default function UnderHeaderSection() {
                 </p>
               </li>
             </ul>
-            <DonateButton  />
+            <DonateButton />
           </section>
           <ul className="flex items-start justify-between gap-4 mb-[-100px]">
             <li>

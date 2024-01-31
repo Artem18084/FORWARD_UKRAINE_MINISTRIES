@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import NavList from "../Header/NavList/NavList";
 import imgActiveMenu from "../../images/sidebar/activeMenu.png";
-import language from "../../images/sidebar/language.png";
 import { setStatusSidebar } from "../../Store/Reducers/sidebarChecker";
+import LanguageSwich from "../UI/UIComponents/LanguageSwich";
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -32,17 +32,10 @@ const Sidebar = () => {
         </div>
         <div className="flex flex-col">
           <NavList
-            sidebar=" flex-col items-start gap-4 px-8"
+            sidebar=" !flex-col !items-start !gap-4 !px-8"
             text="text-[#000E30]  text-base font-normal leading-6"
           />
-          <button
-            className="flex items-center px-8 py-4 gap-[7px]"
-            disabled
-            aria-label="Change language"
-          >
-            <img src={language} alt="change language" />
-            <p className="text-[#9AAAD7]">UA</p>
-          </button>
+         <LanguageSwich/>
         </div>
       </nav>
     </aside>

@@ -1,7 +1,7 @@
 import React from "react";
 import prayBanner from "../../../images/pray/prayBanner.jpg";
 import Title from "../SubTitle/SubTitle";
-import DonateButton from "../../UI/DonateButton/DonateButton";
+import DonateButton from "../../UI/UIComponents/DonateButton";
 export default function PraySection() {
   return (
     <article
@@ -18,8 +18,7 @@ export default function PraySection() {
         suffering both within Ukraine and for those who may flee to neighboring
         countries for safety
       </p>
-      <DonateButton/>
-
+      <DonateButton />
     </article>
   );
 }
