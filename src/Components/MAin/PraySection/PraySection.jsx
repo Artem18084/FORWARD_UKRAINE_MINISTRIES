@@ -1,7 +1,7 @@
 import React from "react";
 import prayBanner from "../../../images/pray/prayBanner.jpg";
 import Title from "../SubTitle/SubTitle";
-import DonateButton from "../../UI/UIComponents/DonateButton";
+import DonateButton from "../../UI/DonateButton/DonateButton";
 export default function PraySection() {
   return (
     <article

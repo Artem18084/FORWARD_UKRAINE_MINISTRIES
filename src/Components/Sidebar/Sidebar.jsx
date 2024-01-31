@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import NavList from "../Header/NavList/NavList";
 import imgActiveMenu from "../../images/sidebar/activeMenu.png";
 import { setStatusSidebar } from "../../Store/Reducers/sidebarChecker";
-import LanguageSwich from "../UI/UIComponents/LanguageSwich";
+import LanguageSwich from "../UI/DonateButton/LanguageSwich";
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -12,7 +12,6 @@ const Sidebar = () => {
   const handleToggleSidebar = () => {
     dispatch(setStatusSidebar(!status));
   };
-  
 
   return (
     <aside
@@ -35,7 +34,7 @@ const Sidebar = () => {
             sidebar=" !flex-col !items-start !gap-4 !px-8"
             text="text-[#000E30]  text-base font-normal leading-6"
           />
-         <LanguageSwich/>
+          <LanguageSwich />
         </div>
       </nav>
     </aside>

@@ -1,10 +1,10 @@
 import React from "react";
 import NavList from "../Header/NavList/NavList";
 
-import ContactButton from "../UI/UIComponents/ContactButton";
+import ContactButton from "../UI/DonateButton/ContactButton";
 import facebookLogo from "../../images/social/facebook.png";
 import instagramLogo from "../../images/social/instagram.png";
-import whatsappLogo from "../../images/social/whatsapp.png";
+import viberLogo from "../../images/social/whatsapp.png";
 import NavLinkOrg from "../Link/NavLinkOrg";
 
 export default function Footer(props) {
@@ -17,14 +17,12 @@ export default function Footer(props) {
           <li className="flex items-center justify-between h-auto  text-base font-semibold leading-7 text-white mx-[1.1562rem] md:order-2">
             <NavLinkOrg justify="center" />
           </li>
-          <li className=" text-base font-semibold leading-8 text-center md:order-1">
-            <a className="flex gap-1" href="###">
-              +380{" "}
-              {Array.from({ length: 3 }, (_, index) => (
-                <span key={index}>XXX</span>
-              ))}
-            </a>
-          </li>
+          <li className="text-base font-semibold leading-8 text-center md:order-1">
+  <a className="flex gap-1" href="tel:+14845065702">
+    +1 484-506-5702
+  </a>
+</li>
+
           <li className="md:order-3">
             <ul className="flex gap-4">
               <ContactButton
@@ -32,14 +30,14 @@ export default function Footer(props) {
                 src={facebookLogo}
                 alt="facebook"
               />
-              <ContactButton href="" src={instagramLogo} alt="instagram" />
-              <ContactButton href="" src={whatsappLogo} alt="whatsapp" />
+              <ContactButton href="https://www.instagram.com/forward_ukraine__ministries?igsh=MWJwbnQxNTdwdWNnOQ==" src={instagramLogo} alt="instagram" />
+              <ContactButton href="tel:+14845065702" src={viberLogo} alt="viber" />
             </ul>
           </li>
         </ul>
 
         <span className="bg-[#fff200] h-[1px] w-full"></span>
-        <NavList flex="flex"  />
+        <NavList flex="flex" />
         <h5 className="text-[#9aaad7]   text-base font-normal leading-17">
           © ForwardUkraineMinistries {currentDate}
         </h5>

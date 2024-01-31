@@ -1,0 +1,41 @@
+{
+  "en": {
+    "header": {
+      "navList": {
+        "main": "Home",
+        "report": "Report",
+        "needs": "About",
+        "team": "Team",
+        "donate": "Donate"
+      }
+    },
+    "main": {
+      "aboutWar": {
+        "contentData": [
+          {
+            "text": "For 4 hours he was lying on the battlefield in a shell crater. For 4 hours he lay in the cold, covered in mud, waiting for evacuation. For 4 hours he just wondered whether he would survive, whether he would be taken out of there alive. Hypothermia, contusion, wounds, a dream of getting to a hospital and just a desire to live"
+          },
+          {
+            "text": "People, the war is not over as long as the best are dying!"
+          },
+          {
+            "text": "Look at these hands, these are the hands of a man who came out of the battle, who lost his comrade-in-arms, who was on the verge of death a few hours ago. This is the war, the war that is not over, and which we will be able to win when everyone does something to win."
+          }
+        ],
+        "time": "DECEMBER-09-2023",
+        "title": "About war..."
+      },
+
+      "routes": {}
+    },
+    "footer": {},
+    "sidebar": {},
+    "ui": {},
+    "link": {}
+  },
+  "uk": {
+    "home": "Головна",
+    "about": "Про нас",
+    "contact": "Контакти"
+  }
+}

@@ -20,7 +20,6 @@ export default function Team() {
       inst: "https://www.instagram.com/zhenyaust/",
       facebook: "https://www.facebook.com/eugene.ustenko",
       gmail: "",
-      telegram: "",
       src: imgEugene,
     },
     {
@@ -29,7 +28,6 @@ export default function Team() {
       inst: "https://instagram.com/kr_yankaaa",
       facebook: "https://www.facebook.com/yana.kravchenko.562",
       gmail: "mailto:ykravchenko94@gmail.com",
-      telegram: "https://t.me/kr_yankaaa",
       src: imgYana,
     },
     {
@@ -38,7 +36,6 @@ export default function Team() {
       inst: "https://www.instagram.com/oleg.rudenko3/",
       facebook: "",
       gmail: "",
-      telegram: "https://t.me/Oleg_r1",
       src: imgOleg,
     },
 
@@ -48,7 +45,6 @@ export default function Team() {
       inst: "https://www.instagram.com/maliia_vard/",
       facebook: "https://www.facebook.com/profile.php?id=100008442401006",
       gmail: "amaliavardanan805@gmail.com",
-      telegram: "https://t.me/amaliiavard",
       src: imgAmalia,
     },
 
@@ -58,7 +54,6 @@ export default function Team() {
       inst: "https://www.instagram.com/4rtemk0/",
       facebook: "https://www.facebook.com/artem.kosharnyi/",
       gmail: "mailto:artemkosharnyi@gmail.com",
-      telegram: "https://telegram.me/Artem18084",
       src: imgArtem,
     },
 
@@ -68,7 +63,6 @@ export default function Team() {
       inst: "https://www.instagram.com/e.n.j_v.a.r.d_/",
       facebook: "https://www.facebook.com/anhelina.vardanian",
       gmail: "",
-      telegram: "https://t.me/enj_vard",
       src: imgAngelina,
     },
 
@@ -76,9 +70,8 @@ export default function Team() {
       key: 8,
       name: "Igor Cherevichniy",
       inst: "https://www.instagram.com/igorcerevicnij/",
-      facebook: "",
+      facebook: "#",
       gmail: "",
-      telegram: "",
       src: imgIgor,
     },
   ];

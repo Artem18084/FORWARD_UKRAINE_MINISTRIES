@@ -25,7 +25,7 @@ export default function ReportItem(props) {
   };
 
   return (
-    <div className='w-[300px] h-[380px] rounded-[12px] overflow-hidden  my-3 mx-3'>
+    <div className='w-[300px] h-[380px] rounded-[12px] overflow-hidden  my-3 mx-3 duration-300 hover:scale-105 transform'>
       <img
         className='h-full w-full object-cover'
         onClick={() => selectItemSetPosition()} 
