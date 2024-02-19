@@ -9,8 +9,11 @@ import solder from "../../../images/header/solder.png";
 
 import ContactButton from "../../UI/DonateButton/ContactButton";
 import Title from "../Title/Title";
+import { useSelector } from "react-redux";
 
 export default function UnderHeaderSection() {
+  const currentTextData = useSelector((state) => state.language.textJson);
+
   return (
     <div className="flex items-center justify-center bg-dark-blue overflow-hidden">
       {" "}
@@ -27,14 +30,11 @@ export default function UnderHeaderSection() {
                 </h4>
               </li>
               <li className="md:w-[456px] lg:w-full">
-                <Title text="Ukraine needs your support" />
+                <Title text={currentTextData.underHeaderSection.title} />
               </li>
               <li>
                 <p className="text-lg leading-[27px] font-normal">
-                  Ukraine needs your support now more than ever, you and I can
-                  not be indifferent and only in vain can we help all these
-                  people survive these really difficult times in the history of
-                  Ukraine that unfortunately happened to them
+                  {currentTextData.underHeaderSection.text}
                 </p>
               </li>
             </ul>
@@ -42,19 +42,24 @@ export default function UnderHeaderSection() {
           </section>
           <ul className="flex items-start justify-between gap-4 mb-[-100px]">
             <li>
-            <ContactButton
+              <ContactButton
                 href="https://www.facebook.com/profile.php?id=100080343590994"
                 src={facebookLogo}
                 alt="facebook"
               />
-             
             </li>
             <li>
-            <ContactButton href="https://www.instagram.com/forward_ukraine__ministries?igsh=MWJwbnQxNTdwdWNnOQ==" src={instagramLogo} alt="instagram" />
+              <ContactButton
+                href="https://www.instagram.com/forward_ukraine__ministries?igsh=MWJwbnQxNTdwdWNnOQ=="
+                src={instagramLogo}
+                alt="instagram"
+              />
             </li>
             <li>
               <ul className="flex items-center justify-between gap-4 text-white">
-                <li className="uppercase">Follow us</li>
+                <li className="uppercase">
+                  {currentTextData.underHeaderSection.follow}
+                </li>
                 <li className="">
                   <figure>
                     <img src={vectorMobile} alt="" />

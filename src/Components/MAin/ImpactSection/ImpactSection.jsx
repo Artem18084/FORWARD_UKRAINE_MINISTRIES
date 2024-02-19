@@ -65,13 +65,13 @@ export default function ImpactSection() {
           title="21 April 2022"
           src={historyMobile}
           alt="active since"
-          text="Humanitarian trip"
+          text="Active Since"
         />
         <ImpactItem
           title={peopleReachedValue + " +"}
           src={peopleMobile}
           alt="people"
-          text="Humanitarian trip"
+          text="People Reached"
         />
       </ul>
     </section>

@@ -52,7 +52,7 @@ export default function Evacuation() {
                   className=" text-[#fff200] font-serif text-sm font-semibold leading-4 tracking-normal text-left"
                   dateTime="2022-10-10"
                 >
-                  AUGUST-24-2023{" "}
+                  AUGUST-24-2023
                 </time>
               </li>
 

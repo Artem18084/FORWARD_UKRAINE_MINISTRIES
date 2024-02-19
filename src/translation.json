@@ -1,5 +1,5 @@
 {
-  "en": {
+  "Eng": {
     "header": {
       "navList": {
         "main": "Home",
@@ -8,6 +8,11 @@
         "team": "Team",
         "donate": "Donate"
       }
+    },
+    "underHeaderSection": {
+      "title": "Ukraine needs your support",
+      "text": " Ukraine needs your support now more than ever, you and I can not be indifferent and only in vain can we help all thesepeople survive these really difficult times in the history ofUkraine that unfortunately happened to them",
+      "follow": "follow us"
     },
     "main": {
       "aboutWar": {
@@ -25,17 +30,205 @@
         "time": "DECEMBER-09-2023",
         "title": "About war..."
       },
+      "AreaOfWork": {
+        "contentData": [
+          {
+            "title": "war",
+            "text": "Military needs, assistance to the military, assistance to civilians, immigrants, evacuation 200"
+          },
+          {
+            "title": "church ministries",
+            "text": "Helping the needy, Serving youth and children, active position in the village (camps, holidays)"
+          },
+          {
+            "title": "youth development",
+            "text": "Workshops, seminars, business development assistance"
+          }
+        ]
+      },
+      "evacuation": {
+        "contentData": [
+          {
+            "text": "22:30 we need to transfer fuel from the barrel to the canisters to refuel. The guys are doing it, and I'm standing next to the truck. There are terrible words written on it: 'On the shield. Evacuation of the fallen'."
+          },
+          {
+            "text": "A car with two soldiers arrived, they parked next to me and one of them looked at the words on the car and me for a long time. He opened the door of his car, took out a cigarette and stared silently."
+          },
+          {
+            "text": "It took some time before he decided to get out of the car, he went far away, but I realized that he just wanted to see what the evacuation looked like. There were no bodies. He approached me step by step and finally decided to speak."
+          },
+          {
+            "text": "\"I see what it says: \"Evacuation of the fallen. Tomorrow they will bring my kid in one of these. Not much honor for them.\""
+          },
+          {
+            "text": "And I just stand there, look into his eyes, and I am pierced by this pain that is visible in his eyes. And I cannot say a word. My mind is a whirlpool of thoughts: 'Hold on? Who gave me the right to say this to a father who is mourning his son? He has every right to be in despair, why does he have to wear a mask? For whom? Will my words change anything at all?' I think about what to say, but I don't have time to say anything."
+          },
+          {
+            "text": "\"He says: \"I don't want to come here.\" And my heart broke. He has the right to live, his son was worthy of life.\""
+          },
+          {
+            "text": "I didn't say anything, I didn't find the words…"
+          }
+        ],
+        "time": "AUGUST-24-2023"
+      },
+      "impactSection": ["Humanitarian trip", "Active Since", "People Reached"],
+      "praySection": {
+        "title": "Pray for Ukraine",
+        "text": "Your help is needed in Ukraine where there are already more than 2.9 million people in need of assistance. There is great risk of additional suffering both within Ukraine and for those who may flee to neighboring countries for safety."
+      },
 
-      "routes": {}
+      "routes": {
+        "about": {
+          "contentData": [
+            {
+              "text": "Who are we? \"Forward, Ukraine\" Ministries is a 501(c)3 non-profit organization that supports Ukrainians in need. We want to take Ukraine forward in small steps. A small victory in someone's life is a victory for the great Ukraine."
+            },
+            {
+              "text": "We want to help Ukrainians to live better, get out of poverty, get an education and get a chance to improve their lives. We try to help people who suffer daily from military aggression, for whom every day can be the last, we have already made a large number of humanitarian trips to some of the hottest spots in Ukraine."
+            },
+            {
+              "text": "Thanks to caring people, without whom we could not do this, we have been able to help thousands of people and we are helping now and encourage you to do the same, everyone can be useful where they are. At the very beginning of the war, we were involved in the evacuation of people to safe places, and we also try to help people who are left without heat due to the constant shelling of the enemy - firewood, and those who are unable. to process it, our team fully prepares it for use by these people. If you don't know how you can help Ukraine, then you've come to the right place!"
+            }
+          ],
+          "title": "who we are",
+          "subTitle": "About us"
+        },
+        "reports": { "title": "our reports" },
+        "team": {
+          "title": "we are the team",
+          "name": [
+            "Yevgeniy Ustenko",
+            "Yana Kravchenko",
+            "Oleg Rudenko",
+            "Amalia Vardanian",
+            "Artem Kosharniy",
+            "Angelina Vardanian",
+            "Igor Cherevichniy"
+          ]
+        }
+      }
     },
-    "footer": {},
-    "sidebar": {},
-    "ui": {},
-    "link": {}
+    "ui": { "donate": "donate", "support": "support", "language": "eng" }
   },
-  "uk": {
-    "home": "Головна",
-    "about": "Про нас",
-    "contact": "Контакти"
+  "Ua": {
+    "header": {
+      "navList": {
+        "main": "Головна",
+        "report": "Звіт",
+        "needs": "Про нас",
+        "team": "Команда",
+        "donate": "Пожертвувати"
+      }
+    },
+    "underHeaderSection": {
+      "title": "Україні потрібна ваша підтримка",
+      "text": "Україні зараз потрібна ваша підтримка більше, ніж будь-коли, ви і я не можемо бути байдужими і тільки марно можемо допомогти всім цим людям вижити у ці дійсно важкі часи в історії України, які, на жаль, сталися з ними",
+      "follow": "підписуйся на нас"
+    },
+    "main": {
+      "aboutWar": {
+        "contentData": [
+          {
+            "text": "Протягом 4 годин він лежав на полі бою в кратері від снаряду. Протягом 4 годин він лежав в холоді, вкритий гряззю, чекаючи на евакуацію. Протягом 4 годин він лише думав, чи виживе він, чи його вивезуть звідти живим. Обмороження, контузія, поранення, мрія про потрапляння в лікарню і просто бажання жити."
+          },
+          {
+            "text": "Люди, війна не закінчиться, доки гинуть найкращі!"
+          },
+          {
+            "text": "Подивіться на ці руки, це руки чоловіка, який вийшов з бою, який втратив свого товариша-збройного, який був на межі смерті кілька годин тому. Це війна, війна, яка не закінчиться, і яку ми зможемо перемогти, коли кожен зробить щось для перемоги."
+          }
+        ],
+        "time": "ГРУДЕНЬ-09-2023",
+        "title": "Про війну..."
+      },
+      "AreaOfWork": {
+        "contentData": [
+          {
+            "title": "війна",
+            "text": "Потреби військових, допомога військовим, допомога цивільним, іммігрантам, евакуація 200"
+          },
+          {
+            "title": "міністерства церкви",
+            "text": "Допомога потребуючим, служіння молоді та дітям, активна позиція в селі (табори, свята)"
+          },
+          {
+            "title": "розвиток молоді",
+            "text": "Майстер-класи, семінари, допомога у розвитку бізнесу"
+          }
+        ]
+      },
+      "evacuation": {
+        "contentData": [
+          {
+            "text": "22:30 нам потрібно перекачувати паливо з бочки в канистри, щоб заправити. Хлопці цим займаються, а я стою біля вантажівки. На ній написано жахливі слова: 'На щиті. Евакуація падших'."
+          },
+          {
+            "text": "Приїхала машина з двома солдатами, вони припаркувались поруч зі мною, і один з них довго дивився на слова на машині та на мене. Він відчинив дверцята своєї машини, витягнув сигарету і мовчки дивився."
+          },
+          {
+            "text": "Деякий час минув, перш ніж він вирішив вийти з машини, він відійшов далеко, але я зрозумів, що він просто хотів побачити, як виглядає евакуація. Там не було тіл. Він підійшов до мене крок за кроком і, нарешті, вирішив заговорити."
+          },
+          {
+            "text": "\"Я бачу, що тут написано: 'Евакуація падших. Завтра вони привезуть моє дитя в одному з цих. Не дуже честь для них.'"
+          },
+          {
+            "text": "І я просто стою там, дивлюся йому в очі, і мене пронизує ця біль, яка видна в його очах. І я не можу сказати ні слова. Мій розум - віртуоз думок: 'Тримайся? Хто дав мені право сказати це батьку, який оплакує свого сина? Він має повне право бути у відчаї, чому він повинен носити маску? Для кого? Чи змінять мої слова щось взагалі?'. Я думаю про те, що сказати, але у мене немає часу сказати нічого."
+          },
+          {
+            "text": "\"Він каже: 'Я не хочу приходити сюди.' І моє серце зламалося. Він має право жити, його син був гідним життя.\""
+          },
+          {
+            "text": "Я нічого не сказав, я не знайшов слів…"
+          }
+        ],
+        "time": "СЕРПЕНЬ-24-2023"
+      },
+      "impactSection": [
+        "Гуманітарна поїздка",
+        "Активність з",
+        "Люди, до яких дійшли"
+      ],
+      "praySection": {
+        "title": "Моліться за Україну",
+        "text": "Ваша допомога потрібна в Україні, де вже понад 2,9 мільйонів людей потребують допомоги. Існує великий ризик додаткового страждання як у межах України, так і для тих, хто може втекти до сусідніх країн у пошуках безпеки."
+      },
+
+      "routes": {
+        "about": {
+          "contentData": [
+            {
+              "text": "Хто ми? Міністерство \"Вперед, Україно\" - це неприбуткова організація 501(с)3, яка підтримує українців у скрутних ситуаціях. Ми хочемо вести Україну вперед малими кроками. Невелика перемога в чиєму-небудь житті - це перемога для великої України."
+            },
+            {
+              "text": "Ми хочемо допомогти українцям жити краще, вибратися з бідності, отримати освіту і отримати шанс покращити своє життя. Ми намагаємося допомогти людям, які щоденно страждають від військової агресії, для кого кожен день може бути останнім, ми вже здійснили велику кількість гуманітарних поїздок до деяких з найгарячіших точок в Україні."
+            },
+            {
+              "text": "Завдяки турботливим людям, без яких ми не могли б цього зробити, ми змогли допомогти тисячам людей і допомагаємо зараз, і закликаємо вас зробити те саме, кожен може бути корисним там, де він є. З самого початку війни ми брали участь у евакуації людей до безпечних місць, і також намагаємося допомогти людям, які залишаються без тепла через постійний обстріл ворога - дрова, і тим, хто не може обробити їх, наша команда повністю готує їх для використання цими людьми. Якщо ви не знаєте, як ви можете допомогти Україні, то ви потрапили за адресою!"
+            }
+          ],
+          "title": "хто ми є",
+          "subTitle": "Про нас"
+        },
+        "reports": { "title": "наші звіти" },
+        "team": {
+          "title": "ми - команда",
+          "name": [
+            "Євгеній Устенко",
+            "Яна Кравченко",
+            "Олег Руденко",
+            "Амалія Варданян",
+            "Артем Кошарний",
+            "Ангеліна Варданян",
+            "Ігор Черевичний"
+          ]
+        }
+      }
+    },
+    "ui": {
+      "donate": "пожертвувати",
+      "support": "підтримка",
+      "language": "укр"
+    }
   }
 }
