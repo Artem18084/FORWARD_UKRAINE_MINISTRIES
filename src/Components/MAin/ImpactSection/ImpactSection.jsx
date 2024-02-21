@@ -3,6 +3,7 @@ import ImpactItem from "./ImpactItem/ImpactItem";
 import vanMobile from "../../../images/Impact/vanMobile.svg";
 import peopleMobile from "../../../images/Impact/peopleMobile.svg";
 import historyMobile from "../../../images/Impact/historyMobile.svg";
+import { useSelector } from "react-redux";
 
 export default function ImpactSection() {
   const [humanitarianValue, setHumanitarianValue] = useState("");
@@ -49,32 +50,36 @@ export default function ImpactSection() {
 
     return () => clearInterval(interval);
   }, [humanitarianValue, peopleReachedValue]);
+  const currentTextData = useSelector((state) => state.language.textJson);
+  const trip = currentTextData.main.impactSection[0];
+  const activeSince = currentTextData.main.impactSection[1];
+  const peopleReached = currentTextData.main.impactSection[2];
+  const time = currentTextData.main.impactSection[3].time;
 
   return (
     <div className="flex items-center justify-center">
-
-    <section className=" w-full flex flex-col items-start  md:items-center justify-center md:justify-between gap-6   pt-12 md:pt-[72px] lg:pt-24 pb-0 px-4 md:px-9 lg:px-11 xl:px-[72px] max-w-[1440px]">
-      <ul className="w-full flex flex-col md:flex-row  items-start justify-between gap-10  flex-shrink-0 flex-basis-0">
-        <ImpactItem
-          title={humanitarianValue + " +"}
-          src={vanMobile}
-          alt="van"
-          text="Humanitarian trip"
-        />
-        <ImpactItem
-          title="21 April 2022"
-          src={historyMobile}
-          alt="active since"
-          text="Active Since"
-        />
-        <ImpactItem
-          title={peopleReachedValue + " +"}
-          src={peopleMobile}
-          alt="people"
-          text="People Reached"
-        />
-      </ul>
-    </section>
+      <section className=" w-full flex flex-col items-start  md:items-center justify-center md:justify-between gap-6   pt-12 md:pt-[72px] lg:pt-24 pb-0 px-4 md:px-9 lg:px-11 xl:px-[72px] max-w-[1440px]">
+        <ul className="w-full flex flex-col md:flex-row  items-start justify-between gap-10  flex-shrink-0 flex-basis-0">
+          <ImpactItem
+            title={humanitarianValue + " +"}
+            src={vanMobile}
+            alt="van"
+            text={trip}
+          />
+          <ImpactItem
+            title={time}
+            src={historyMobile}
+            alt="active since"
+            text={activeSince}
+          />
+          <ImpactItem
+            title={peopleReachedValue + " +"}
+            src={peopleMobile}
+            alt="people"
+            text={peopleReached}
+          />
+        </ul>
+      </section>
     </div>
   );
 }

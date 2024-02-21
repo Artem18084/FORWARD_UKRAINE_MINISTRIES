@@ -7,6 +7,9 @@ import SubTitle from "../SubTitle/SubTitle";
 
 export default function AboutWar() {
   const currentTextData = useSelector((state) => state.language.textJson);
+  const contentDataText = currentTextData.main.aboutWar.contentData;
+  const time = currentTextData.main.aboutWar.time;
+  const title = currentTextData.main.aboutWar.title;
 
   return (
     <div className="flex items-center justify-center">
@@ -36,18 +39,15 @@ export default function AboutWar() {
                   className=" text-[#4177ec] font-serif text-sm font-semibold leading-4 tracking-normal text-left"
                   dateTime="2022-10-10"
                 >
-                  {currentTextData.main.aboutWar.time}
+                  {time}
                 </time>
               </li>
               <li>
-                <SubTitle
-                  title={currentTextData.main.aboutWar.title}
-                  color="black"
-                />
+                <SubTitle title={title} color="black" />
               </li>
             </ul>
             <ul className="flex flex-col gap-4 text-base font-light ">
-              {currentTextData.main.aboutWar.contentData.map((item, index) => (
+              {contentDataText.map((item, index) => (
                 <li key={index}>
                   <p className={item.isBold ? "font-bold" : "text-normal"}>
                     {item.text}

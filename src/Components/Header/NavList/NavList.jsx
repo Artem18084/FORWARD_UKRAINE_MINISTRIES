@@ -35,14 +35,17 @@
 import React from "react";
 import ListItem from "./ListItem/ListItem";
 import CustomLink from "../../Link/CustomLink";
+import { useSelector } from "react-redux";
 
 export default function NavList(props) {
+  const currentTextData = useSelector((state) => state.language.textJson);
+  
   const navList = {
-    main: "Home",
-    report: "Report",
-    needs: "About",
-    team: "Team",
-    donate: "Donate",
+    main: currentTextData.header.navList.main,
+    report: currentTextData.header.navList.report,
+    about: currentTextData.header.navList.about,
+    team: currentTextData.header.navList.team,
+  
   };
 
   return (
@@ -56,7 +59,7 @@ export default function NavList(props) {
         <ListItem tittle={navList.report} text={props.text}/>
       </CustomLink>
       <CustomLink to="/About">
-        <ListItem tittle={navList.needs} text={props.text}/>
+        <ListItem tittle={navList.about} text={props.text}/>
       </CustomLink>
       <CustomLink to="/Team">
         <ListItem tittle={navList.team} text={props.text}/>

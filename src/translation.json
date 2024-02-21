@@ -4,33 +4,36 @@
       "navList": {
         "main": "Home",
         "report": "Report",
-        "needs": "About",
+        "about": "About",
         "team": "Team",
         "donate": "Donate"
       }
     },
     "underHeaderSection": {
       "title": "Ukraine needs your support",
-      "text": " Ukraine needs your support now more than ever, you and I can not be indifferent and only in vain can we help all thesepeople survive these really difficult times in the history ofUkraine that unfortunately happened to them",
+      "text": " Ukraine needs your support now more than ever, you and I can not be indifferent and only  we can we help all thesepeople survive these really difficult times in the history ofUkraine that unfortunately happened to them",
       "follow": "follow us"
     },
     "main": {
       "aboutWar": {
         "contentData": [
           {
-            "text": "For 4 hours he was lying on the battlefield in a shell crater. For 4 hours he lay in the cold, covered in mud, waiting for evacuation. For 4 hours he just wondered whether he would survive, whether he would be taken out of there alive. Hypothermia, contusion, wounds, a dream of getting to a hospital and just a desire to live"
+            "text": "For 4 hours he was lying on the battlefield in a shell crater. For 4 hours he lay in the cold, covered in mud, waiting for evacuation. For 4 hours he just wondered whether he would survive, whether he would be taken out of there alive. Hypothermia, contusion, wounds, a dream of getting to a hospital and just a desire to live",
+            "isBold": false
           },
           {
-            "text": "People, the war is not over as long as the best are dying!"
+            "text": "People, the war is not over as long as the best are dying!",
+            "isBold": true
           },
           {
-            "text": "Look at these hands, these are the hands of a man who came out of the battle, who lost his comrade-in-arms, who was on the verge of death a few hours ago. This is the war, the war that is not over, and which we will be able to win when everyone does something to win."
+            "text": "Look at these hands, these are the hands of a man who came out of the battle, who lost his comrade-in-arms, who was on the verge of death a few hours ago. This is the war, the war that is not over, and which we will be able to win when everyone does something to win.",
+            "isBold": false
           }
         ],
         "time": "DECEMBER-09-2023",
         "title": "About war..."
       },
-      "AreaOfWork": {
+      "areaOfWork": {
         "contentData": [
           {
             "title": "war",
@@ -44,35 +47,48 @@
             "title": "youth development",
             "text": "Workshops, seminars, business development assistance"
           }
-        ]
+        ],
+        "title": "Area of work..."
       },
       "evacuation": {
         "contentData": [
           {
-            "text": "22:30 we need to transfer fuel from the barrel to the canisters to refuel. The guys are doing it, and I'm standing next to the truck. There are terrible words written on it: 'On the shield. Evacuation of the fallen'."
+            "text": "22:30 we need to transfer fuel from the barrel to the canisters to refuel. The guys are doing it, and I'm standing next to the truck. There are terrible words written on it: 'On the shield. Evacuation of the fallen'.",
+            "isBold": true
           },
           {
-            "text": "A car with two soldiers arrived, they parked next to me and one of them looked at the words on the car and me for a long time. He opened the door of his car, took out a cigarette and stared silently."
+            "text": "A car with two soldiers arrived, they parked next to me and one of them looked at the words on the car and me for a long time. He opened the door of his car, took out a cigarette and stared silently.",
+            "isBold": false
           },
           {
-            "text": "It took some time before he decided to get out of the car, he went far away, but I realized that he just wanted to see what the evacuation looked like. There were no bodies. He approached me step by step and finally decided to speak."
+            "text": "It took some time before he decided to get out of the car, he went far away, but I realized that he just wanted to see what the evacuation looked like. There were no bodies. He approached me step by step and finally decided to speak.",
+            "isBold": false
           },
           {
-            "text": "\"I see what it says: \"Evacuation of the fallen. Tomorrow they will bring my kid in one of these. Not much honor for them.\""
+            "text": "\"I see what it says: \"Evacuation of the fallen. Tomorrow they will bring my kid in one of these. Not much honor for them.\"",
+            "isBold": true
           },
           {
-            "text": "And I just stand there, look into his eyes, and I am pierced by this pain that is visible in his eyes. And I cannot say a word. My mind is a whirlpool of thoughts: 'Hold on? Who gave me the right to say this to a father who is mourning his son? He has every right to be in despair, why does he have to wear a mask? For whom? Will my words change anything at all?' I think about what to say, but I don't have time to say anything."
+            "text": "And I just stand there, look into his eyes, and I am pierced by this pain that is visible in his eyes. And I cannot say a word. My mind is a whirlpool of thoughts: 'Hold on? Who gave me the right to say this to a father who is mourning his son? He has every right to be in despair, why does he have to wear a mask? For whom? Will my words change anything at all?' I think about what to say, but I don't have time to say anything.",
+            "isBold": false
           },
           {
-            "text": "\"He says: \"I don't want to come here.\" And my heart broke. He has the right to live, his son was worthy of life.\""
+            "text": "\"He says: \"I don't want to come here.\" And my heart broke. He has the right to live, his son was worthy of life.\"",
+            "isBold": false
           },
           {
-            "text": "I didn't say anything, I didn't find the words…"
+            "text": "I didn't say anything, I didn't find the words…",
+            "isBold": false
           }
         ],
         "time": "AUGUST-24-2023"
       },
-      "impactSection": ["Humanitarian trip", "Active Since", "People Reached"],
+      "impactSection": [
+        "Humanitarian trip",
+        "Active Since",
+        "People Reached",
+        { "time": "21 APRIL 2022" }
+      ],
       "praySection": {
         "title": "Pray for Ukraine",
         "text": "Your help is needed in Ukraine where there are already more than 2.9 million people in need of assistance. There is great risk of additional suffering both within Ukraine and for those who may flee to neighboring countries for safety."
@@ -109,77 +125,87 @@
         }
       }
     },
-    "ui": { "donate": "donate", "support": "support", "language": "eng" }
+    "ui": { "donate": "donate", "support": "support" }
   },
   "Ua": {
     "header": {
       "navList": {
         "main": "Головна",
         "report": "Звіт",
-        "needs": "Про нас",
-        "team": "Команда",
-        "donate": "Пожертвувати"
+        "about": "Про нас",
+        "team": "Команда"
       }
     },
     "underHeaderSection": {
       "title": "Україні потрібна ваша підтримка",
-      "text": "Україні зараз потрібна ваша підтримка більше, ніж будь-коли, ви і я не можемо бути байдужими і тільки марно можемо допомогти всім цим людям вижити у ці дійсно важкі часи в історії України, які, на жаль, сталися з ними",
+      "text": "Україні зараз потрібна ваша підтримка більше, ніж будь-коли, ви і я не можемо бути байдужими і тільки мb можемо допомогти всім цим людям вижити у ці дійсно важкі часи в історії України, які, на жаль, сталися з ними",
       "follow": "підписуйся на нас"
     },
     "main": {
       "aboutWar": {
         "contentData": [
           {
-            "text": "Протягом 4 годин він лежав на полі бою в кратері від снаряду. Протягом 4 годин він лежав в холоді, вкритий гряззю, чекаючи на евакуацію. Протягом 4 годин він лише думав, чи виживе він, чи його вивезуть звідти живим. Обмороження, контузія, поранення, мрія про потрапляння в лікарню і просто бажання жити."
+            "text": "Протягом 4 годин він лежав на полі бою в кратері від снаряду. Протягом 4 годин він лежав в холоді, вкритий гряззю, чекаючи на евакуацію. Протягом 4 годин він лише думав, чи виживе він, чи його вивезуть звідти живим. Обмороження, контузія, поранення, мрія про потрапляння в лікарню і просто бажання жити.",
+            "isBold": false
           },
           {
-            "text": "Люди, війна не закінчиться, доки гинуть найкращі!"
+            "text": "Люди, війна не закінчиться, доки гинуть найкращі!",
+            "isBold": true
           },
           {
-            "text": "Подивіться на ці руки, це руки чоловіка, який вийшов з бою, який втратив свого товариша-збройного, який був на межі смерті кілька годин тому. Це війна, війна, яка не закінчиться, і яку ми зможемо перемогти, коли кожен зробить щось для перемоги."
+            "text": "Подивіться на ці руки, це руки чоловіка, який вийшов з бою, який втратив свого товариша-збройного, який був на межі смерті кілька годин тому. Це війна, війна, яка не закінчиться, і яку ми зможемо перемогти, коли кожен зробить щось для перемоги.",
+            "isBold": false
           }
         ],
         "time": "ГРУДЕНЬ-09-2023",
         "title": "Про війну..."
       },
-      "AreaOfWork": {
+      "areaOfWork": {
         "contentData": [
           {
             "title": "війна",
             "text": "Потреби військових, допомога військовим, допомога цивільним, іммігрантам, евакуація 200"
           },
           {
-            "title": "міністерства церкви",
+            "title": "церковне служіння",
             "text": "Допомога потребуючим, служіння молоді та дітям, активна позиція в селі (табори, свята)"
           },
           {
             "title": "розвиток молоді",
             "text": "Майстер-класи, семінари, допомога у розвитку бізнесу"
           }
-        ]
+        ],
+        "title": "Сфери діяльності..."
       },
       "evacuation": {
         "contentData": [
           {
-            "text": "22:30 нам потрібно перекачувати паливо з бочки в канистри, щоб заправити. Хлопці цим займаються, а я стою біля вантажівки. На ній написано жахливі слова: 'На щиті. Евакуація падших'."
+            "text": "22:30 нам потрібно перекачувати паливо з бочки в канистри, щоб заправити. Хлопці цим займаються, а я стою біля вантажівки. На ній написано жахливі слова: 'На щиті. Евакуація падших'.",
+            "isBold": true
           },
           {
-            "text": "Приїхала машина з двома солдатами, вони припаркувались поруч зі мною, і один з них довго дивився на слова на машині та на мене. Він відчинив дверцята своєї машини, витягнув сигарету і мовчки дивився."
+            "text": "Приїхала машина з двома солдатами, вони припаркувались поруч зі мною, і один з них довго дивився на слова на машині та на мене. Він відчинив дверцята своєї машини, витягнув сигарету і мовчки дивився.",
+            "isBold": false
           },
           {
-            "text": "Деякий час минув, перш ніж він вирішив вийти з машини, він відійшов далеко, але я зрозумів, що він просто хотів побачити, як виглядає евакуація. Там не було тіл. Він підійшов до мене крок за кроком і, нарешті, вирішив заговорити."
+            "text": "Деякий час минув, перш ніж він вирішив вийти з машини, він відійшов далеко, але я зрозумів, що він просто хотів побачити, як виглядає евакуація. Там не було тіл. Він підійшов до мене крок за кроком і, нарешті, вирішив заговорити.",
+            "isBold": false
           },
           {
-            "text": "\"Я бачу, що тут написано: 'Евакуація падших. Завтра вони привезуть моє дитя в одному з цих. Не дуже честь для них.'"
+            "text": "\"Я бачу, що тут написано: 'Евакуація падших. Завтра вони привезуть моє дитя в одному з цих. Не дуже честь для них.'",
+            "isBold": true
           },
           {
-            "text": "І я просто стою там, дивлюся йому в очі, і мене пронизує ця біль, яка видна в його очах. І я не можу сказати ні слова. Мій розум - віртуоз думок: 'Тримайся? Хто дав мені право сказати це батьку, який оплакує свого сина? Він має повне право бути у відчаї, чому він повинен носити маску? Для кого? Чи змінять мої слова щось взагалі?'. Я думаю про те, що сказати, але у мене немає часу сказати нічого."
+            "text": "І я просто стою там, дивлюся йому в очі, і мене пронизує ця біль, яка видна в його очах. І я не можу сказати ні слова. Мій розум - віртуоз думок: 'Тримайся? Хто дав мені право сказати це батьку, який оплакує свого сина? Він має повне право бути у відчаї, чому він повинен носити маску? Для кого? Чи змінять мої слова щось взагалі?'. Я думаю про те, що сказати, але у мене немає часу сказати нічого.",
+            "isBold": false
           },
           {
-            "text": "\"Він каже: 'Я не хочу приходити сюди.' І моє серце зламалося. Він має право жити, його син був гідним життя.\""
+            "text": "\"Він каже: 'Я не хочу приходити сюди.' І моє серце зламалося. Він має право жити, його син був гідним життя.\"",
+            "isBold": false
           },
           {
-            "text": "Я нічого не сказав, я не знайшов слів…"
+            "text": "Я нічого не сказав, я не знайшов слів…",
+            "isBold": false
           }
         ],
         "time": "СЕРПЕНЬ-24-2023"
@@ -187,7 +213,8 @@
       "impactSection": [
         "Гуманітарна поїздка",
         "Активність з",
-        "Люди, до яких дійшли"
+        "Люди, яких досягнули",
+        { "time": "21 Квітеня 2022" }
       ],
       "praySection": {
         "title": "Моліться за Україну",
@@ -227,8 +254,7 @@
     },
     "ui": {
       "donate": "пожертвувати",
-      "support": "підтримка",
-      "language": "укр"
+      "support": "підтримати"
     }
   }
 }
