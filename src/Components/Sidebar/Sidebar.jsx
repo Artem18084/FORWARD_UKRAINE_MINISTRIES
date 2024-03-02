@@ -12,14 +12,21 @@ const Sidebar = () => {
   const handleToggleSidebar = () => {
     dispatch(setStatusSidebar(!status));
   };
+  const stopPropagation = (e) => {
+    e.stopPropagation();
+  };
 
   return (
     <aside
+      onClick={handleToggleSidebar}
       className={`fixed top-0 left-0 z-50 h-screen flex flex-row-reverse w-screen bg-opacity-0 duration-[1500ms] ${
         status ? "translate-x-0" : "translate-x-[100%]"
       } font-sans text-base font-semibold leading-6`}
     >
-      <nav className="h-full w-[266px] flex flex-col bg-white">
+      <nav
+        className="h-full w-[266px] flex flex-col bg-white"
+        onClick={stopPropagation}
+      >
         <div className="flex justify-end p-8">
           <button
             onClick={handleToggleSidebar}
