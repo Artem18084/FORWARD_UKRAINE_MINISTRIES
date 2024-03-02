@@ -13,12 +13,12 @@ export default function LanguageSwitch() {
 
   return (
     <button
-      className="flex items-center px-8 py-4 gap-[7px]"
+      className="flex items-center px-8 py-4 gap-[7px] w-fit"
       aria-label="Change language"
       onClick={handleClick}
     >
       <img src={language} alt="change language" />
-      <p className="text-[#9AAAD7]">{currentLanguage}</p>
+      <p className="text-[#9AAAD7] ">{currentLanguage}</p>
     </button>
   );
 }
