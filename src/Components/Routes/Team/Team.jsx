@@ -1,4 +1,3 @@
-
 import React from "react";
 import PersonCard from "./PersonCard/PersonCard";
 import RoutUnderHeader from "../RoutUnderHeader";
@@ -11,12 +10,17 @@ import imgAngelina from "../../../images/Routes/Team/Angelina.jpg";
 import imgIgor from "../../../images/Routes/Team/Igor.jpg";
 import imgOleg from "../../../images/Routes/Team/Oleg.jpg";
 import imgEugene from "../../../images/Routes/Team/Eugene.jpg";
+import { useSelector } from "react-redux";
 
 export default function Team() {
+  
+  const currentTextData = useSelector((state) => state.language.textJson);
+  const title = currentTextData.main.routes.team.title;
+  const name = currentTextData.main.routes.team.name
   const team = [
     {
       key: 1,
-      name: "Yevgeniy Ustenko",
+      name: name[0],
       inst: "https://www.instagram.com/zhenyaust/",
       facebook: "https://www.facebook.com/eugene.ustenko",
       gmail: "",
@@ -24,7 +28,7 @@ export default function Team() {
     },
     {
       key: 2,
-      name: "Yana Kravchenko",
+      name: name[1],
       inst: "https://instagram.com/kr_yankaaa",
       facebook: "https://www.facebook.com/yana.kravchenko.562",
       gmail: "mailto:ykravchenko94@gmail.com",
@@ -32,7 +36,7 @@ export default function Team() {
     },
     {
       key: 3,
-      name: "Oleg Rudenko",
+      name: name[2],
       inst: "https://www.instagram.com/oleg.rudenko3/",
       facebook: "",
       gmail: "",
@@ -41,7 +45,7 @@ export default function Team() {
 
     {
       key: 4,
-      name: "Amalia Vardanian",
+      name: name[3],
       inst: "https://www.instagram.com/maliia_vard/",
       facebook: "https://www.facebook.com/profile.php?id=100008442401006",
       gmail: "amaliavardanan805@gmail.com",
@@ -50,7 +54,7 @@ export default function Team() {
 
     {
       key: 5,
-      name: "Artem Kosharniy",
+      name: name[4],
       inst: "https://www.instagram.com/4rtemk0/",
       facebook: "https://www.facebook.com/artem.kosharnyi/",
       gmail: "mailto:artemkosharnyi@gmail.com",
@@ -59,7 +63,7 @@ export default function Team() {
 
     {
       key: 6,
-      name: "Angelina Vardanian",
+      name: name[5],
       inst: "https://www.instagram.com/e.n.j_v.a.r.d_/",
       facebook: "https://www.facebook.com/anhelina.vardanian",
       gmail: "",
@@ -67,8 +71,8 @@ export default function Team() {
     },
 
     {
-      key: 8,
-      name: "Igor Cherevichniy",
+      key: 7,
+      name: name[6],
       inst: "https://www.instagram.com/igorcerevicnij/",
       facebook: "#",
       gmail: "",
@@ -76,9 +80,10 @@ export default function Team() {
     },
   ];
 
+
   return (
     <main className="flex flex-col">
-      <RoutUnderHeader title="we are the team" banner={teamBanner} />
+      <RoutUnderHeader title={title} banner={teamBanner} />
 
       <section className="flex flex-col items-center justify-center self-stretch py-[48px] sm:py-[72px] md:py-[96px] gap-[60px]">
         <div className="w-full flex flex-wrap justify-center gap-[24px] md:gap-y-[60px] px-4 md:px-[44px] lg:px-[44px] xl:px-[72px]">

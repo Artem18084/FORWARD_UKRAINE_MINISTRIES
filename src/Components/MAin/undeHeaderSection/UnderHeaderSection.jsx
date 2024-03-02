@@ -15,10 +15,10 @@ export default function UnderHeaderSection() {
   const currentTextData = useSelector((state) => state.language.textJson);
 
   return (
-    <div className="flex items-center justify-center bg-dark-blue overflow-hidden">
+    <div className="flex  xl:h-screen xl:max-h-[1100px] items-center justify-center bg-dark-blue overflow-hidden">
       {" "}
       <article
-        className="  h-[812px] md:h-[900px] flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start bg-center relative overflow-hidden  w-full  max-w-[1440"
+        className="  h-[812px] md:h-[900px] xl:h-full flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start bg-center bg-cover relative overflow-hidden  w-full  max-w-[1440"
         style={{ backgroundImage: `url(${headerBanner})` }}
       >
         <article className="flex flex-col justify-center h-full items-start gap-16 md:gap-[88px]  w-full md:w-[50vw] xl:w-[600px] my2xl:w-[750px]  2xl:w-[45vw] py-0 px-4 md:px-0 md:pl-9 lg:pl-11 xl:pl-[72px] 2xl:pl-[10vw] font-normal">

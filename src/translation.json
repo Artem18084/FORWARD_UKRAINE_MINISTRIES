@@ -98,13 +98,16 @@
         "about": {
           "contentData": [
             {
-              "text": "Who are we? \"Forward, Ukraine\" Ministries is a 501(c)3 non-profit organization that supports Ukrainians in need. We want to take Ukraine forward in small steps. A small victory in someone's life is a victory for the great Ukraine."
+              "text": "Who are we? \"Forward Ukraine Ministries\" is a 501(c)3 non-profit organization that supports Ukrainians in need. We want to take Ukraine forward in small steps. A small victory in someone's life is a victory for the great Ukraine.",
+              "isBold": true
             },
             {
-              "text": "We want to help Ukrainians to live better, get out of poverty, get an education and get a chance to improve their lives. We try to help people who suffer daily from military aggression, for whom every day can be the last, we have already made a large number of humanitarian trips to some of the hottest spots in Ukraine."
+              "text": "We want to help Ukrainians to live better, get out of poverty, get an education and get a chance to improve their lives. We try to help people who suffer daily from military aggression, for whom every day can be the last, we have already made a large number of humanitarian trips to some of the hottest spots in Ukraine.",
+              "isBold": false
             },
             {
-              "text": "Thanks to caring people, without whom we could not do this, we have been able to help thousands of people and we are helping now and encourage you to do the same, everyone can be useful where they are. At the very beginning of the war, we were involved in the evacuation of people to safe places, and we also try to help people who are left without heat due to the constant shelling of the enemy - firewood, and those who are unable. to process it, our team fully prepares it for use by these people. If you don't know how you can help Ukraine, then you've come to the right place!"
+              "text": "Thanks to caring people, without whom we could not do this, we have been able to help thousands of people and we are helping now and encourage you to do the same, everyone can be useful where they are. At the very beginning of the war, we were involved in the evacuation of people to safe places, and we also try to help people who are left without heat due to the constant shelling of the enemy - firewood, and those who are unable. to process it, our team fully prepares it for use by these people. If you don't know how you can help Ukraine, then you've come to the right place!",
+              "isBold": false
             }
           ],
           "title": "who we are",
@@ -125,7 +128,7 @@
         }
       }
     },
-    "ui": { "donate": "donate", "support": "support" }
+    "ui": { "donate": "Donate", "support": "Support" }
   },
   "Ua": {
     "header": {
@@ -138,7 +141,7 @@
     },
     "underHeaderSection": {
       "title": "Україні потрібна ваша підтримка",
-      "text": "Україні зараз потрібна ваша підтримка більше, ніж будь-коли, ви і я не можемо бути байдужими і тільки мb можемо допомогти всім цим людям вижити у ці дійсно важкі часи в історії України, які, на жаль, сталися з ними",
+      "text": "Україні зараз потрібна ваша підтримка більше, ніж будь-коли, ви і я не можемо бути байдужими і тільки ми можемо допомогти всім цим людям вижити у ці дійсно важкі часи в історії України, які, на жаль, сталися з ними",
       "follow": "підписуйся на нас"
     },
     "main": {
@@ -153,7 +156,7 @@
             "isBold": true
           },
           {
-            "text": "Подивіться на ці руки, це руки чоловіка, який вийшов з бою, який втратив свого товариша-збройного, який був на межі смерті кілька годин тому. Це війна, війна, яка не закінчиться, і яку ми зможемо перемогти, коли кожен зробить щось для перемоги.",
+            "text": "Подивіться на ці руки, це руки чоловіка, який вийшов з бою, який втратив свого побратима , який був на межі смерті кілька годин тому. Це війна, війна, яка не закінчиться, і яку ми зможемо перемогти, коли кожен зробить щось для перемоги.",
             "isBold": false
           }
         ],
@@ -172,7 +175,7 @@
           },
           {
             "title": "розвиток молоді",
-            "text": "Майстер-класи, семінари, допомога у розвитку бізнесу"
+            "text": "Майстер-класи, семінарії, допомога у розвитку бізнесу"
           }
         ],
         "title": "Сфери діяльності..."
@@ -180,7 +183,7 @@
       "evacuation": {
         "contentData": [
           {
-            "text": "22:30 нам потрібно перекачувати паливо з бочки в канистри, щоб заправити. Хлопці цим займаються, а я стою біля вантажівки. На ній написано жахливі слова: 'На щиті. Евакуація падших'.",
+            "text": "22:30 нам потрібно перекачувати паливо з бочки в канистри, щоб заправити. Хлопці цим займаються, а я стою біля вантажівки. На ній написано жахливі слова: 'На щиті. Евакуація полеглих'.",
             "isBold": true
           },
           {
@@ -192,7 +195,7 @@
             "isBold": false
           },
           {
-            "text": "\"Я бачу, що тут написано: 'Евакуація падших. Завтра вони привезуть моє дитя в одному з цих. Не дуже честь для них.'",
+            "text": "\"Я бачу, що тут написано: 'Евакуація полеглих. Завтра вони привезуть моє дитя в одному з цих. Не дуже честь для них.'",
             "isBold": true
           },
           {
@@ -211,7 +214,7 @@
         "time": "СЕРПЕНЬ-24-2023"
       },
       "impactSection": [
-        "Гуманітарна поїздка",
+        "Гуманітарних поїздок",
         "Активність з",
         "Люди, яких досягнули",
         { "time": "21 Квітеня 2022" }
@@ -225,13 +228,16 @@
         "about": {
           "contentData": [
             {
-              "text": "Хто ми? Міністерство \"Вперед, Україно\" - це неприбуткова організація 501(с)3, яка підтримує українців у скрутних ситуаціях. Ми хочемо вести Україну вперед малими кроками. Невелика перемога в чиєму-небудь житті - це перемога для великої України."
+              "text": "Хто ми? \"Forward Ukraine Ministries\" - це неприбуткова організація 501(с)3, яка підтримує українців у скрутних ситуаціях. Ми хочемо вести Україну вперед малими кроками. Невелика перемога в чиєму-небудь житті - це перемога для великої України.",
+              "isBold": true
             },
             {
-              "text": "Ми хочемо допомогти українцям жити краще, вибратися з бідності, отримати освіту і отримати шанс покращити своє життя. Ми намагаємося допомогти людям, які щоденно страждають від військової агресії, для кого кожен день може бути останнім, ми вже здійснили велику кількість гуманітарних поїздок до деяких з найгарячіших точок в Україні."
+              "text": "Ми хочемо допомогти українцям жити краще, вибратися з бідності, отримати освіту і отримати шанс покращити своє життя. Ми намагаємося допомогти людям, які щоденно страждають від військової агресії, для кого кожен день може бути останнім, ми вже здійснили велику кількість гуманітарних поїздок до деяких з найгарячіших точок в Україні.",
+              "isBold": false
             },
             {
-              "text": "Завдяки турботливим людям, без яких ми не могли б цього зробити, ми змогли допомогти тисячам людей і допомагаємо зараз, і закликаємо вас зробити те саме, кожен може бути корисним там, де він є. З самого початку війни ми брали участь у евакуації людей до безпечних місць, і також намагаємося допомогти людям, які залишаються без тепла через постійний обстріл ворога - дрова, і тим, хто не може обробити їх, наша команда повністю готує їх для використання цими людьми. Якщо ви не знаєте, як ви можете допомогти Україні, то ви потрапили за адресою!"
+              "text": "Завдяки турботливим людям, без яких ми не могли б цього зробити, ми змогли допомогти тисячам людей і допомагаємо зараз, і закликаємо вас зробити те саме, кожен може бути корисним там, де він є. З самого початку війни ми брали участь у евакуації людей до безпечних місць, і також намагаємося допомогти людям, які залишаються без тепла через постійний обстріл ворога - дрова, і тим, хто не може обробити їх, наша команда повністю готує їх для використання цими людьми. Якщо ви не знаєте, як ви можете допомогти Україні, то ви потрапили за адресою!",
+              "isBold": false
             }
           ],
           "title": "хто ми є",
@@ -253,8 +259,8 @@
       }
     },
     "ui": {
-      "donate": "пожертвувати",
-      "support": "підтримати"
+      "donate": "Пожертвувати",
+      "support": "Підтримати"
     }
   }
 }

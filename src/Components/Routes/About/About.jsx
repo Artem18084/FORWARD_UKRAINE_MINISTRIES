@@ -8,26 +8,19 @@ import SubTitle from "../../MAin/SubTitle/SubTitle";
 import leftImg from "../../../images/Routes/About/AboutImages/leftImageMobile.png"
 import mainImg from "../../../images/Routes/About/AboutImages/mainImageMobile.png"
 import rightImg from "../../../images/Routes/About/AboutImages/rightImageMobile.png"
+import { useSelector } from "react-redux";
 
 export default function About() {
-  const contentData = [
-    {
-      text: `Who are we? "Forward, Ukraine" Ministries is a 501(c)3 non-profit organization that supports Ukrainians in need. We want to take Ukraine forward in small steps. A small victory in someone's life is a victory for the great Ukraine.`,
-      isBold: true,
-    },
-    {
-      text: `We want to help Ukrainians to live better, get out of poverty, get an education and get a chance to improve their lives. We try to help people who suffer daily from military aggression, for whom every day can be the last, we have already made a large number of humanitarian trips to some of the hottest spots in Ukraine.`,
-      isBold: false,
-    },
-    {
-      text: `Thanks to caring people, without whom we could not do this, we have been able to help thousands of people and we are helping now and encourage you to do the same, everyone can be useful where they are. At the very beginning of the war, we were involved in the evacuation of people to safe places, and we also try to help people who are left without heat due to the constant shelling of the enemy - firewood, and those who are unable. to process it, our team fully prepares it for use by these people. If you don't know how you can help Ukraine, then you've come to the right place!`,
-      isBold: false,
-    },
-  ];
+  const currentTextData = useSelector((state) => state.language.textJson);
+  const title = currentTextData.main.routes.about.title
+  const subTitle = currentTextData.main.routes.about.subTitle
+
+  const contentDataText = currentTextData.main.routes.about.contentData;
+  
 
   return (
     <main className="flex flex-col items-center">
-      <RoutUnderHeader title="who we are" banner={aboutImg}/>
+      <RoutUnderHeader title={title} banner={aboutImg}/>
       <article
         className="flex flex-col sm:flex-col-reverse lg:flex-row-reverse lg:flex-1 gap-8 sm:gap-[24px] lg:gap-[0px] xl:justify-around items-center justify-center self-stretch px-4 sm:px-9 md:px-11 lg:px-[44px] py-16 sm:py-[72px] md:py-[96px] ">
         <div className="flex items-center justify-center w-full mx-au to relative max-w-[500px] md:max-w-[800px] lg:flex-1 lg:ml-6 xl:max-w-[950px]">
@@ -53,11 +46,11 @@ export default function About() {
         <section
           className=" w-full md:w-full lg:w-[450px] xl:w-[650px] flex flex-col items-start  gap-[29.793px]">
           <div className="pl-4 border-l-[1px] border-l-[#4177EC] ">
-            <SubTitle color="black" title="About us"/>
+            <SubTitle color="black" title={subTitle}/>
           </div>
           <ul
             className="flex flex-col items-start gap-[14.897px] self-stretch text-base leading-6 text-[#3F424B] font-sans ">
-            {contentData.map((item, index) => (
+            {contentDataText.map((item, index) => (
               <li key={index}>
                 <p className={item.isBold ? "font-bold " : "text-light"}>
                   {item.text}
